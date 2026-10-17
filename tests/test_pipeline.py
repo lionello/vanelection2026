@@ -194,3 +194,14 @@ def test_board_votes_consistent():
         if m["result"].startswith("CARRIED UNANIMOUSLY"):
             assert "opposed" not in vals, m
         assert not m.get("parse_warning")
+
+
+def test_news_positions_are_the_candidates_own_speech(claims, cands):
+    """A news sentence counts as a candidate's position only if it reports THEIR words or argument."""
+    from vanelect import claims as C
+    C._CANDS.clear()
+    C._CANDS.update({c["candidate_id"]: c for c in cands})
+    bad = [c["claim_id"] for c in claims if c["candidate_id"] and c["source_type"] == "news"
+           and c["evidence_type"] == "individual_position" and c["attribution"] == "name_in_sentence"
+           and not C.reported_speech(c["claim"], c["candidate_id"])]
+    assert not bad, bad[:5]

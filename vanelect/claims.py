@@ -93,6 +93,8 @@ def sentences(text: str) -> list[str]:
         p = clean_sentence(p.strip(" •-"))
         if p.startswith("—") or p.startswith("–") or p.endswith("?"):
             continue
+        if re.search(r'["”]\.?$', p) and re.search(r'^[A-Z][^"“”]*:\s', p):
+            continue  # citation title, e.g. 'Election 2022: Why X wants to be mayor".'
         if p.count("|") >= 3:
             continue  # flattened table row, not a sentence
         if len(p.split()) >= 6 and len(p) <= 700 and not BOILER.search(p) and not mostly_names(p):
@@ -373,9 +375,32 @@ def speaks(sent: str, cid: str) -> bool:
     return False
 
 
+SPEECH_VERBS = r"(said|says|told|argued|argues|pledged|promised|vowed|vows|wants|believes|proposed|proposes|called for|calls for|wrote|insisted|insists|added|stated)"
+PARTYISH = re.compile(r"\b(platform|party|slate|ABC|OneCity|COPE|TEAM|Greens?|Liberals|Vote Vancouver|Bright Future|TrueBlue)\b(?:'s)?\s+(promises?|platform|pledges?)|'s (ABC|party|platform)\b", re.I)
+
+
+def reported_speech(sent: str, cid: str) -> bool:
+    """News text reporting what the candidate themself said or argued (direct or indirect speech)."""
+    c = _CANDS.get(cid)
+    if not c or PARTYISH.search(sent):
+        return False
+    title = r"(?:(?:Mayor|Councillor|Coun\.|Commissioner|Trustee)\s+)?"
+    for n in {re.escape(c["display_name"]), re.escape(c["display_name"].split()[-1])}:
+        if re.search(rf"\b{title}{n}\b(?:'s)?\s+(?:\w+\s+){{0,2}}{SPEECH_VERBS}\b", sent) or \
+                re.search(rf"\b{SPEECH_VERBS}\s+{title}{n}\b", sent):
+            return True
+    return False
+
+
 def mk(cid, pid, sent, p, src, date, date_basis, how, quoted_doc=None) -> dict:
     et, vs = classify(sent, src["source_type"], how)
-    if cid and how == "name_in_sentence" and et == "individual_position" and not speaks(sent, cid):
+    own_speech = False
+    if cid and how == "name_in_sentence" and src["source_type"] in ("news", "reference") \
+            and et in ("reported_action", "individual_position") and reported_speech(sent, cid):
+        # the candidate's own words or argument as reported by a third party: their position, attributed
+        et, vs, own_speech = "individual_position", "reported_quote_or_paraphrase", True
+    if cid and how == "name_in_sentence" and et == "individual_position" and not own_speech \
+            and (src["source_type"] in ("news", "reference") or not speaks(sent, cid)):
         # mentioned, not speaking: a statement ABOUT the candidate, never their position
         et, vs = ("reported_action", vs) if src["source_type"] in ("news", "reference", "official_record") \
             else ("biography", vs)
