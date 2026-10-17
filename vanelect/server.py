@@ -215,6 +215,84 @@ def source_view(sid: str, p: str | None = None):
             f"<title>Source {sid}</title><style>{css}</style>{head}{''.join(body)}{js}")
 
 
+# ------------------------------------------------------------------ browser captures (bookmarklet)
+from fastapi import Request  # noqa: E402
+import secrets as _secrets  # noqa: E402
+from . import captures  # noqa: E402
+
+
+def _check_token(t: str | None) -> None:
+    tok = captures.token()
+    if not tok or not t or not _secrets.compare_digest(t, tok):
+        raise HTTPException(403, "invalid token")
+
+
+@app.post("/api/ingest")
+async def ingest(request: Request, t: str | None = None):
+    _check_token(t)
+    body = await request.body()
+    if len(body) > 60 * 1024 * 1024:
+        raise HTTPException(413, "too large")
+    try:
+        payload = json.loads(body)
+    except ValueError:
+        raise HTTPException(400, "body must be JSON")
+    return JSONResponse(captures.ingest(payload))
+
+
+@app.get("/contribute", response_class=HTMLResponse)
+def contribute(request: Request, t: str | None = None, recv: int = 0):
+    _check_token(t)
+    origin = f"https://{request.headers.get('host', 'vanelection2026.help')}"
+    bm = ("javascript:(async()=>{const O=" + json.dumps(origin) + ",T=" + json.dumps(t) + ";"
+          "const w=window.open(O+'/contribute?recv=1&t='+encodeURIComponent(T),'vanelect','width=560,height=460');"
+          "const pdfs=[...new Set([...document.querySelectorAll('a[href]')].map(a=>a.href)"
+          ".filter(h=>/\\.pdf($|[?#])/i.test(h)&&/candidates-list|minutes|voting-record/i.test(h)))].slice(0,30);"
+          "const files=[];for(const u of pdfs){try{const r=await fetch(u,{credentials:'include'});if(!r.ok)continue;"
+          "const b=new Uint8Array(await r.arrayBuffer());let s='';for(let i=0;i<b.length;i+=32768)"
+          "s+=String.fromCharCode.apply(null,b.subarray(i,i+32768));files.push({url:u,b64:btoa(s)})}catch(e){}}"
+          "if(/\\.pdf($|[?#])/i.test(location.href)){try{const r=await fetch(location.href,{credentials:'include'});"
+          "const b=new Uint8Array(await r.arrayBuffer());let s='';for(let i=0;i<b.length;i+=32768)"
+          "s+=String.fromCharCode.apply(null,b.subarray(i,i+32768));files.push({url:location.href,b64:btoa(s)})}catch(e){}}"
+          "const m={url:location.href,title:document.title,html:document.contentType==='text/html'?"
+          "document.documentElement.outerHTML:'',captured_at:new Date().toISOString(),user_agent:navigator.userAgent,files};"
+          "let n=0;const iv=setInterval(()=>{w.postMessage(m,O);if(++n>60)clearInterval(iv)},500);"
+          "addEventListener('message',e=>{if(e.origin===O&&e.data==='ack')clearInterval(iv)})})()")
+    caps = captures.all_captures()
+    rows = "".join(f"<li>{html.escape(c['captured_at'][:16])} · {c['kind']} · {html.escape(c['url'])} "
+                   f"<span class=m>{c['bytes']:,} bytes · sha256 {c['sha256'][:10]}</span></li>" for c in caps[::-1][:50])
+    css = ("body{font:15px/1.5 system-ui,sans-serif;max-width:760px;margin:1.5rem auto;padding:0 16px;background:#fff;"
+           "color:#1b1b1b}a.bm{display:inline-block;padding:.5rem .9rem;border-radius:6px;background:#2a78d6;color:#fff;"
+           "text-decoration:none;font-weight:600}.m{color:#777;font-size:.85em}code{background:#f3f3f3;padding:0 3px}"
+           "#st{padding:.6rem;border-radius:6px;background:#f2f4f8;white-space:pre-wrap}"
+           "@media(prefers-color-scheme:dark){body{background:#141414;color:#e6e6e6}code,#st{background:#262626}}")
+    if recv:
+        js = ("<script>const T=" + json.dumps(t) + ";let done=false;addEventListener('message',async e=>{"
+              "let h='';try{h=new URL(e.origin).hostname}catch(_){}"
+              "if(done||!(h==='vancouver.ca'||h.endsWith('.vancouver.ca')))return;done=true;"
+              "e.source.postMessage('ack',e.origin);const st=document.getElementById('st');st.textContent='Uploading…';"
+              "try{const r=await fetch('/api/ingest?t='+encodeURIComponent(T),{method:'POST',body:JSON.stringify(e.data)});"
+              "const j=await r.json();st.textContent=(j.stored||[]).map(x=>'✓ '+x.kind+'  '+x.url).join('\\n')+"
+              "((j.rejected||[]).length?'\\n'+j.rejected.map(x=>'✗ '+x.url+' ('+x.reason+')').join('\\n'):'')||'Nothing stored';"
+              "}catch(err){st.textContent='Failed: '+err}});</script>")
+        return (f"<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>"
+                f"<title>Capture</title><style>{css}</style><h2>Receiving capture…</h2><div id=st>Waiting for the page…</div>"
+                f"<p class=m>You can close this window when it shows ✓.</p>{js}")
+    return (f"<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>"
+            f"<title>Contribute captures</title><style>{css}</style><h1>Add vancouver.ca pages</h1>"
+            f"<p>vancouver.ca refuses automated clients, so the pipeline cannot fetch it. You can: open the page in your "
+            f"own browser and send what you see.</p><ol><li>Drag this button to your bookmarks bar: "
+            f"<a class=bm href=\"{html.escape(bm)}\">Send to Vancouver explorer</a></li>"
+            f"<li>Open a vancouver.ca page (e.g. <a href='https://vancouver.ca/your-government/2026-candidates-councillor.aspx' "
+            f"target=_blank>council candidates</a>) and click the bookmark. A small window confirms what was stored. Linked "
+            f"candidate-list / minutes / voting-record PDFs on that page are sent too; opening a PDF and clicking the "
+            f"bookmark sends that PDF.</li><li>Ask Claude to rebuild. Captures replace Internet Archive copies and are "
+            f"labelled “captured in a user's browser” with time and hash.</li></ol>"
+            f"<p class=m>Only https URLs on vancouver.ca, council.vancouver.ca and parkboardmeetings.vancouver.ca are accepted. "
+            f"This page and the bookmark contain a private token: don't share them.</p>"
+            f"<h3>Captures so far ({len(caps)})</h3><ul>{rows or '<li>none yet</li>'}</ul>")
+
+
 @app.get("/methods", response_class=HTMLResponse)
 def methods():
     return FileResponse(EXP / "methods_report.html")

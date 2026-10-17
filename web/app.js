@@ -17,6 +17,7 @@ const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v
 const partyColor = (pid) => { const i = PARTY_ORDER.indexOf(pid); return i >= 0 ? css(`--s${i + 1}`) : css("--other"); };
 const VERIF = {
   official_archived_snapshot: '<span class="badge ok">official page (archived)</span>',
+  official_user_capture: '<span class="badge ok">official page (browser capture)</span>',
   official_registration_plus_secondary_ballot_number: '<span class="badge warn">name official (Elections BC); ballot # secondary</span>',
   secondary_source: '<span class="badge warn">secondary source</span>' };
 const fmtPct = (x) => (x == null ? "–" : (100 * x).toFixed(0) + "%");
@@ -319,7 +320,7 @@ function citeHTML(it) {
     ${it.perspective && (it.evidence_type === "third_party_assessment" || it.evidence_type === "commentary" || it.verification_status === "questionnaire_response") ? `<div class="src"><b>Publisher perspective:</b> ${esc(it.perspective)}</div>` : ""}
     <div class="src">${esc(typeLbl)} · ${esc(it.verification_status.replaceAll("_", " "))} · uncertainty ${esc(it.uncertainty)}${forms}<br>
     <a href="/source/${esc(it.source_id)}?p=${encodeURIComponent(it.passage_id)}#${encodeURIComponent(it.passage_id)}" target="_blank" rel="noopener">${esc(s.publisher || "source")}${it.page ? ", p." + it.page : ""} · passage ${esc(it.passage_id.split(":").slice(1).join(":"))}</a>
-    · <a href="${esc(s.url)}" target="_blank" rel="noopener">original ↗</a>${s.via === "wayback" ? " (via Internet Archive)" : ""} · ${esc(it.date || "")}</div></div>`;
+    · <a href="${esc(s.url)}" target="_blank" rel="noopener">original ↗</a>${s.via === "wayback" ? " (via Internet Archive)" : s.via === "user_browser_capture" ? " (captured in a user's browser)" : ""} · ${esc(it.date || "")}</div></div>`;
 }
 
 function stabilityHTML(id) {

@@ -159,7 +159,15 @@ def wayback_latest(url: str) -> str | None:
 def fetch(url: str, *, allow_wayback: bool = True, refresh: bool = False,
           wayback_ts: str | None = None) -> Fetched | None:
     """Fetch url (cached). Falls back to the Internet Archive when the origin
-    refuses automated access. Returns None and logs when unavailable."""
+    refuses automated access. Returns None and logs when unavailable.
+    A page captured by a person's browser (captures.py) takes precedence."""
+    from . import captures
+    cap = captures.lookup(url)
+    if cap:
+        return Fetched(url=url, final_url=cap["url"], via="user_browser_capture", status=200,
+                       content_type="application/pdf" if cap["kind"] == "pdf" else "text/html",
+                       sha256=cap["sha256"], retrieved_at=cap["captured_at"], path=cap["path"],
+                       note=f"Captured in a user's browser at {cap['captured_at']}")
     if not refresh:
         c = cached(url)
         if c:

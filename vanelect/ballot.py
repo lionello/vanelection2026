@@ -88,9 +88,19 @@ def candidate_id(race: str, display_name: str) -> str:
     return f"{race}-{slug(display_name)}"
 
 
-def parse_official(race: str) -> list[dict]:
+def official_page(race: str) -> tuple[Path | None, dict | None]:
+    """Prefer a browser capture of the City's page; else the archived snapshot."""
+    from . import captures
+    cap = captures.lookup(OFFICIAL_BASE + RACES[race]["page"])
+    if cap and cap["kind"] == "html":
+        return ROOT / cap["path"], cap
+    snap = RACES[race]["snapshot"]
+    return (SNAP / snap if snap else None), None
+
+
+def parse_official(race: str, path: Path | None = None) -> list[dict]:
     info = RACES[race]
-    raw = (SNAP / info["snapshot"]).read_text(encoding="utf-8", errors="replace")
+    raw = (path or SNAP / info["snapshot"]).read_text(encoding="utf-8", errors="replace")
     soup = BeautifulSoup(raw, "lxml")
     out = []
     for li in soup.select("li"):
@@ -226,11 +236,17 @@ def build() -> dict:
     dh = parse_dailyhive()
     candidates, checks = [], {}
     for race, info in RACES.items():
-        if info["snapshot"]:
-            rows = parse_official(race)
-            src = dict(kind="official_archived", url=OFFICIAL_BASE + info["page"],
-                       archive_url=f"https://web.archive.org/web/{info['ts']}/{OFFICIAL_BASE}{info['page']}",
-                       snapshot_ts=info["ts"])
+        page, cap = official_page(race)
+        rows = parse_official(race, page) if page else []
+        if page and rows:
+            if cap:
+                src = dict(kind="official_user_capture", url=OFFICIAL_BASE + info["page"],
+                           captured_at=cap["captured_at"], sha256=cap["sha256"],
+                           note="Official City page captured in a person's browser (site refuses automated access).")
+            else:
+                src = dict(kind="official_archived", url=OFFICIAL_BASE + info["page"],
+                           archive_url=f"https://web.archive.org/web/{info['ts']}/{OFFICIAL_BASE}{info['page']}",
+                           snapshot_ts=info["ts"])
             # cross-check with Daily Hive
             dmap = {r["ballot_number"]: r for r in dh[race]}
             mism = []
@@ -239,8 +255,9 @@ def build() -> dict:
                 first_last = r["display_name"]
                 if not d or norm_name(d["name"]) != norm_name(first_last):
                     mism.append({"ballot": r["ballot_number"], "official": first_last, "dailyhive": d and d["name"]})
-            checks[race] = dict(official_count=len(rows), dailyhive_count=len(dh[race]), name_mismatches=mism)
-            verification = "official_archived_snapshot"
+            checks[race] = dict(official_count=len(rows), dailyhive_count=len(dh[race]), name_mismatches=mism,
+                                official_source=src["kind"])
+            verification = "official_user_capture" if cap else "official_archived_snapshot"
         else:
             rows = [dict(ballot_number=r["ballot_number"], ballot_name=None,
                          display_name=strip_cjk(r["name"])[0], name_cjk=strip_cjk(r["name"])[1],
