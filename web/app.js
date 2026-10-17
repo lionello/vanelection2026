@@ -380,21 +380,22 @@ async function table() {
 function renderBallot() {
   const race = S.race === "all" ? "council" : S.race, label = RACES.find((r) => r[0] === race)[1];
   const b = ballotOf(race), n = SEATS[race];
+  b.sort((x, y) => S.cmap[x].ballot_number - S.cmap[y].ballot_number);  // same order as on the paper ballot
   $("#ballotTitle").textContent = `My ballot · ${label}: ${b.length} of up to ${n}`;
   const items = b.map((id, i) => { const c = S.cmap[id]; return `<li><span class="bn">#${c.ballot_number}</span><span class="sp"><a href="#" data-c="${id}">${esc(c.display_name)}</a> <span class="status">${esc(c.party)}</span></span>
-    <button class="iconbtn" data-up="${i}" aria-label="Move up" ${i ? "" : "disabled"}>↑</button><button class="iconbtn" data-down="${i}" aria-label="Move down" ${i < b.length - 1 ? "" : "disabled"}>↓</button><button class="iconbtn" data-rm="${id}" aria-label="Remove">✕</button></li>`; });
+    <button class="iconbtn" data-rm="${id}" aria-label="Remove">✕</button></li>`; });
   for (let i = b.length; i < n; i++) items.push(`<li class="empty-slot">open slot (use + in the table)</li>`);
   $("#ballotList").innerHTML = items.join("");
   const L = $("#ballotList");
-  L.querySelectorAll("[data-up]").forEach((x) => (x.onclick = () => { const i = +x.dataset.up; [b[i - 1], b[i]] = [b[i], b[i - 1]]; store.set("ballot", S.ballot); renderBallot(); }));
-  L.querySelectorAll("[data-down]").forEach((x) => (x.onclick = () => { const i = +x.dataset.down; [b[i + 1], b[i]] = [b[i], b[i + 1]]; store.set("ballot", S.ballot); renderBallot(); }));
   L.querySelectorAll("[data-rm]").forEach((x) => (x.onclick = () => toggleBallot(x.dataset.rm)));
   L.querySelectorAll("a[data-c]").forEach((a) => (a.onclick = (e) => { e.preventDefault(); select(a.dataset.c); }));
 }
 
+const sortedBallot = (r) => [...ballotOf(r)].sort((x, y) => S.cmap[x].ballot_number - S.cmap[y].ballot_number);
+
 function ballotText() {
   return ["mayor", "council", "park", "school"].map((r) => {
-    const label = RACES.find((x) => x[0] === r)[1], b = ballotOf(r);
+    const label = RACES.find((x) => x[0] === r)[1], b = sortedBallot(r);
     return `${label} (vote for up to ${SEATS[r]}):\n` + (b.length ? b.map((id) => `  ${S.cmap[id].ballot_number}  ${S.cmap[id].display_name}  (${S.cmap[id].party})`).join("\n") : "  (none chosen)");
   }).join("\n\n");
 }
@@ -405,9 +406,9 @@ function copyBallot() {
 }
 
 function printBallot() {
-  $("#printArea").innerHTML = `<h1>My Vancouver 2026 ballot</h1><p>Election day: Saturday, October 17, 2026. Numbers are the official ballot numbers.</p>` +
-    ["mayor", "council", "park", "school"].map((r) => { const b = ballotOf(r); return `<h2>${esc(RACES.find((x) => x[0] === r)[1])}: vote for up to ${SEATS[r]}</h2>` +
-      (b.length ? `<ol>${b.map((id) => `<li><b>${S.cmap[id].ballot_number}</b> ${esc(S.cmap[id].display_name)} (${esc(S.cmap[id].party)})</li>`).join("")}</ol>` : "<p>(none chosen)</p>"); }).join("") +
+  $("#printArea").innerHTML = `<h1>My Vancouver 2026 ballot</h1><p>Election day: Saturday, October 17, 2026. Listed in ballot order; numbers are the official ballot numbers.</p>` +
+    ["mayor", "council", "park", "school"].map((r) => { const b = sortedBallot(r); return `<h2>${esc(RACES.find((x) => x[0] === r)[1])}: vote for up to ${SEATS[r]}</h2>` +
+      (b.length ? `<ul style="list-style:none;padding:0">${b.map((id) => `<li><b>${S.cmap[id].ballot_number}</b> ${esc(S.cmap[id].display_name)} (${esc(S.cmap[id].party)})</li>`).join("")}</ul>` : "<p>(none chosen)</p>"); }).join("") +
     `<p style="font-size:9pt">Your own choices, from vanelection2026.help. Not an endorsement.</p>`;
   window.print();
 }
