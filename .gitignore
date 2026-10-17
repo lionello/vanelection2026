@@ -10,3 +10,7 @@ data/processed/
 data/site/
 data/exports/
 server.pid
+# official inputs are re-downloaded by the pipeline (ensure_inputs); the Elections BC PDF
+# also lists financial agents' personal addresses, which this repo should not republish
+data/official/*.pdf
+data/official/*.csv
