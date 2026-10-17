@@ -282,6 +282,13 @@ def methods_report(meta, analysis, cands) -> str:
         "* The councillor page and the City's candidate-list PDF have no usable capture. Council ballot numbers come from "
         "Daily Hive's ballot-order article (2026-09-22), which matches the official pages for all 74 mayor, Park Board "
         "and school entries (name and ballot number).",
+        (f"* **All {b['city_candidate_list_pdf']['matched']}/{b['total']} entries (ballot number and name) match the City's "
+         f"official candidate-list PDF**, captured in a user's browser on {b['city_candidate_list_pdf']['captured_at'][:10]} "
+         f"(sha256 `{b['city_candidate_list_pdf']['sha256'][:16]}...`). The council page itself was also captured this way, "
+         "so council entries no longer rely on Daily Hive. Candidates the City lists as residing outside Vancouver: "
+         + ", ".join(f"{c['display_name']} ({c['residence_outside_vancouver']['place']})" for c in cands
+                     if c.get('residence_outside_vancouver')) + "."
+         if b.get("city_candidate_list_pdf") else "* The City's candidate-list PDF was not available."),
         f"* Every ballot entry ({b['elections_bc']['matched']}/{b['total']}) was matched to Elections BC's official "
         "registered-candidates list (name, office, affiliation; two documented name variants). Council entries are "
         "therefore `official_registration_plus_secondary_ballot_number`. Registered but not on the ballot: "

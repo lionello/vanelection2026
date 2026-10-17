@@ -122,3 +122,24 @@ td.num { font-variant-numeric: tabular-nums; }
 .poles { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
 .term { display: inline-block; font-size: .75rem; padding: .05rem .4rem; margin: .1rem; border-radius: 4px; background: var(--surface-2); }
 @media (max-width: 900px) { .poles { grid-template-columns: 1fr; } }
+
+.ballot { margin: 1rem 16px; padding: .8rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+.ballot-head { display: flex; justify-content: space-between; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.ballot-list { margin: .4rem 0 0; padding-left: 1.6rem; }
+.ballot-list li { padding: .25rem 0; border-bottom: 1px solid var(--border); display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
+.ballot-list li .bn { font-variant-numeric: tabular-nums; font-weight: 600; min-width: 2.5rem; }
+.ballot-list li .sp { flex: 1; }
+.ballot-list .empty-slot { color: var(--muted); font-style: italic; }
+.tablectl { display: flex; gap: .8rem; align-items: end; flex-wrap: wrap; }
+.tablectl .ctl { flex-direction: row; align-items: center; gap: .4rem; }
+.iconbtn { font: inherit; background: none; border: 1px solid var(--border); border-radius: 5px; padding: 0 .35rem; cursor: pointer; color: var(--text); }
+.iconbtn[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }
+.simbar { display: inline-block; height: 6px; background: var(--s1); border-radius: 3px; vertical-align: middle; margin-right: .3rem; }
+tr.unranked td { opacity: .55; }
+.print-area { display: none; }
+@media print {
+  body > *:not(.print-area) { display: none !important; }
+  .print-area { display: block !important; font: 12pt/1.4 system-ui, sans-serif; color: #000; }
+  .print-area h1 { font-size: 16pt; } .print-area h2 { font-size: 13pt; margin: 1em 0 .3em; }
+  .print-area li { margin: .15em 0; }
+}

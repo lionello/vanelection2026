@@ -101,17 +101,39 @@
   <div id="compareBody" class="compare-body"></div>
 </section>
 
+<section class="ballot" id="ballot">
+  <div class="ballot-head"><h2 id="ballotTitle">My ballot</h2>
+    <div><button class="btn" id="copyBallot">Copy as text</button> <button class="btn primary" id="printBallot">Print all races</button></div></div>
+  <p class="hint">Your picks, in your order, saved only in this browser. Pin candidates whose evidence you agree with
+    (📌), then order the table by “More like my pins”. That ordering is <b>language similarity to the candidates you
+    pinned</b>, computed in the original embedding space under the view and weights you choose. It is not a recommendation
+    and not a match to your views, and similar wording is not the same as similar votes. Check the evidence before you decide.</p>
+  <ol id="ballotList" class="ballot-list"></ol>
+</section>
+<div id="printArea" class="print-area"></div>
+
 <section class="tablewrap">
   <div class="tablehead">
     <h2 id="tableTitle">Candidates</h2>
-    <input type="search" id="search" placeholder="Search name, party, ballot #…" aria-label="Search candidates">
+    <div class="tablectl">
+      <label class="ctl" for="orderSel">Order by
+        <select id="orderSel">
+          <option value="ballot">Ballot number</option>
+          <option value="similar">More like my pins (📌)</option>
+          <option value="years">Years in elected office</option>
+          <option value="topics">Topics with own statements</option>
+          <option value="sources">Number of sources</option>
+          <option value="name">Name</option>
+        </select></label>
+      <input type="search" id="search" placeholder="Search name, party, ballot #…" aria-label="Search candidates">
+    </div>
   </div>
   <div class="scrollx">
   <table id="ctable">
     <thead><tr>
-      <th>Compare</th><th data-k="ballot_number">#</th><th data-k="display_name">Candidate</th><th data-k="party">Party</th>
+      <th title="Pin as a reference for 'More like my pins'">📌</th><th>Ballot</th><th>Compare</th><th data-k="ballot_number">#</th><th data-k="display_name">Candidate</th><th data-k="party">Party</th>
       <th data-k="years">Elected office (yrs)</th><th data-k="mgmt">Management resp.</th><th data-k="votes">Vote record</th>
-      <th data-k="topics">Topics w/ positions</th><th data-k="sources">Sources</th><th>Map status</th><th>Ballot source</th>
+      <th data-k="topics">Topics w/ positions</th><th data-k="sources">Sources</th><th>Map status</th><th id="simHead">Similarity to pins</th><th>Ballot source</th>
     </tr></thead>
     <tbody></tbody>
   </table>

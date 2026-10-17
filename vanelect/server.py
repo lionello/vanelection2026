@@ -91,7 +91,7 @@ def custom_map(race: str = Query(...), view: str = "policy", mode: str = "indivi
     return JSONResponse(analyze.analyse_map(st, r, view, mode, weights=w, sensitivity=False))
 
 
-def combined(st, race, mode, w, b, missing="shared"):
+def combined(st, race, mode, w, b, missing="shared", want_matrix=False):
     """Combine the policy / experience / actions blocks with adjustable weights.
 
     missing="shared" (default): pairwise similarity is the weight-averaged cosine over the blocks BOTH
@@ -127,10 +127,26 @@ def combined(st, race, mode, w, b, missing="shared"):
         res["note"] = (f"Combined map (shared blocks): similarity between two candidates is the weight-averaged cosine "
                        f"over the blocks both have; the {anchor} block is required so every pair shares one. Missing "
                        f"blocks are never zero-filled. Map = classical MDS of sqrt(2 - 2 x similarity).")
-    if len(ids) < 3:
+    if len(ids) < 3 and not want_matrix:
         res["points"] = [dict(id=c) for c in ids]
         return res
     n = len(ids)
+    if want_matrix:
+        if missing == "exclude":
+            X = np.hstack([np.array([per[blk][c] for c in ids]) * np.sqrt(wt) for blk, wt in blocks.items()]) \
+                if ids else np.zeros((0, 1))
+            X = X / np.linalg.norm(X, axis=1, keepdims=True).clip(1e-12)
+            res["_ids"], res["_S"] = ids, X @ X.T
+            return res
+        num, den = np.zeros((n, n)), np.zeros((n, n))
+        for blk, wt in blocks.items():
+            have = np.array([c in per[blk] for c in ids])
+            V = np.array([per[blk][c] if c in per[blk] else np.zeros(st.vecs.shape[1]) for c in ids])
+            both = np.outer(have, have)
+            num += wt * (V @ V.T) * both
+            den += wt * both
+        res["_ids"], res["_S"] = ids, (num / np.where(den == 0, 1, den)) if n else np.zeros((0, 0))
+        return res
     if missing == "exclude":
         X = np.hstack([np.array([per[blk][c] for c in ids]) * np.sqrt(wt) for blk, wt in blocks.items()])
         X /= np.linalg.norm(X, axis=1, keepdims=True)
@@ -168,6 +184,53 @@ def combined(st, race, mode, w, b, missing="shared"):
                           neighbours=[dict(id=ids[j], cosine=round(float(S[i, j]), 4)) for j in nb[i]])
                      for i, c in enumerate(ids)]
     return res
+
+
+def similarity(st, race, view, mode, w, b, missing="shared"):
+    """ids, S (cosine similarity in the ORIGINAL embedding space) and reasons for candidates left out."""
+    if view == "combined":
+        res = combined(st, race, mode, w, b, missing, want_matrix=True)
+        return res["_ids"], res["_S"], res["insufficient"]
+    ids, X, _, insuff = analyze.candidate_vectors(st, race, view, mode, w if view != "experience" else None)
+    return ids, (X @ X.T if len(ids) else np.zeros((0, 0))), insuff
+
+
+@app.get("/api/rank")
+def rank(race: str, pins: str, view: str = "policy", mode: str = "individual", weights: str = "{}",
+         blocks: str = "{}", missing: str = "shared"):
+    """Order a race's candidates by similarity to the candidates the USER pinned. The ranking is driven
+    entirely by the user's pins and chosen view/weights; it is not a recommendation."""
+    st = state()
+    if race not in analyze.RACES:
+        raise HTTPException(400, "unknown race")
+    try:
+        pin_ids = [p for p in json.loads(pins) if p in st.cmap and st.cmap[p]["race"] == race][:10]
+        w = {k: float(v) for k, v in json.loads(weights).items()}
+        bl = {k: float(v) for k, v in json.loads(blocks).items()}
+    except (ValueError, AttributeError, TypeError):
+        raise HTTPException(400, "bad parameters")
+    if not pin_ids:
+        raise HTTPException(400, "pin at least one candidate in this race")
+    ids, S, insuff = similarity(st, race, view, mode, w, bl, missing)
+    idx = {c: i for i, c in enumerate(ids)}
+    usable = [p for p in pin_ids if p in idx]
+    out = []
+    for c in ids:
+        if not usable:
+            break
+        sims = [float(S[idx[c], idx[p]]) for p in usable if p != c]
+        if not sims:
+            continue
+        best = max(usable, key=lambda p: -2 if p == c else S[idx[c], idx[p]])
+        out.append(dict(id=c, score=round(float(np.mean(sims)), 4), per_pin={p: round(float(S[idx[c], idx[p]]), 4)
+                        for p in usable if p != c}, closest_pin=best, pinned=c in pin_ids))
+    out.sort(key=lambda r: -r["score"])
+    return JSONResponse(dict(race=race, view=view, mode=mode, pins=pin_ids, pins_without_evidence=[p for p in pin_ids if p not in idx],
+                             ranked=out, not_ranked={c: insuff.get(c, "no evidence in this view") for c in
+                                                     [x["candidate_id"] for x in st.cands if x["race"] == race] if c not in idx},
+                             note=("Ordered by mean cosine similarity, in the original embedding space, to the candidates "
+                                   "you pinned. Similar language is not the same as similar positions or votes, and "
+                                   "candidates with little evidence cannot be ranked. Not a recommendation.")))
 
 
 @app.get("/api/support")

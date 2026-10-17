@@ -141,8 +141,8 @@ def parse_official(race: str, path: Path | None = None) -> list[dict]:
 def fix_case(display: str, last_upper: str) -> str:
     # Ballot surnames are upper-case; restore conventional casing for display.
     last = last_upper.strip()
-    nice = " ".join(w.capitalize() if not w.startswith("O'") else "O'" + w[2:].capitalize()
-                    for w in last.lower().split())
+    nice = " ".join("-".join(seg.capitalize() for seg in w.split("-")) if not w.startswith("o'")
+                    else "O'" + w[2:].capitalize() for w in last.lower().split())
     nice = re.sub(r"\bMc(\w)", lambda m: "Mc" + m.group(1).upper(), nice)
     nice = nice.replace("Van Vloten", "Van Vloten").replace("O'keefe", "O'Keefe")
     first = display[: len(display) - len(last.title())].strip() if display.lower().endswith(last.lower()) else display
@@ -230,6 +230,38 @@ def ensure_inputs() -> None:
         electionsbc.PDF.write_bytes(requests.get(electionsbc.URL, timeout=120, headers={"User-Agent": "Mozilla/5.0"}).content)
 
 
+def candidate_list_pdf_check(candidates: list[dict]) -> dict | None:
+    """Cross-check ballot number + name for every race against the City's candidate-list PDF, when a
+    browser capture of it exists."""
+    import pymupdf
+    from . import captures
+    cap = captures.lookup("https://vancouver.ca/files/cov/2026-vancouver-election-candidates-list.pdf")
+    if not cap:
+        return None
+    text = "\n".join(p.get_text() for p in pymupdf.open(ROOT / cap["path"]))
+    found = {int(m.group(1)): m.group(2).strip() for m in
+             re.finditer(r"(?m)^(\d{2,3})(?:[ \t]+|\s*\n)([^\n]*[A-ZÀ-Ý]{2,}[^\n]*)$", text)}
+    mism, missing = [], []
+    for c in candidates:
+        n = found.get(c["ballot_number"])
+        if n is None:
+            missing.append(c["candidate_id"])
+            continue
+        res = re.search(r"\(([^)]+)\)\s*$", n)
+        if res:  # the City's list marks non-residents: "All candidates reside in Vancouver unless otherwise stated"
+            c["residence_outside_vancouver"] = dict(place=res.group(1), source=cap["url"])
+            n = n[:res.start()].strip()
+        last, _, first = n.partition(",")
+        if norm_name(f"{strip_cjk(first)[0]} {last}") != norm_name(c["display_name"]) and \
+                norm_name(n) != norm_name(c["display_name"]):
+            mism.append(dict(candidate_id=c["candidate_id"], ballot=c["ballot_number"], pdf=n.strip()))
+    for c in candidates:
+        c["city_list_pdf_match"] = c["candidate_id"] not in missing and \
+            c["candidate_id"] not in {m["candidate_id"] for m in mism}
+    return dict(url=cap["url"], captured_at=cap["captured_at"], sha256=cap["sha256"], entries_in_pdf=len(found),
+                matched=len(candidates) - len(mism) - len(missing), mismatches=mism, missing=missing)
+
+
 def build() -> dict:
     ensure_inputs()
     OUT.mkdir(parents=True, exist_ok=True)
@@ -286,6 +318,7 @@ def build() -> dict:
                 campaign_links=r["campaign_links"], official_documents=r["official_documents"],
                 affiliations=[], status="on_ballot_pre_election"))
     ebc = electionsbc_check(candidates)
+    pdfcheck = candidate_list_pdf_check(candidates)
     ids = [c["candidate_id"] for c in candidates]
     assert len(ids) == len(set(ids)), "duplicate candidate ids"
     meta = dict(
@@ -295,7 +328,7 @@ def build() -> dict:
                     "must be added as a separate, dated record."),
         counts={r: sum(c["race"] == r for c in candidates) for r in RACES},
         total=len(candidates), seats={r: RACES[r]["seats"] for r in RACES},
-        cross_checks=checks, elections_bc=ebc,
+        cross_checks=checks, elections_bc=ebc, city_candidate_list_pdf=pdfcheck,
         expected_total_reported_by_dailyhive=130,
         inaccessible=[
             {"url": OFFICIAL_BASE + "2026-election.aspx", "reason": "Cloudflare bot challenge (HTTP 403)"},

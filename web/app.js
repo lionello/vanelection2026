@@ -3,7 +3,13 @@
 const S = {
   meta: null, cands: [], cmap: {}, analysis: null, sources: {}, race: "mayor", view: "policy", mode: "individual",
   proj: "pca", colorParty: true, hidden: new Set(), selected: null, compare: [], custom: null,
-  weights: {}, blocks: { policy: 1, experience: 0.5, actions: 0.5 }, missing: "shared", search: "", sort: ["ballot_number", 1],
+  weights: {}, blocks: { policy: 1, experience: 0.5, actions: 0.5 }, missing: "shared",
+  pins: {}, ballot: {}, order: "ballot", rank: null, rankKey: null, search: "", sort: ["ballot_number", 1],
+};
+const SEATS = { mayor: 1, council: 10, park: 7, school: 9 };
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("vanelect:" + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem("vanelect:" + k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } },
 };
 const RACES = [["mayor", "Mayor"], ["council", "City Council"], ["park", "Park Board"], ["school", "School Board"], ["all", "Cross-race (policy only)"]];
 // Fixed categorical order (colour follows the party, never its rank). Parties past slot 8 share "other" grey
@@ -36,6 +42,12 @@ async function init() {
   $("#missSel").onchange = (e) => { S.missing = e.target.value; S.custom = null; render(); };
   $("#colorParty").onchange = (e) => { S.colorParty = e.target.checked; render(); };
   $("#search").oninput = (e) => { S.search = e.target.value.toLowerCase(); table(); };
+  S.pins = store.get("pins", {}); S.ballot = store.get("ballot", {});
+  for (const r in S.ballot) S.ballot[r] = (S.ballot[r] || []).filter((id) => S.cmap[id]);
+  for (const r in S.pins) S.pins[r] = (S.pins[r] || []).filter((id) => S.cmap[id]);
+  $("#orderSel").onchange = (e) => { S.order = e.target.value; table(); };
+  $("#printBallot").onclick = printBallot;
+  $("#copyBallot").onclick = copyBallot;
   $("#weightsBtn").onclick = () => { const p = $("#weightsPanel"); p.hidden = !p.hidden; $("#weightsBtn").setAttribute("aria-expanded", String(!p.hidden)); };
   $("#applyWeights").onclick = applyWeights;
   $("#resetWeights").onclick = () => { Object.keys(S.weights).forEach((k) => (S.weights[k] = 1)); S.blocks = { policy: 1, experience: 0.5, actions: 0.5 }; sliders(); S.custom = null; render(); };
@@ -54,7 +66,9 @@ function banner() {
   const items = [
     `<div class="b"><b>Pre-election data.</b> Ballot retrieved ${esc(b.retrieved_at.slice(0, 10))}; election day ${esc(b.election_date)}. No results are included.
       ${b.total} candidates: mayor ${b.counts.mayor}, council ${b.counts.council}, Park Board ${b.counts.park}, school ${b.counts.school}.</div>`,
-    `<div class="b warn"><b>How the ballot was verified.</b> vancouver.ca refuses automated access (bot challenge). The mayor, Park Board and school lists are from Internet Archive captures of the City's official pages. The councillor page was never archived, so council <i>ballot numbers</i> come from Daily Hive's ballot-order list, which matches the official pages for all 74 other entries. All ${b.total} names and offices are corroborated by Elections BC's official registered-candidate list.</div>`,
+    (b.city_candidate_list_pdf && b.city_candidate_list_pdf.matched === b.total
+      ? `<div class="b"><b>Ballot verified against the City's official candidate list.</b> All ${b.total} ballot numbers and names match the City of Vancouver's candidate-list PDF and official candidate pages, captured in a browser on ${esc(b.city_candidate_list_pdf.captured_at.slice(0, 10))} (vancouver.ca refuses automated access). Names, offices and parties are also corroborated by Elections BC's registered-candidate list.</div>`
+      : `<div class="b warn"><b>How the ballot was verified.</b> vancouver.ca refuses automated access (bot challenge). Lists come from captures of the City's official pages; all ${b.total} names and offices are corroborated by Elections BC's registered-candidate list.</div>`),
     `<div class="b warn"><b>Coverage is not comprehensive.</b> ${m.coverage.with_policy_position}/${m.coverage.candidates_total} candidates have at least one individual policy statement in collected sources; ${m.coverage.without_any_evidence.length} have no evidence collected. “Not found” means absent from the collected sources, not a position.</div>`,
   ];
   $("#banner").innerHTML = items.join("");
@@ -116,6 +130,7 @@ async function render() {
   partyChips();
   if (S.view === "votes") renderVotes(); else renderMap();
   table();
+  renderBallot();
   if (S.selected) panel(S.selected);
 }
 
@@ -281,26 +296,120 @@ function rowData(c) {
     mapstatus: S.view === "votes" ? (c.vote_summary ? "record" : "no record") : !plotted ? "insufficient evidence" : st?.unstable ? "unstable" : "plotted" };
 }
 
-function table() {
-  const rows = raceCands().filter((c) => !S.search || `${c.display_name} ${c.name_cjk || ""} ${c.party} ${c.ballot_number}`.toLowerCase().includes(S.search))
+const pinsOf = (race) => (S.pins[race] ||= []);
+const ballotOf = (race) => (S.ballot[race] ||= []);
+
+function togglePin(id) {
+  const r = S.cmap[id].race, p = pinsOf(r), i = p.indexOf(id);
+  if (i >= 0) p.splice(i, 1); else p.push(id);
+  store.set("pins", S.pins); S.rank = null; table(); if (S.selected === id) panel(id);
+}
+
+function toggleBallot(id) {
+  const r = S.cmap[id].race, b = ballotOf(r), i = b.indexOf(id);
+  if (i >= 0) b.splice(i, 1);
+  else if (b.length >= SEATS[r]) { alert(`You can vote for at most ${SEATS[r]} in this race. Remove someone first.`); return; }
+  else b.push(id);
+  store.set("ballot", S.ballot); renderBallot(); table(); if (S.selected === id) panel(id);
+}
+
+async function ensureRank() {
+  const race = S.race;
+  if (race === "all" || S.order !== "similar") return null;
+  const pins = pinsOf(race);
+  if (!pins.length) return { error: "Pin (📌) at least one candidate in this race to use this ordering." };
+  const view = ["votes"].includes(S.view) ? "policy" : S.view;
+  const k = JSON.stringify([race, view, S.mode, S.missing, pins, S.weights, S.blocks]);
+  if (S.rank && S.rankKey === k) return S.rank;
+  const q = new URLSearchParams({ race, view, mode: S.mode, missing: S.missing, pins: JSON.stringify(pins),
+    weights: JSON.stringify(S.weights), blocks: JSON.stringify(S.blocks) });
+  try { S.rank = await j(`/api/rank?${q}`); S.rankKey = k; } catch (e) { S.rank = { error: e.message }; S.rankKey = k; }
+  return S.rank;
+}
+
+async function table() {
+  const rk = await ensureRank();
+  const rmap = {}, rpos = {};
+  if (rk && rk.ranked) rk.ranked.forEach((r, i) => { rmap[r.id] = r; rpos[r.id] = i; });
+  $("#simHead").style.display = S.order === "similar" ? "" : "none";
+  let rows = raceCands().filter((c) => !S.search || `${c.display_name} ${c.name_cjk || ""} ${c.party} ${c.ballot_number}`.toLowerCase().includes(S.search))
     .map((c) => [c, rowData(c)]);
-  const [k, dir] = S.sort;
-  rows.sort((a, b) => { const x = a[1][k], y = b[1][k]; return (x == null) - (y == null) || (x > y ? dir : x < y ? -dir : 0); });
-  $("#tableTitle").textContent = `Candidates (${rows.length})`;
+  const ord = {
+    ballot: (a, b) => a[0].ballot_number - b[0].ballot_number,
+    name: (a, b) => a[0].display_name.localeCompare(b[0].display_name),
+    years: (a, b) => (b[1].years ?? -1) - (a[1].years ?? -1),
+    topics: (a, b) => b[1].topics - a[1].topics,
+    sources: (a, b) => b[1].sources - a[1].sources,
+    similar: (a, b) => {
+      const pa = pinsOf(a[0].race).includes(a[0].candidate_id) ? -1 : (rpos[a[0].candidate_id] ?? 1e9);
+      const pb = pinsOf(b[0].race).includes(b[0].candidate_id) ? -1 : (rpos[b[0].candidate_id] ?? 1e9);
+      return pa - pb || a[0].ballot_number - b[0].ballot_number; },
+  }[S.order];
+  if (S.order === "ballot" && S.sort[0] !== "ballot_number") {
+    const [k, dir] = S.sort;
+    rows.sort((a, b) => { const x = a[1][k], y = b[1][k]; return (x == null) - (y == null) || (x > y ? dir : x < y ? -dir : 0); });
+  } else rows.sort(ord);
+  $("#tableTitle").textContent = `Candidates (${rows.length})` + (S.order === "similar" && rk && rk.error ? ` · ${rk.error}` : "")
+    + (S.order === "similar" && rk && rk.ranked && rk.ranked.length > 1 && Math.max(...rk.ranked.map((r) => r.score)) - Math.min(...rk.ranked.map((r) => r.score)) < 0.15 ? " · differences are small: treat the order as rough" : "");
   const vr = { available: "Council votes", board_minutes_partial: "board minutes (partial)", not_collected_board_minutes: "board minutes (none parsed)", none_no_council_seat: "none" };
-  $("#ctable tbody").innerHTML = rows.map(([c, r]) => `<tr data-c="${c.candidate_id}" class="${c.candidate_id === S.selected ? "sel" : ""}">
-    <td><input type="checkbox" aria-label="Compare ${esc(c.display_name)}" ${S.compare.includes(c.candidate_id) ? "checked" : ""} data-cmp="${c.candidate_id}"></td>
+  const maxS = rk && rk.ranked && rk.ranked.length ? Math.max(...rk.ranked.map((r) => r.score)) : 1;
+  const minS = rk && rk.ranked && rk.ranked.length ? Math.min(...rk.ranked.map((r) => r.score)) : 0;
+  $("#ctable tbody").innerHTML = rows.map(([c, r]) => {
+    const id = c.candidate_id, pinned = pinsOf(c.race).includes(id), inB = ballotOf(c.race).includes(id), rr = rmap[id];
+    const sim = S.order !== "similar" ? "" : `<td>${pinned ? '<span class="status">pinned</span>' : rr ? `<span class="simbar" style="width:${Math.round(4 + 56 * (rr.score - minS) / Math.max(1e-9, maxS - minS))}px"></span>${rr.score.toFixed(3)}<br><span class="status">closest pin: ${esc(S.cmap[rr.closest_pin].display_name)}</span>` : `<span class="status">not rankable: ${esc((rk && rk.not_ranked && rk.not_ranked[id]) || "no evidence in this view")}</span>`}</td>`;
+    return `<tr data-c="${id}" class="${id === S.selected ? "sel" : ""} ${S.order === "similar" && !rr && !pinned ? "unranked" : ""}">
+    <td><button class="iconbtn" data-pin="${id}" aria-pressed="${pinned}" title="Pin as reference">📌</button></td>
+    <td><button class="iconbtn" data-bal="${id}" aria-pressed="${inB}" title="${inB ? "Remove from" : "Add to"} my ballot">${inB ? "✓" : "+"}</button></td>
+    <td><input type="checkbox" aria-label="Compare ${esc(c.display_name)}" ${S.compare.includes(id) ? "checked" : ""} data-cmp="${id}"></td>
     <td class="num">${c.ballot_number}</td><td>${esc(c.display_name)}${c.name_cjk ? " " + esc(c.name_cjk) : ""}${c.also_on_ballot_as.length ? ' <span class="badge">also on another ballot</span>' : ""}</td>
     <td><span class="sw" style="background:${partyColor(c.party_id)}"></span> ${esc(c.party)}</td>
     <td class="num">${r.years == null ? '<span class="status">not documented</span>' : r.years}</td>
     <td>${r.mgmt ? "documented" : '<span class="status">not documented</span>'}</td>
     <td>${esc(vr[r.votes] || r.votes)}</td><td class="num">${r.topics}/13</td><td class="num">${r.sources}</td>
     <td>${r.mapstatus === "unstable" ? '<span class="badge warn">unstable</span>' : r.mapstatus === "insufficient evidence" ? '<span class="badge bad">insufficient evidence</span>' : `<span class="badge">${esc(r.mapstatus)}</span>`}</td>
-    <td>${VERIF[c.ballot_verification]}</td></tr>`).join("");
+    ${sim}<td>${VERIF[c.ballot_verification] || ""}</td></tr>`; }).join("");
   document.querySelectorAll("#ctable tbody tr").forEach((tr) => (tr.onclick = (e) => {
-    if (e.target.dataset.cmp) { toggleCompare(e.target.dataset.cmp); return; }
+    const t = e.target.closest("[data-pin],[data-bal],[data-cmp]");
+    if (t && t.dataset.pin) { togglePin(t.dataset.pin); return; }
+    if (t && t.dataset.bal) { toggleBallot(t.dataset.bal); return; }
+    if (t && t.dataset.cmp) { toggleCompare(t.dataset.cmp); return; }
     select(tr.dataset.c);
   }));
+}
+
+function renderBallot() {
+  const race = S.race === "all" ? "council" : S.race, label = RACES.find((r) => r[0] === race)[1];
+  const b = ballotOf(race), n = SEATS[race];
+  $("#ballotTitle").textContent = `My ballot · ${label}: ${b.length} of up to ${n}`;
+  const items = b.map((id, i) => { const c = S.cmap[id]; return `<li><span class="bn">#${c.ballot_number}</span><span class="sp"><a href="#" data-c="${id}">${esc(c.display_name)}</a> <span class="status">${esc(c.party)}</span></span>
+    <button class="iconbtn" data-up="${i}" aria-label="Move up" ${i ? "" : "disabled"}>↑</button><button class="iconbtn" data-down="${i}" aria-label="Move down" ${i < b.length - 1 ? "" : "disabled"}>↓</button><button class="iconbtn" data-rm="${id}" aria-label="Remove">✕</button></li>`; });
+  for (let i = b.length; i < n; i++) items.push(`<li class="empty-slot">open slot (use + in the table)</li>`);
+  $("#ballotList").innerHTML = items.join("");
+  const L = $("#ballotList");
+  L.querySelectorAll("[data-up]").forEach((x) => (x.onclick = () => { const i = +x.dataset.up; [b[i - 1], b[i]] = [b[i], b[i - 1]]; store.set("ballot", S.ballot); renderBallot(); }));
+  L.querySelectorAll("[data-down]").forEach((x) => (x.onclick = () => { const i = +x.dataset.down; [b[i + 1], b[i]] = [b[i], b[i + 1]]; store.set("ballot", S.ballot); renderBallot(); }));
+  L.querySelectorAll("[data-rm]").forEach((x) => (x.onclick = () => toggleBallot(x.dataset.rm)));
+  L.querySelectorAll("a[data-c]").forEach((a) => (a.onclick = (e) => { e.preventDefault(); select(a.dataset.c); }));
+}
+
+function ballotText() {
+  return ["mayor", "council", "park", "school"].map((r) => {
+    const label = RACES.find((x) => x[0] === r)[1], b = ballotOf(r);
+    return `${label} (vote for up to ${SEATS[r]}):\n` + (b.length ? b.map((id) => `  ${S.cmap[id].ballot_number}  ${S.cmap[id].display_name}  (${S.cmap[id].party})`).join("\n") : "  (none chosen)");
+  }).join("\n\n");
+}
+
+function copyBallot() {
+  const t = "My Vancouver 2026 ballot (election day Oct 17)\n\n" + ballotText();
+  (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(() => alert("Copied."), () => prompt("Copy:", t));
+}
+
+function printBallot() {
+  $("#printArea").innerHTML = `<h1>My Vancouver 2026 ballot</h1><p>Election day: Saturday, October 17, 2026. Numbers are the official ballot numbers.</p>` +
+    ["mayor", "council", "park", "school"].map((r) => { const b = ballotOf(r); return `<h2>${esc(RACES.find((x) => x[0] === r)[1])}: vote for up to ${SEATS[r]}</h2>` +
+      (b.length ? `<ol>${b.map((id) => `<li><b>${S.cmap[id].ballot_number}</b> ${esc(S.cmap[id].display_name)} (${esc(S.cmap[id].party)})</li>`).join("")}</ol>` : "<p>(none chosen)</p>"); }).join("") +
+    `<p style="font-size:9pt">Your own choices, from vanelection2026.help. Not an endorsement.</p>`;
+  window.print();
 }
 
 function toggleCompare(id) {
@@ -360,6 +469,7 @@ async function panel(id) {
   $("#panel").innerHTML = `<div class="cand-head"><h2>${esc(c.display_name)} ${c.name_cjk ? esc(c.name_cjk) : ""}</h2>
     <div class="meta">#${c.ballot_number} · ${esc(c.office)} · ${esc(c.party)}${c.party_label_on_ballot ? "" : " (no party on ballot)"}</div></div>
     <div class="badges">${VERIF[c.ballot_verification]}${c.official_registration ? `<span class="badge ok">Elections BC registered: ${esc(c.official_registration.name_as_registered)}${c.official_registration.affiliation_registered ? " (" + esc(c.official_registration.affiliation_registered) + ")" : ""}</span>` : ""}
+      ${c.residence_outside_vancouver ? `<span class="badge">resides in ${esc(c.residence_outside_vancouver.place)} (City candidate list)</span>` : ""}
       ${c.also_on_ballot_as.map((o) => `<span class="badge">also running: ${esc(S.cmap[o].office)}</span>`).join("")}
       <span class="badge">${p.coverage.topics_with_positions}/13 topics with own statements</span><span class="badge">${f.n_sources} sources</span></div>
     ${S.view !== "votes" ? stabilityHTML(id) : ""}
@@ -379,8 +489,12 @@ async function panel(id) {
     ${p.assessments.length ? `<h3>Third-party assessments (labelled by publisher)</h3>${p.assessments.map(citeHTML).join("")}` : ""}
     ${p.commentary.length ? `<h3>Commentary (secondary context, not evidence)</h3>${p.commentary.map(citeHTML).join("")}` : ""}
     ${c.gaps.length ? `<h3>Coverage gaps logged</h3><ul>${c.gaps.map((g) => `<li>${esc(g.what)} <span class="status">(tried: ${esc(g.tried)})</span></li>`).join("")}</ul>` : ""}
-    <p><button class="btn" id="cmpBtn">${S.compare.includes(id) ? "Remove from" : "Add to"} comparison</button> <a href="/api/claims/${esc(id)}" target="_blank">All claims (JSON)</a></p>`;
+    <p><button class="btn" id="pinBtn">${pinsOf(c.race).includes(id) ? "Unpin 📌" : "Pin 📌 as reference"}</button>
+      <button class="btn" id="balBtn">${ballotOf(c.race).includes(id) ? "Remove from my ballot" : "Add to my ballot"}</button>
+      <button class="btn" id="cmpBtn">${S.compare.includes(id) ? "Remove from" : "Add to"} comparison</button> <a href="/api/claims/${esc(id)}" target="_blank">All claims (JSON)</a></p>`;
   $("#cmpBtn").onclick = () => { toggleCompare(id); panel(id); };
+  $("#pinBtn").onclick = () => togglePin(id);
+  $("#balBtn").onclick = () => toggleBallot(id);
   document.querySelectorAll("#panel a[data-c]").forEach((a) => (a.onclick = (e) => { e.preventDefault(); select(a.dataset.c); }));
   document.querySelectorAll("#panel button[data-why]").forEach((b) => (b.onclick = async () => {
     const box = b.nextElementSibling; box.hidden = !box.hidden; if (box.dataset.loaded) return;
