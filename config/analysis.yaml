@@ -1,0 +1,45 @@
+# Analysis configuration. Every build records this file (and its hash) in
+# data/site/meta.json so a map can always be traced to the settings behind it.
+embedding:
+  backend: sentence-transformers        # sentence-transformers | openai-compatible
+  model: BAAI/bge-small-en-v1.5         # any sentence-transformers id, or the API model name
+  # For openai-compatible: set EMBEDDING_API_KEY (and optionally EMBEDDING_API_BASE)
+  # in the server environment. Keys are never sent to the browser.
+  batch_size: 32
+  normalize: true                       # L2-normalise every chunk vector
+  max_words_per_chunk: 160
+  preprocessing: "NFKC normalise, collapse whitespace, verbatim sentences only, no prefixes"
+
+topics: [housing, displacement, coops_public_housing, homelessness, drug_policy, policing,
+         active_transport, transit, taxes, public_services, parks, education, governance]
+
+views:
+  policy:      {evidence_types: [individual_position], label: "Individual policy positions"}
+  platform:    {evidence_types: [party_commitment], label: "Party platform (shared)"}
+  experience:  {evidence_types: [professional_experience, elected_experience, education],
+                topics: [elected_experience, professional_experience, education],
+                label: "Experience & governance"}
+  actions:     {evidence_types: [reported_action, claimed_outcome], label: "Recorded & reported actions"}
+  # third_party_assessment and commentary are shown, labelled by publisher, but never embedded
+
+dedup:
+  near_duplicate_cosine: 0.95          # chunks of one subject this similar collapse to one
+
+thresholds:
+  min_chunks: 3                        # fewer canonical chunks -> "insufficient evidence"
+  min_topics: 2                        # policy view: fewer covered topics -> insufficient
+  neighbours_k: 5
+
+pca: {components: 2}
+umap: {n_neighbors: 15, min_dist: 0.15, metric: cosine, seeds: [42, 7, 1234, 99, 2026]}
+
+sensitivity:
+  source_dropout: {runs: 25, drop_probability: 0.2, seed: 11}
+  topic_weights:  {runs: 25, dirichlet_alpha: 4.0, seed: 13}
+  unstable_displacement: 0.5           # Procrustes displacement / RMS spread
+  unstable_neighbour_jaccard: 0.34
+
+combined:
+  default_block_weights: {policy: 1.0, experience: 0.5, actions: 0.5}
+votes:
+  min_overlap: 100

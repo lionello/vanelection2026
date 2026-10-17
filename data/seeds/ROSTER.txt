@@ -1,0 +1,142 @@
+## ABC Vancouver 24
+mayor-ken-sim	#54	Mayor	Ken Sim
+council-joyce-gillespie	#101	City Council	Joyce Gillespie
+council-mike-klassen	#103	City Council	Mike Klassen
+council-peter-meiszner	#109	City Council	Peter Meiszner
+council-arezo-zarrabian	#126	City Council	Arezo Zarrabian
+council-lorraine-lowe	#129	City Council	Lorraine Lowe
+council-sarah-kirby-yung	#135	City Council	Sarah Kirby-Yung
+council-lisa-dominato	#137	City Council	Lisa Dominato
+council-david-grewal	#138	City Council	David Grewal
+council-lenny-zhou	#144	City Council	Lenny Zhou
+park-stephen-molnar	#207	Park Board	Stephen Molnar
+park-marie-rogers	#209	Park Board	Marie Rogers
+park-christian-kyle	#218	Park Board	Christian Kyle
+park-chris-qiu	#227	Park Board	Chris Qiu
+park-jas-virdi	#228	Park Board	Jas Virdi
+park-cheryl-grant	#232	Park Board	Cheryl Grant
+park-jay-bailey	#234	Park Board	Jay Bailey
+school-alfred-chien	#305	School Board	Alfred Chien
+school-shirley-sio	#310	School Board	Shirley Sio
+school-maria-kritikos	#311	School Board	Maria Kritikos
+school-matt-kroeker	#312	School Board	Matt Kroeker
+school-rob-nijjar	#316	School Board	Rob Nijjar
+school-preeti-faridkot	#320	School Board	Preeti Faridkot
+school-lina-vargas	#327	School Board	Lina Vargas
+## Affordable Housing 1
+council-eric-redmond	#136	City Council	Eric Redmond
+## Bright Future Vancouver 7
+mayor-muhammad-ahmad	#53	Mayor	Muhammad Ahmad
+council-yadwinder-mangat	#116	City Council	Yadwinder Mangat
+council-judith-kasiama	#120	City Council	Judith Kasiama
+council-bilal-khan	#122	City Council	Bilal Khan
+council-andy-lin	#140	City Council	Andy Lin
+council-ibrahima-cisse	#148	City Council	Ibrahima Cisse
+council-mohadeseh-gharib-p-arasi	#152	City Council	Mohadeseh Gharib P. Arasi
+## COPE 12
+council-sean-orr	#111	City Council	Sean Orr
+council-devyani-singh	#121	City Council	Devyani Singh
+council-chloe-leslie	#124	City Council	Chloe Leslie
+council-solomon-yi-kieran	#155	City Council	Solomon Yi-Kieran
+park-t-uy-t-tanat-cease-wyss	#203	Park Board	T'uy't'tanat Cease Wyss
+park-jamie-han	#205	Park Board	Jamie Han
+park-tamiko-suzuki	#206	Park Board	Tamiko Suzuki
+park-sacia-burton	#215	Park Board	Sacia Burton
+school-suzie-mah	#304	School Board	Suzie Mah
+school-melanie-cheng	#314	School Board	Melanie Cheng
+school-derrick-o-keefe	#323	School Board	Derrick O'Keefe
+school-gwen-giesbrecht	#324	School Board	Gwen Giesbrecht
+## Green Party of Vancouver 10
+mayor-pete-fry	#51	Mayor	Pete Fry
+council-annette-reilly	#102	City Council	Annette Reilly
+council-camil-dumont	#119	City Council	Camil Dumont
+council-bridget-burns	#141	City Council	Bridget Burns
+council-stephanie-smith	#147	City Council	Stephanie Smith
+park-spencer-van-vloten	#212	Park Board	Spencer Van Vloten
+park-breanne-smart	#216	Park Board	Breanne Smart
+park-tom-digby	#222	Park Board	Tom Digby
+school-alisha-masongsong	#303	School Board	Alisha Masongsong
+school-julie-strilesky	#330	School Board	Julie Strilesky
+## Independent Parks Party 5
+park-leonard-vanderstar	#202	Park Board	Leonard Vanderstar
+park-cam-rothery	#213	Park Board	Cam Rothery
+park-brynja-marshall	#224	Park Board	Brynja Marshall
+park-michael-robert-caditz	#226	Park Board	Michael Robert Caditz
+park-niknaz-alemi	#231	Park Board	Niknaz Alemi
+## No affiliation on ballot 9
+mayor-amauri-caliman	#55	Mayor	Amauri Caliman
+mayor-scott-gilbert	#57	Mayor	Scott Gilbert
+council-john-jones	#104	City Council	John Jones
+council-job-zhao	#108	City Council	Job Zhao
+council-rollergirl	#133	City Council	ROLLERGIRL
+council-parris-j-williams	#143	City Council	Parris J. Williams
+council-guy-dube	#151	City Council	Guy Dubé
+council-noi-soudarack	#153	City Council	Noi Soudarack
+school-christopher-jk-richardson	#317	School Board	Christopher JK Richardson
+## OneCity Vancouver 13
+council-jarrett-hagglund	#100	City Council	Jarrett Hagglund
+council-iona-bonamis	#113	City Council	Iona Bonamis
+council-lucy-maloney	#131	City Council	Lucy Maloney
+council-frances-bula	#146	City Council	Frances Bula
+council-caitlin-stockwell	#149	City Council	Caitlin Stockwell
+park-tyler-petersen	#214	Park Board	Tyler Petersen
+park-john-irwin	#217	Park Board	John Irwin
+park-dominic-denofrio	#230	Park Board	Dominic Denofrio
+school-krista-sigurdson	#301	School Board	Krista Sigurdson
+school-rory-brown	#302	School Board	Rory Brown
+school-sherry-breshears	#321	School Board	Sherry Breshears
+school-christopher-lee	#325	School Board	Christopher Lee
+school-steve-cardwell	#328	School Board	Steve Cardwell
+## TEAM for a Livable Vancouver 14
+mayor-colleen-hardwick	#50	Mayor	Colleen Hardwick
+council-amanda-boggan	#110	City Council	Amanda Boggan
+council-charles-kelly	#117	City Council	Charles Kelly
+council-kathleen-larsen	#123	City Council	Kathleen Larsen
+council-jonathan-weisman	#127	City Council	Jonathan Weisman
+council-raj-mundra	#130	City Council	Raj Mundra
+council-patrick-sauriol	#142	City Council	Patrick Sauriol
+council-josh-gordon	#150	City Council	Josh Gordon
+park-allan-fawley	#201	Park Board	Allan Fawley
+park-jon-girard	#204	Park Board	Jon Girard
+park-mayeli-alvarez	#219	Park Board	Mayeli Alvarez
+park-alex-tkach	#225	Park Board	Alex Tkach
+park-wah-gee	#233	Park Board	Wah Gee
+school-kat-nystedt	#322	School Board	Kat Nystedt
+## TrueBlue Vancouver 4
+council-naomi-chocyk	#154	City Council	Naomi Chocyk
+school-travers-fenton	#307	School Board	Travers Fenton
+school-blair-coleman	#309	School Board	Blair Coleman
+school-naomi-chocyk	#318	School Board	Naomi Chocyk
+## Vancouver Liberals 19
+mayor-kareem-allam	#56	Mayor	Kareem Allam
+council-victoria-jung	#107	City Council	Victoria Jung
+council-jessica-walton	#118	City Council	Jessica Walton
+council-armor-valor	#125	City Council	Armor Valor
+council-devin-clemens	#128	City Council	Devin Clemens
+council-john-coupar	#134	City Council	John Coupar
+council-moira-stilwell	#139	City Council	Moira Stilwell
+council-michael-wu	#145	City Council	Michael Wu
+park-mark-halyk	#208	Park Board	Mark Halyk
+park-shayla-bird	#211	Park Board	Shayla Bird
+park-scott-jensen	#220	Park Board	Scott Jensen
+park-amanda-bains	#221	Park Board	Amanda Bains
+park-amir-bajehkian	#223	Park Board	Amir Bajehkian
+park-tricia-barker	#229	Park Board	Tricia Barker
+school-darren-boidman	#300	School Board	Darren Boidman
+school-isabel-ochoa-prieto	#308	School Board	Isabel Ochoa Prieto
+school-noosha-mehdian	#313	School Board	Noosha Mehdian
+school-ishi-dinim	#326	School Board	Ishi Dinim
+school-joshua-cameron	#329	School Board	Joshua Cameron
+## Vote Vancouver 12
+mayor-rebecca-bligh	#52	Mayor	Rebecca Bligh
+council-geoff-teoli	#105	City Council	Geoff Teoli
+council-keerit-jutla	#106	City Council	Keerit Jutla
+council-steve-jedreicich	#112	City Council	Steve Jedreicich
+council-rebecca-hasdell	#114	City Council	Rebecca Hasdell
+council-bhavna-solecki	#115	City Council	Bhavna Solecki
+council-john-boychuk	#132	City Council	John Boychuk
+park-stephen-menon	#200	Park Board	Stephen Menon
+park-summit-wannamaker	#210	Park Board	Summit Wannamaker
+school-tasha-doucas	#306	School Board	Tasha Doucas
+school-mandy-potter	#315	School Board	Mandy Potter
+school-amarys-joseph	#319	School Board	Amarys Joseph

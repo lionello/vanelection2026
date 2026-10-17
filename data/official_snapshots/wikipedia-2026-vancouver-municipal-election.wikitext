@@ -1,0 +1,508 @@
+{{Short description|Vancouver municipal election}}
+{{Use Canadian English|date=October 2025}}
+{{Use mdy dates|date=September 2026}}
+{{Infobox election
+| election_name = 2026 Vancouver municipal election
+| flag_image = 
+| type = parliamentary
+| ongoing = yes
+| election_date = {{Start date|2026|10|17}}
+| party_colour = no
+| party_name = no
+| previous_election = 2025 Vancouver City Council by-election
+| previous_year = 2025
+| previous_mps = 
+| next_election = 
+| next_year = 2030
+| next_mps = 
+| seats_for_election = {{plainlist|
+* 10 seats on [[Vancouver City Council]] + 1 [[List of mayors of Vancouver|mayor]]
+* 9 seats on [[Vancouver School Board]]
+* 7 seats on [[Vancouver Park Board]]
+}}
+| turnout = 
+| module = {{Infobox election
+| embed = yes
+| election_name = Mayoral election
+| ongoing = yes
+| type = Parliamentary
+| image1 = [[File:Ken Sim - Collision 2024 (53799178757) (cropped).jpg|x160px]]
+| candidate1 = [[Ken Sim]]
+| party1 = {{Canadian party colour|VAN|ABC|name}}
+| colour1 = {{Canadian party colour|VAN|ABC|nohash}}
+| popular_vote1 =
+| percentage1 =
+| swing1 =
+
+| image2 = {{Easy CSS image crop |Image=Kareem Allam.jpg|desired_width=120|crop_left_perc=24|crop_right_perc=24|crop_top_perc=5|crop_bottom_perc=26}}
+| candidate2 = Kareem Allam
+| party2 = {{Canadian party colour|VAN|Vancouver Liberals|name}}
+| colour2 = {{Canadian party colour|VAN|Liberal|nohash}}
+
+| image3 = [[File:Rebecca Bligh Vote Vancouver Launch 2025.jpg|x160px]]
+| candidate3 = [[Rebecca Bligh]]
+| party3 = {{Canadian party colour|VAN|Vote Vancouver|name}}
+| colour3 = {{Canadian party colour|VAN|Vote Vancouver|colour}}
+
+| image4 = [[File:Councillor Pete Fry (Color).jpg|x160px]]
+| candidate4 = [[Pete Fry]]
+| party4 = {{Canadian party colour|VAN|Green|name}}
+| colour4 = {{Canadian party colour|VAN|Green|nohash}}
+
+| image5 = [[File:Vancouver mayoral candidate Colleen Hardwick (cropped).jpg|x160px]]
+| candidate5 = [[Colleen Hardwick]]
+| party5 = {{Canadian party colour|VAN|TEAM for a Livable Vancouver|name}}
+| colour5 = {{Canadian party colour|VAN|TEAM for a Livable Vancouver|nohash}}
+
+| map_image = 
+| map_size = 
+| map_caption = 
+| title = mayor
+| posttitle = Elected mayor
+| before_election = Ken Sim
+| before_party = [[ABC Vancouver]]
+| after_election = 
+| after_party = 
+
+| module = {{Infobox legislative election
+| embed = yes
+| election_name = City council election
+| ongoing = yes
+| previous_election = 
+| next_election = 
+| party1 = {{Canadian party colour|VAN|ABC|name}}
+| colour1 = {{Canadian party colour|VAN|ABC|colour}}
+| leader1 = Ken Sim
+| seats1 = 	
+| current_seats1 = 6
+| party2 = {{Canadian party colour|VAN|Green|name}}
+| colour2 = {{Canadian party colour|VAN|Green|colour}}
+| leader2 = Pete Fry
+| seats2 = 
+| current_seats2 = 1
+| party3 = {{Canadian party colour|VAN|COPE|name}}
+| colour3 = {{Canadian party colour|VAN|COPE|colour}}
+| leader3 = N/A
+| seats3 = 
+| current_seats3 = 1
+| party4 = {{Canadian party colour|VAN|OneCity|name}}
+| colour4 = {{Canadian party colour|VAN|OneCity|colour}}
+| leader4 = N/A
+| seats4 = 
+| current_seats4 = 1
+| party5 = {{Canadian party colour|VAN|Vote Vancouver|name}}
+| colour5 = {{Canadian party colour|VAN|Vote Vancouver|colour}}
+| leader5 = Rebecca Bligh
+| seats5 = 
+| current_seats5 = 1
+
+| module = {{Infobox legislative election
+| embed = yes
+| election_name = Park board election
+| nopercentage = yes
+| ongoing = yes
+| party1 = {{Canadian party colour|VAN|ABC|name}}
+| colour1 = {{Canadian party colour|VAN|ABC|colour}}
+| leader1 = Ken Sim
+| seats1 = 	
+| current_seats1 = 3
+| party2 = {{Canadian party colour|VAN|Independent|name}}
+| colour2 = {{Canadian party colour|VAN|Independent|colour}}
+| leader2 = N/A
+| seats2 = 
+| current_seats2 = 1
+| party3 = {{Canadian party colour|VAN|Green|name}}
+| colour3 = {{Canadian party colour|VAN|Green|colour}}
+| leader3 = Pete Fry
+| seats3 = 
+| current_seats3 = 1
+| party4 = {{Canadian party colour|VAN|Vancouver Liberals|name}}
+| colour4 = {{Canadian party colour|VAN|Liberal|colour}}
+| leader4 = Kareem Allam
+| seats4 = 
+| current_seats4 = 2
+
+| module = {{Infobox legislative election
+| embed = yes
+| election_name = School board election
+| nopercentage = yes
+| ongoing = yes
+| party1 = {{Canadian party colour|VAN|ABC|name}}
+| colour1 = {{Canadian party colour|VAN|ABC|colour}}
+| leader1 = Ken Sim
+| seats1 = 	
+| current_seats1 = 3
+| party2 = {{Canadian party colour|VAN|Green|name}}
+| colour2 = {{Canadian party colour|VAN|Green|colour}}
+| leader2 = Pete Fry
+| seats2 = 
+| current_seats2 = 2
+| party3 = {{Canadian party colour|VAN|Independent|name}}
+| colour3 = {{Canadian party colour|VAN|Independent|colour}}
+| leader3 = N/A
+| seats3 = 
+| current_seats3 = 1
+| party4 = {{Canadian party colour|VAN|COPE|name}}
+| colour4 = {{Canadian party colour|VAN|COPE|colour}}
+| leader4 = N/A
+| seats4 = 
+| current_seats4 = 1
+| party5 = {{Canadian party colour|VAN|OneCity|name}}
+| colour5 = {{Canadian party colour|VAN|OneCity|colour}}
+| leader5 = N/A
+| seats5 = 
+| current_seats5 = 1
+| party6 = {{Canadian party colour|VAN|Vancouver Liberals|name}}
+| colour6 = {{Canadian party colour|VAN|Liberal|colour}}
+| leader6 = Kareem Allam
+| seats6 = 
+| current_seats6 = 1
+}}}}}}}}
+}}
+The '''2026 Vancouver municipal election''' will be held on October 17, 2026, on the same day as the [[2026 British Columbia municipal elections|municipal elections]] held throughout British Columbia.<ref name=":0">{{Cite web |title=2026 municipal election |url=https://vancouver.ca/your-government/2026-municipal-election.aspx |access-date=October 1, 2025 |website=[[City of Vancouver]] |language=en}}</ref> Voters will elect the [[mayor of Vancouver]] along with 10 [[Vancouver City Council|city councillors]], 7 [[Vancouver Park Board|park board commissioners]], and 9 [[Vancouver School Board|school board trustees]] through [[Plurality at-large voting|plurality-at-large voting]].<ref name=":0" /> In addition, voters will vote on three capital plan questions and two plebiscite questions related to public safety.<ref name=":0" /><ref>{{Cite news |last=Chan |first=Cheryl |date=August 14, 2026 |title=Vancouver council approves ABC's public-safety plebiscite questions for October ballot |url=https://vancouversun.com/news/local-news/vancouver-council-approves-abc-public-safety-plebiscite-questions-october-ballot |access-date=August 18, 2026 |work=[[Vancouver Sun]]}}</ref>
+
+== Background ==
+[[Ken Sim]] defeated incumbent mayor [[Kennedy Stewart (Canadian politician)|Kennedy Stewart]] in the [[2022 Vancouver municipal election|2022 mayoral election]].<ref name=":1">{{Cite news |date=November 7, 2022 |title=Ken Sim sworn in as mayor of Vancouver |url=https://www.cbc.ca/news/canada/british-columbia/ken-sim-vancouver-mayor-swearing-in-2022-1.6643066 |access-date=October 2, 2025 |work=[[CBC News]]}}</ref> Sim was elected mayor with 51% of votes cast<ref name=":2">{{Cite news |last=Fumano |first=Dan |date=October 17, 2022 |title=Vancouver Election Results: Ken Sim rolls over Kennedy Stewart, vows to act fast to add police officers |url=https://vancouversun.com/news/local-news/vancouver-election-results-2022 |access-date=October 2, 2025 |work=[[Vancouver Sun]]}}</ref> and was sworn in on November 7, 2022.<ref name=":1" /> The city council, park board, and school board elections, held on the same day, had Sim's [[ABC Vancouver]] winning outright majorities on all three.<ref name=":2" />
+
+== Mayoral election ==
+
+===Candidates===
+==== Declared ====
+
+* Muhammad Ahmad, Bright Future Vancouver, communications strategist and chair of the strategic advisory board at Alpharay Consulting<ref>{{Cite web |title=Muhammad Ahmad |url=https://www.brightfuturevancouver.ca/muhammad-ahmad |access-date=August 20, 2026 |website=Bright Future Vancouver |language=en-CA}}</ref>
+* Kareem Allam, [[Vancouver Liberal Electors Association|Vancouver Liberals]], former chief of staff to Mayor [[Ken Sim]]<ref>{{Cite news |last=Chan |first=Cheryl |date=July 3, 2025 |title=Vancouver mayor's former chief of staff starts new political party |url=https://vancouversun.com/news/local-news/vancouver-mayor-ken-sim-former-chief-of-staff-kareem-allam-starts-new-political-party |access-date=October 2, 2025 |work=[[Vancouver Sun]]}}</ref>
+* [[Rebecca Bligh]], Vote Vancouver, [[Vancouver City Council|Vancouver city councillor]] (2018–present)<ref>{{Cite news |last=Pawson |first=Chad |date=September 22, 2025 |title=Vancouver city councillor kicked out of ruling party announces mayoral bid |url=https://www.cbc.ca/news/canada/british-columbia/rebecca-bligh-to-run-for-mayor-in-vancouver-2026-1.7639887 |access-date=October 2, 2025 |work=[[CBC News]]}}</ref>
+* Amauri Caliman, [[Independent politician|independent]]
+* [[Pete Fry]], [[Green Party of Vancouver|Green Party]], [[Vancouver City Council|Vancouver city councillor]] (2018–present)<ref>{{Cite news |url=https://vancouversun.com/news/pete-fry-vancouver-mayoral-candidate |title=Pete Fry adds his name to the (long) list of Vancouver mayoral candidates |last=Fumano |first=Dan |date=January 30, 2026 |access-date=January 30, 2026 |work=[[Vancouver Sun]]}}</ref>
+* Scott Gilbert, [[Independent politician|independent]]<ref>{{Cite web |last=Vancouver |first=City of |title=2026 mayoral candidates |url=https://vancouver.ca/your-government/2026-candidates-mayor.aspx |access-date=2026-09-14 |website=vancouver.ca |language=en}}</ref>
+* [[Colleen Hardwick]], [[TEAM for a Livable Vancouver]], Vancouver city councillor (2018–2022)<ref name=":4">{{Cite web |last=Robinson |first=Sal |date=April 13, 2026 |title=Colleen Hardwick Chosen As TEAM's Mayoral Candidate Along With Three Council Candidates |url=https://www.voteteam.ca/post/colleen-hardwick-chosen-as-team-s-mayoral-candidate-along-with-three-council-candidates |url-status=live |archive-url=https://web.archive.org/web/20260413200333/https://www.voteteam.ca/post/colleen-hardwick-chosen-as-team-s-mayoral-candidate-along-with-three-council-candidates |archive-date=April 13, 2026 |access-date=April 13, 2026 |website=TEAM for a Livable Vancouver |language=en-CA}}</ref>
+* [[Ken Sim]], [[ABC Vancouver]], incumbent mayor (2022–present)<ref>{{Cite web |last=Howell |first=Mike |date=November 8, 2023 |title=Vancouver Mayor Ken Sim will seek re-election in 2026 |url=https://www.vancouverisawesome.com/local-news/vancouver-mayor-ken-sim-will-seek-re-election-in-2026-7803101 |access-date=October 2, 2025 |website=Vancouver Is Awesome |language=en}}</ref>
+
+==== Withdrawn ====
+* Stephanie Allen, [[Coalition of Progressive Electors|COPE]], co-founder of Hogan's Alley Society and a former vice-president at [[BC Housing Management Commission|BC Housing]]<ref>{{cite news |last1=Chan |first1=Cheryl |last2=Fumano |first2=Dan |title=COPE ends Vancouver mayoral campaign, urging Greens and OneCity to rally |url=https://vancouversun.com/news/cope-ends-vancouver-mayoral-campaign-urging-greens-onecity-rally |access-date=September 2, 2026 |work=Vancouver Sun |date=September 2, 2026}}</ref>
+*William Azaroff, [[OneCity Vancouver]], CEO of Brightside Community Homes<ref>{{Cite web |last=Weichel |first=Andrew |date=2026-09-08 |title=William Azaroff drops out of Vancouver mayoral race, cites need to ‘get Ken Sim out’ |url=https://www.ctvnews.ca/vancouver/article/william-azaroff-drops-out-of-vancouver-mayoral-race-cites-need-to-get-ken-sim-out/ |access-date=2026-09-08 |website=CTVNews |language=en-CA}}</ref>
+
+===Opinion polling===
+==== Declared candidates ====
+{| class="wikitable"
+|+
+!Polling firm
+!Dates
+!Sim
+!Fry
+!Allam
+!Hardwick
+!Allen
+!Azaroff
+!Bligh
+!Ahmad
+!Other
+!Undecided
+|-
+|Canada Pulse Insights<ref>{{Cite web |last=Crawford |first=Emma |date=2026-10-09 |title=Vancouver mayoral race a dead heat between Fry and Sim: poll |url=https://vancouver.citynews.ca/2026/10/09/vancouver-mayoral-race-a-dead-heat-between-fry-and-sim-poll/ |access-date=2026-10-09 |website=CityNews Vancouver |language=en}}</ref>
+|September 28 – October 6, 2026
+|27%
+|{{open source|'''28%'''}}
+|19%
+|13%
+|{{N/A}}
+|{{N/A}}
+|7%
+|3%
+|{{N/A}}
+|
+|-
+|Leger<ref>{{Cite web |last=Fumano |first=Dan |date=2026-10-09 |title=Vancouver election: New poll shows Ken Sim and Pete Fry battling for lead in mayoral race |url=https://vancouversun.com/news/local-news/vancouver-election-new-poll-shows-ken-sim-and-pete-fry-battling-for-lead-in-mayoral-race |access-date=2026-10-12 |website=Vancouver Sun |language=en}}</ref>
+|September 23–30, 2026
+|19%
+|{{open source|'''23%'''}}
+|6%
+|6%
+|{{N/A}}
+|{{N/A}}
+|5%
+|{{N/A}}
+|{{N/A}}
+|36%
+|-
+|Justason<ref>{{Cite web |publisher=Justason Market Intelligence |date=September 16, 2026 |title=Fry takes lead in Vancouver's mayoral race |url=https://www.justasonmi.com/?p=6484 |access-date=September 17, 2026 |website=justasonmi.com}}</ref>
+|August 31 – September 11, 2026
+|30%
+|{{open source|'''45%'''}}
+|10%
+|11%
+|{{N/A}}
+|{{N/A}}
+|5%
+|{{N/A}}
+|{{N/A}}
+|-
+|Research Co.<ref name="research-co-poll1">{{Cite web |last=Co. |first=Research |date=August 4, 2026 |title=1/3 of the Vote Could Suffice in Vancouver’s Mayoral Election |url=https://researchco.ca/2026/08/04/vanpoli-2/ |access-date=August 6, 2026 |website=Research Co. |language=en-CA}}</ref>
+|August 1, 2026
+| style="background:#FFD6E8;" |'''30%'''
+|19%
+|19%
+|14%
+|4%
+|5%
+|7%
+|{{N/A}}
+|3%
+|{{N/A}}
+|-
+|Research Co.<ref name="research-co-poll1" />
+|August 1, 2026
+| style="background:#FFD6E8;" |'''22%'''
+|14%
+|14%
+|10%
+|3%
+|4%
+|5%
+|{{N/A}}
+|2%
+|26%
+|-
+|Pallas Data<ref>{{Cite web |last=Data |first=Pallas |date=July 30, 2026 |title=Vancouver Pallas Poll: Sim's Favourability Underwater, Over a Third Still Undecided |url=https://pallas-data.ca/2026/07/30/vancouver-pallas-poll-sims-favourability-underwater-over-a-third-still-undecided/ |access-date=July 31, 2026 |website=Pallas Data |language=en-US}}</ref>
+|July 20–24, 2026
+|13.8%
+|{{open source|'''18.1%'''}}
+|11.5%
+|10.5%
+|6%
+|3.5%
+|2.9%
+|{{N/A}}
+|33.8%
+|}
+
+====Potential candidates====
+{{row hover highlight}}
+{|class="wikitable sortable mw-datatable" style="text-align:center; line-height:14px"
+|-
+! Polling firm
+! Date last conducted
+! width="50px" | Kareem Allam, Liberal
+! width="50px" | John Coupar, Conservative
+! width="50px" | Kirk LaPointe, Conservative
+! width="50px" | Sean Orr, COPE
+! width="50px" | Pete Fry, Green
+! width="50px" | Ken Sim, ABC
+! width="50px" | Colleen Hardwick, TEAM
+! width="50px" | Tim Louis, COPE
+! width="50px" | Amanda Burrows, OneCity
+! width="50px" | Fred Harding, NPA
+! width="50px" | Rebecca Bligh, Vote Vancouver
+! Other
+! Sample size
+! MOE
+! Polling method
+! Lead
+|-
+| Mainstreet Research<ref name="MainstreetOct2025">{{cite web |title=Mainstreet Research Survey – Vancouver |url=https://static1.squarespace.com/static/68990e32994d8c31d907e8b6/t/690010bf6f1d68397fb2adbf/1761611967849/1_Mainstreet_Vancouver_October_2025.pdf |website=[[Mainstreet Research]] |access-date=October 28, 2025 |date=October 24, 2025}}</ref>
+| October 22, 2025
+| 13%
+|style="background-color:#B1D8D3" | '''25%'''
+|{{N/A}}
+| 20%
+| 20%
+| 13%
+| 4%
+| {{N/A}}
+| 2%
+| 1%
+| 2%
+| {{N/A}}
+| 1,207
+| ±2.8pp
+| IVR
+| style="background-color:#B1D8D3" | '''5%'''
+|-
+| Mainstreet Research<ref name="MainstreetOct2025"/>
+| October 22, 2025
+| 16%
+|{{N/A}}
+| style="background-color:#B1D8D3" | '''26%'''
+| 17%
+| 20%
+| 11%
+| 4%
+| {{N/A}}
+| 2%
+| 1%
+| 3%
+| {{N/A}}
+| 1,207
+| ±2.8pp
+| IVR
+| style="background-color:#B1D8D3" | '''6%'''
+|-
+| Mainstreet Research<ref>{{cite web |title=Mainstreet Research Survey – Vancouver |url=https://cdn.prod.website-files.com/66c8dfb086a015b3b519e988/68bb391512f583924fce321e_Mainstreet_Vancouver_August_2025_Public.pdf |website=[[Mainstreet Research]] |access-date=October 28, 2025 |date=September 5, 2025}}</ref>
+| August 29, 2025
+| style="background-color:#f3db3b" | '''19%'''
+| 18%
+|{{N/A}}
+|{{N/A}}
+| 17%
+| 15%
+| 6%
+| 8%
+| 8%
+| 8%
+| {{N/A}}
+| {{N/A}}
+| 961
+| ±3.2pp
+| IVR
+| style="background-color:#f3db3b" | '''1%'''
+|}
+
+====Parties====
+{{row hover highlight}}
+{|class="wikitable sortable mw-datatable" style="text-align:center; line-height:14px"
+|-
+! Polling firm
+! Date last conducted
+! width="50px" | Conservatives
+! width="50px" | Liberals
+! width="50px" | COPE
+! width="50px" | Greens
+! width="50px" | ABC
+! width="50px" | OneCity
+! width="50px" | TEAM
+! width="50px" | Vote Vancouver
+! width="50px" | NPA
+! Sample size
+! MOE
+! Polling method
+! Lead
+|-
+| Mainstreet Research<ref name="MainstreetOct2025" />
+| October 22, 2025
+| style="background-color:#B1D8D3" | '''32%'''
+| 22%
+| 13%
+| 11%
+| 8%
+| 5%
+| 4%
+| 4%
+| 2%
+| 1,207
+| ±2.8pp
+| IVR
+| style="background-color:#B1D8D3" | '''10%'''
+|-
+|}
+
+== City council elections ==
+=== Candidates ===
+==== Declared ====
+
+* Mohadeseh G.P. Arasi, Bright Future Vancouver, community advocate and entrepreneur<ref name="BFV-candidates">{{Cite web |title=City Council Candidates |url=https://www.brightfuturevancouver.ca/candidates/city-council |access-date=August 20, 2026 |website=Bright Future Vancouver |language=en-CA}}</ref>
+* Amanda Boggan, TEAM for a Livable Vancouver, former president of the Downtown Eastside Neighbourhood Council<ref name=":6">{{Cite web |last=Robinson |first=Sal |date=June 9, 2026 |title=TEAM Chooses Two More City Council Candidates |url=https://www.voteteam.ca/post/team-chooses-two-more-city-council-candidates |url-status=live |archive-url=https://web.archive.org/web/20260610205849/https://www.voteteam.ca/post/team-chooses-two-more-city-council-candidates |archive-date=June 10, 2026 |access-date=June 9, 2026 |website=TEAM for a Livable Vancouver |language=en-CA}}</ref>
+* Iona Bonamis, OneCity, City of Vancouver transportation planner<ref name="onecity-candidates">{{Cite news |last=Caddell |first=Nathan |date=May 11, 2026 |title=OneCity Vancouver announces council, school board, and park board candidates |url=https://www.straight.com/city-culture/onecity-vancouver-announces-council-school-board-and-park-board-candidates |access-date=May 11, 2026 |website=[[The Georgia Straight]]}}</ref>
+* John Boychuk, Vote Vancouver, Vancouver Pride Society co-chair and small business owner<ref name="Vote Vancouver Candidates">{{cite news |last1=Chan |first1=Kenneth |title=Vote Vancouver party announces first nine candidates to run in civic election |url=https://dailyhive.com/vancouver/vote-vancouver-party-first-candidates-civic-election-2026 |access-date=May 27, 2026 |website=Daily Hive |date=May 25, 2026}}</ref>
+* Frances Bula, OneCity, civic journalist<ref name="onecity-candidates" />
+* Bridget Burns, Green Party, [[Green Party of Canada]] national field manager<ref name="green-candidates">{{Cite news |last=Chan |first=Kenneth |date=March 24, 2026 |title=Green party names seven Vancouver City Council nomination hopefuls for election |url=https://dailyhive.com/vancouver/green-party-vancouver-city-council-candidates-2026 |access-date=March 30, 2026 |website=[[DailyHive]]}}</ref>
+* Ibrahima Cisse, Bright Future Vancouver, entrepreneur and community builder<ref name="BFV-candidates" />
+* Devin Clemens, Vancouver Liberals, UBC graduate program manager<ref>{{Cite web |title=Devin Clemens - City Council Candidate |date=June 4, 2026 |url=https://www.vancouverliberals.com/devin_clemens |access-date=July 28, 2026 |website=Vancouver Liberals}}</ref>
+* John Coupar, Vancouver Liberals, former [[Vancouver Park Board]] commissioner and [[Conservative Party of British Columbia]] candidate in the [[2024 British Columbia general election|2024 British Columbia election]] for [[Vancouver-Little Mountain]]<ref>{{Cite web |date=August 6, 2026 |title=Former Park Board commissioner John Coupar to run for council with Vancouver Liberals |url=https://www.straight.com/city-culture/former-park-board-commissioner-john-coupar-to-run-for-council-with-vancouver-liberals |access-date=August 6, 2026 |website=The Georgia Straight |language=en}}</ref><ref>{{Cite web |title=Press Release - John Coupar |url=https://www.vancouverliberals.com/press_release_john_coupar |access-date=August 6, 2026 |website=Vancouver Liberals |language=en}}</ref><ref>{{Cite web |title=John Coupar to run for Vancouver City Council under Liberals civic party |url=https://dailyhive.com/vancouver/john-coupar-vancouver-liberals-city-council-election |access-date=August 6, 2026 |website=Daily Hive |language=en}}</ref>
+* Camil Dumont, Green Party, former Vancouver Park Board commissioner (2018–2022)<ref name="green-candidates" />
+* Jarrett Hagglund, OneCity, managing director of the Co-Operative Housing Federation of BC<ref name="onecity-candidates" />
+* Rebecca Hasdell, Vote Vancouver, [[British Columbia Centre for Disease Control|BC Centre for Disease Control]] public health scientist and University of British Columbia adjunct professor<ref name="Vote Vancouver Candidates" />
+* Steve Jedreicich, Vote Vancouver, development and acquisitions specialist<ref>{{Cite web |title=Steve Jedreicich - City Council Candidate |date=July 15, 2026 |url=https://www.votevancouver.ca/steve-jedreicich |access-date=August 22, 2026 |website=Vote Vancouver}}</ref>
+* Victoria Jung, Vancouver Liberals, [[Vancouver School Board|Vancouver School Board trustee]] (2022–present)<ref>{{Cite web |last=Howell |first=Mike |date=January 28, 2026 |title=Vancouver Liberals add second ex-ABC politician to campaign roster |url=https://www.biv.com/news/economy-law-politics/vancouver-liberals-add-second-ex-abc-politician-to-campaign-roster-victoria-jung-11798578 |access-date=January 28, 2026 |website=Business in Vancouver |language=en}}</ref>
+* Keerit Jutla, Vote Vancouver, lawyer and CEO of Invicta Metals<ref>{{Cite web |title=Keerit Jutla - City Council Candidate |date=September 1, 2026 |url=https://www.votevancouver.ca/keerit-jutla|access-date=September 4, 2026 |website=Vote Vancouver}}</ref>
+* Judith Kasiama, Bright Future Vancouver, founder of Colour the Trails and community advocate<ref name="BFV-candidates" />
+* Charles Kelly, TEAM for a Livable Vancouver, [[United Nations Human Settlements Programme|UN Human Settlements]] advisor and pub owner<ref name=":4" />
+* Bilal Khan, Bright Future Vancouver, housing and homelessness advocate<ref name="BFV-candidates" />
+* Kathleen Larsen, TEAM for a Livable Vancouver, Vancouver Heritage Foundation director and TEAM candidate in the [[2022 Vancouver municipal election|2022 Vancouver Park Board election]]<ref name=":4" />
+* Chloe Leslie, COPE, food redistribution nonprofits<ref name=":5">{{Cite web |title=Nominees - 2026 |url=https://www.votecope.ca/nominees2026 |access-date=May 13, 2026 |website=COPE Vancouver |language=en-CA}}</ref>
+* Andy Lin, Bright Future Vancouver, business founder and community advocate<ref name="BFV-candidates" />
+* [[Lucy Maloney]], OneCity, Vancouver city councillor (2025–present), lawyer and safe streets advocate; elected in the [[2025 Vancouver City Council by-election]]<ref>{{Cite web |title=2026 Candidates |url=https://www.onecityvancouver.ca/our_candidates |access-date=May 13, 2026 |website=OneCity Vancouver |language=en}}</ref>
+* Yadwinder Mangat, Bright Future Vancouver, realtor and former Vancouver cab driver<ref name="BFV-candidates" />
+* [[Sean Orr]], COPE, Vancouver city councillor (2025–present), housing activist and journalist; elected in the [[2025 Vancouver City Council by-election]]<ref name=":5" />
+* Annette Reilly, Green Party, Green Party candidate in the [[2025 Vancouver City Council by-election]]<ref name="green-candidates" />
+* Patrick Sauriol, TEAM for a Livable Vancouver, digital entrepreneur, former DigiBC executive director<ref name=":6" />
+* Devyani Singh, COPE, climate scientist and researcher<ref name=":5" />
+* Bhavna Solecki, Vote Vancouver, scientific researcher and seniors' advocate<ref name="Vote Vancouver Candidates" />
+* Stephanie Smith, Green Party, housing, labour, and social justice activist<ref name="green-candidates" />
+* [[Moira Stilwell]], Vancouver Liberals, former provincial Cabinet minister<ref>https://vancouversun.com/opinion/columnists/former-bc-cabinet-minister-vancouver-council-run-ubc-into-city</ref>
+* Caitlin Stockwell, OneCity, Indigenous rights lawyer<ref name="onecity-candidates" />
+* Geoff Teoli, Vote Vancouver, entrepreneur and former Vancouver film commissioner<ref name="Vote Vancouver Candidates" />
+* Armor Valor, Vancouver Liberals, entrepreneur, Hospital Employees Union member, Langara College board member and former OneCity council candidate<ref>{{Cite web |last=Caddell |first=Nathan |date=May 28, 2026 |title=Former OneCity council candidate Armor Valor joins Vancouver Liberals |url=https://www.straight.com/city-culture/former-onecity-council-candidate-armor-valor-joins-vancouver-liberals |access-date=May 30, 2026 |website=The Georgia Straight |language=en}}</ref>
+* Jessica Walton, Vancouver Liberals, political strategist and government copywriter<ref name="liberal-candidates">{{Cite news |last=Chan |first=Kenneth |date=March 20, 2026 |title=Vancouver Liberals add two city councillor candidates for 2026 election |url=https://dailyhive.com/vancouver/michael-wu-jessica-walton-vancouver-liberals |access-date=March 30, 2026 |website=[[DailyHive]]}}</ref>
+* Jonathan Weisman, TEAM for a Livable Vancouver, lawyer<ref name=":6" />
+* Michael Wu, Vancouver Liberals, entrepreneur, RCMP auxiliary constable, and 2024 [[Conservative Party of British Columbia|BC Conservative]] candidate in [[Burnaby North]]<ref name="liberal-candidates" />
+* Solomon Yi-Kieran, COPE, public transit activist<ref name=":5" />
+
+==== Declined ====
+* Brian Montague, ABC Vancouver, Vancouver city councillor (2022–present)<ref>{{Cite web |last=Zavarise |first=Isabella |date=October 30, 2025 |title=Vancouver councillor defends attendance record after selling local home, buying property in Okanagan |url=https://www.ctvnews.ca/vancouver/article/vancouver-councillor-defends-attendance-record-after-selling-local-home-buying-property-in-okanagan/ |access-date=October 30, 2025 |website=[[CIVT-DT|CTV News Vancouver]] |language=en}}</ref>
+
+== School board elections ==
+=== Candidates ===
+==== Declared ====
+* Darren Boidman, Vancouver Liberals<ref name="vanlib-candidates" />
+* Sherry Breshears, OneCity, inclusive education expert<ref name="onecity-candidates" />
+* Rory Brown, OneCity, teacher and union leader<ref name="onecity-candidates" />
+* Joshua Cameron, Vancouver Liberals<ref name="vanlib-candidates">{{cite web |title=Candidates & Caucus |url=https://www.vancouverliberals.com/candidates_caucus |website=Vancouver Liberals |access-date=August 25, 2026}}</ref>
+* Steve Cardwell, OneCity, former Vancouver School Board superintendent<ref name="onecity-candidates" />
+* Melanie Cheng, COPE, former DPAC chair and community organizer<ref name=":5" />
+* Ishi Dinim, Vancouver Liberals<ref name="vanlib-candidates" />
+* Gwen Giesbrecht, COPE, former Vancouver Park Board commissioner (2018–2022) and former DPAC chair<ref name=":5" />
+* Amarys Joseph, Vote Vancouver, post-secondary education manager<ref name="Vote Vancouver Candidates" />
+* Christopher Lee, OneCity, founder of Helping Hearts Youth Foundation<ref name="onecity-candidates" />
+* Suzie Mah, COPE, Vancouver School Board trustee (2022–present)<ref name=":5" />
+* Alisha Masongsong, Green Party, community advocate and social planner<ref name=":7">{{Cite web |title=Candidates |url=https://www.vangreens.ca/meet_your_candidates |access-date=June 26, 2026 |website=Vancouver Greens |language=en}}</ref>
+* Noosha Mehdian, Vancouver Liberals<ref name="vanlib-candidates" />
+* Isabel Ochoa, Vancouver Liberals<ref name="vanlib-candidates" />
+* Derrick O'Keefe, COPE, journalist and writer<ref name=":5" />
+* Mandy Potter, Vote Vancouver<ref name="Vote Vancouver Candidates" />
+* Krista Sigurdson, OneCity, health researcher<ref name="onecity-candidates" />
+* Julie Strilesky, Green Party<ref name=":7" />
+
+==== Declined ====
+* Jennifer Reddy, OneCity, Vancouver School Board trustee (2022–present)<ref>{{Cite web |date=April 27, 2026 |title=Vancouver school board trustee Jennifer Reddy's legacy |url=https://www.facebook.com/OneCityVan/posts/thank-you-reddyforchangeafter-nearly-a-decade-fighting-for-vancouvers-students-f/1440731358090945/ |access-date=August 4, 2026 |website=Facebook.com|language=en}}</ref>
+
+== Park board elections ==
+=== Candidates ===
+==== Declared ====
+* Summit Ambeault-Wannamaker, Vote Vancouver, wildland firefighter<ref name="Vote Vancouver Candidates" />
+* Amanda Bains, Vancouver Liberals, community leader<ref name="vanlib-candidates" />
+* Amir Bajehkian, Vancouver Liberals, flight data analyst and civic engagement advocate<ref name="vanlib-candidates" />
+* Amee Barber, Vote Vancouver, regulated industries policy advocate<ref name="Vote Vancouver Candidates" />
+* Tricia Barker, Vancouver Liberals, personal trainer and former Vancouver Park Board commissioner (2018–2022)<ref name="vanlib-candidates" />
+* Brennan Bastyovanszky, Vancouver Liberals, Vancouver Park Board commissioner (2022–present)<ref>{{Cite news |last=Chan |first=Kenneth|date=February 19, 2026 |title=Vancouver Liberals civic party gain third sitting elected official ahead of election |url=https://dailyhive.com/vancouver/brennan-bastyovanszky-vancouver-liberals|access-date=March 9, 2026 |work=[[DailyHive]]}}</ref>
+* Shayla Bird, Vancouver Liberals, educator and public historian<ref name="vanlib-candidates" />
+* Sacia Burton, COPE, co-director of BC Poverty Reduction Coalition<ref name=":5" />
+* Dominic Denofrio, OneCity, constituency advisor with the BC NDP<ref name="onecity-candidates" />
+* Tom Digby, Green Party, current chair of the Vancouver Park Board and commissioner (2022–present)<ref name=":7" />
+* Mark Halyk, Vancouver Liberals<ref name="vanlib-candidates" />
+* Jamie Han, COPE, youth organizer<ref name=":5" />
+* John Irwin, OneCity, former Vancouver Parks Board commissioner (2018–2022)<ref name="onecity-candidates" />
+* Scott Jensen, Vancouver Liberals, Vancouver Park Board commissioner (2022–present)<ref>{{Cite news |last=Fumano |first=Dan |date=January 18, 2026 |title=Ex-ABC Vancouver politician joins new civic party to seek re-election |url=https://vancouversun.com/opinion/columnists/ex-abc-vancouver-politician-joins-new-vancouver-liberal-party-to-seek-re-election |access-date=January 19, 2026 |work=[[Vancouver Sun]]}}</ref>
+*Stephen Menon, Vote Vancouver, product development leader and [[Qmunity]] board member<ref name="Vote Vancouver Candidates" />
+*Tyler Petersen, OneCity, biologist and labour activist <ref name="onecity-candidates" />
+*Breanne Smart, Green Party, chef<ref>{{Cite web |title=Breanne Smart |url=https://www.vangreens.ca/breanne_smart |access-date=2026-09-09 |website=Green Party of Vancouver |language=en}}</ref>
+*Tamiko Suzuki, COPE, healthcare worker and environmental activist<ref>{{Cite web |title=Parks |url=https://www.votecope.ca/parks |access-date=2026-09-09 |website=COPE Vancouver |language=en-CA}}</ref>
+*Spencer Van Vloten, Green Party, writer and accessibility expert<ref name=":7" />
+* [[Tʼuyʼtʼtanat-Cease Wyss]], COPE, ethnobotanist<ref name=":5" />
+
+== Gallery ==
+{{Gallery
+| align = center
+ | 2026 Vancouver municipal election unmarked ballots.jpg | Unmarked ballots for the 2026 Vancouver municipal election | Unmarked ballots for the 2026 Vancouver municipal election
+}}
+
+== References ==
+{{reflist}}
+
+==External links==
+{{Vancouver, British Columbia municipal elections}}
+{{2026 elections in Canada}}
+
+{{DEFAULTSORT:Vancouver municipal election, 2026}}
+[[Category:Municipal elections in Vancouver|2026]]
+[[Category:2026 British Columbia municipal elections|Vancouver]]
+[[Category:2026 in Vancouver|Election]]

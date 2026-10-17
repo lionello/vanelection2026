@@ -1,0 +1,3138 @@
+{
+ "sources": [
+  {
+   "url": "https://www.votevancouver.ca/platform",
+   "title": "Vote Vancouver platform: Let's get Vancouver working again",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Vote Vancouver",
+   "topics": [
+    "housing",
+    "public_safety",
+    "economy",
+    "transit",
+    "active_transport",
+    "public_services",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Platform hub: 'The Vancouver Test' framework plus links to five platform sections (housing, economy, public safety, transportation, public services)."
+  },
+  {
+   "url": "https://www.votevancouver.ca/housing",
+   "title": "Housing & Belonging: Stay in the city you call home",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Vote Vancouver",
+   "topics": [
+    "housing",
+    "coops_public_housing",
+    "homelessness"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Housing platform: community land trusts/co-ops on public land, supportive housing with services, faster approvals, middle-income homes on public land, faith-land redevelopment, Affordable Housing Endowment Fund, seniors (NORCs)."
+  },
+  {
+   "url": "https://www.votevancouver.ca/public-safety",
+   "title": "Public Safety: Safe streets and a stronger Downtown Eastside",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Vote Vancouver",
+   "topics": [
+    "public_safety",
+    "policing",
+    "drug_policy",
+    "homelessness",
+    "housing"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Public-safety platform: health-led response, lift supportive-housing ban, 'housing over incarceration', treat substance use as health issue, Recovery Community Centres, expand St. Paul's Road to Recovery."
+  },
+  {
+   "url": "https://www.votevancouver.ca/economy",
+   "title": "Economic Drivers: Make a good living in Vancouver",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Vote Vancouver",
+   "topics": [
+    "economy",
+    "childcare",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Economic platform: Small Business Concierge, faster permits, western HQ strategy, childcare on underused City land, major events, vacant City storefronts."
+  },
+  {
+   "url": "https://www.votevancouver.ca/transportation",
+   "title": "Transportation Choice: Get where you need to go, faster and cheaper",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Vote Vancouver",
+   "topics": [
+    "transit",
+    "active_transport"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Transportation platform: free transit for under-18s, fix streetlights within 72h, complete Broadway bike lane, SkyTrain to UBC, free seasonal bike valets, 10 pedestrian plazas, electric passenger ferry, parking."
+  },
+  {
+   "url": "https://www.votevancouver.ca/public-services",
+   "title": "Public Services: Love your community",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Vote Vancouver",
+   "topics": [
+    "public_services",
+    "parks",
+    "education",
+    "climate"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Public-services platform: City Hall service access, Seniors Desk, Neighbourhood Hubs, community centres/libraries/pools, community use of schools, 30% tree-canopy target, climate action."
+  },
+  {
+   "url": "https://www.votevancouver.ca/s/VV-PolicyPriorities_260915.pdf",
+   "title": "Vote Vancouver Policy Priorities (PDF, 2026-09-15 per filename)",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Vote Vancouver",
+   "topics": [
+    "housing",
+    "public_safety",
+    "transit",
+    "economy",
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "37-page policy-priorities PDF linked from the Vote Vancouver homepage (text not extracted here; date inferred only from filename)."
+  },
+  {
+   "url": "https://www.votevancouver.ca/candidates",
+   "title": "Meet Your Vote Vancouver Candidates",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "party_candidate_list",
+   "candidates": [
+    "mayor-rebecca-bligh",
+    "council-geoff-teoli",
+    "council-keerit-jutla",
+    "council-steve-jedreicich",
+    "council-rebecca-hasdell",
+    "council-bhavna-solecki",
+    "council-john-boychuk",
+    "park-stephen-menon",
+    "park-summit-wannamaker",
+    "school-tasha-doucas",
+    "school-mandy-potter",
+    "school-amarys-joseph"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party slate page listing all 12 Vote Vancouver candidates by office."
+  },
+  {
+   "url": "https://www.votevancouver.ca/rebecca-bligh",
+   "title": "Rebecca Bligh for Mayor",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "mayor-rebecca-bligh"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "housing",
+    "public_safety",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party bio: Two-term councillor, Metro Vancouver Director, former President of the Federation of Canadian Municipalities; housing, public safety, economy."
+  },
+  {
+   "url": "https://www.votevancouver.ca/john-boychuk",
+   "title": "John Boychuk for City Council",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-john-boychuk"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "housing",
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party bio: 30+ years small business, community leadership and housing operations; seniors housing, LGBTQ2S+ inclusion."
+  },
+  {
+   "url": "https://www.votevancouver.ca/rebecca-hasdell",
+   "title": "Dr. Rebecca Hasdell for City Council",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-rebecca-hasdell"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "housing",
+    "public_services",
+    "climate"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party bio: Public health scientist, population-health leader at BC Centre for Disease Control, UBC adjunct; food security, housing affordability, climate resilience."
+  },
+  {
+   "url": "https://www.votevancouver.ca/steve-jedreicich",
+   "title": "Steve Jedreicich for City Council",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-steve-jedreicich"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "housing",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party bio: Real estate development and acquisitions executive; planning, responsible growth, infrastructure."
+  },
+  {
+   "url": "https://www.votevancouver.ca/keerit-jutla",
+   "title": "Keerit Jutla for City Council",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-keerit-jutla"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "governance",
+    "economy"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party bio: Lawyer; CEO/founder Invicta Metals; former President & CEO of Association for Mineral Exploration; Aboriginal/regulatory law; open decision-making."
+  },
+  {
+   "url": "https://www.votevancouver.ca/bhavna-solecki",
+   "title": "Bhavna Solecki for City Council",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-bhavna-solecki"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "housing",
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party bio: Entrepreneur and clinical researcher (regulatory affairs); seniors' affordable housing, aging in place."
+  },
+  {
+   "url": "https://www.votevancouver.ca/geoff-teoli",
+   "title": "Geoff Teoli for City Council",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-geoff-teoli"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "economy",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party bio: Former Vancouver Film Commissioner and City senior leader for film and special events; red tape, transparency, business growth."
+  },
+  {
+   "url": "https://www.votevancouver.ca/tasha-doucas",
+   "title": "Tasha Doucas for School Board",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "school-tasha-doucas"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "education",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party bio: Educator (B.Ed.), PAC executive, former president of a provincial sport organization; governance, student safety."
+  },
+  {
+   "url": "https://www.votevancouver.ca/amarys-joseph",
+   "title": "Amarys Joseph for School Board",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "school-amarys-joseph"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "education",
+    "childcare"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party bio: Post-secondary office manager, collective-bargaining support background; chairs Workers of Colour Caucus, Surfrider board secretary; childcare through schools."
+  },
+  {
+   "url": "https://www.votevancouver.ca/mandy-potter",
+   "title": "Mandy Potter for School Board",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "school-mandy-potter"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "education"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party bio: Founder/Managing Partner of Misfit Ventures (LGBTQ+-focused VC); inclusive, high-performing schools."
+  },
+  {
+   "url": "https://www.votevancouver.ca/stephen-menon",
+   "title": "Stephen Menon for Park Board",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-stephen-menon"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party bio: Business/non-profit leader, banking and tech exec, Qmunity board treasurer; independent park board, affordable capital investment."
+  },
+  {
+   "url": "https://www.votevancouver.ca/summit-wannamaker",
+   "title": "Summit Wannamaker for Park Board",
+   "publisher": "Vote Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-summit-wannamaker"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "parks",
+    "climate"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party bio: Wildland firefighter, UBC student, president of UBC Young Liberals; climate-resilient parks infrastructure."
+  },
+  {
+   "url": "https://www.brightfuturevancouver.ca/blueprint",
+   "title": "The Blueprint: A Plan for the Working Class",
+   "publisher": "Bright Future Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Bright Future Vancouver",
+   "topics": [
+    "housing",
+    "transit",
+    "childcare",
+    "economy",
+    "taxes"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Platform overview: five pillars (Roots Project housing, The Pulse transit, Universal Care, Aurora Engine local economy, Pure Vancouver fair share); headline items 20% rent-to-equity, free transit for residents, 21-day deemed permits, 2% surcharge on $5M+ properties."
+  },
+  {
+   "url": "https://www.brightfuturevancouver.ca/blueprint/the-roots-project",
+   "title": "The Roots Project: Real Ownership for Real Vancouverites",
+   "publisher": "Bright Future Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Bright Future Vancouver",
+   "topics": [
+    "housing",
+    "coops_public_housing"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Housing pillar: rent-to-own Roots Equity Trust (20% of rent), permanent affordable rentals, Local Buyers First (bulk-buying cap), family-sized/pet-inclusive housing; 2,000-home first-term target."
+  },
+  {
+   "url": "https://www.brightfuturevancouver.ca/blueprint/the-pulse",
+   "title": "The Pulse: Safe, Affordable, and Modern Transit for All",
+   "publisher": "Bright Future Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Bright Future Vancouver",
+   "topics": [
+    "transit"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Transit pillar: phased fare relief, platform safety gates pilot, UBC SkyTrain corridor prep, faster core bus routes, public delivery tracking."
+  },
+  {
+   "url": "https://www.brightfuturevancouver.ca/blueprint/universal-care",
+   "title": "Universal Care: Practical Support for Working Families",
+   "publisher": "Bright Future Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Bright Future Vancouver",
+   "topics": [
+    "childcare",
+    "drug_policy",
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Care pillar: night-shift childcare, treatment-first crisis response, accessible civic spaces, faster care-clinic permits using City land/permits/zoning."
+  },
+  {
+   "url": "https://www.brightfuturevancouver.ca/blueprint/the-aurora-engine",
+   "title": "The Aurora Engine (local economy pillar)",
+   "publisher": "Bright Future Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Bright Future Vancouver",
+   "topics": [
+    "economy",
+    "housing"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Local-economy pillar: faster permits, affordable food access, worker training, lower building costs (page confirmed reachable; detail not extracted)."
+  },
+  {
+   "url": "https://www.brightfuturevancouver.ca/blueprint/pure-vancouver",
+   "title": "Pure Vancouver: Securing Our Foundations",
+   "publisher": "Bright Future Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Bright Future Vancouver",
+   "topics": [
+    "taxes",
+    "education",
+    "housing",
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Fair-share pillar: marginal Luxury Infrastructure Levy on homes assessed above $5M (needs provincial authority), Vancouver Foundations Fund, school-safety acceleration, intergenerational hubs, empty-homes accountability."
+  },
+  {
+   "url": "https://www.brightfuturevancouver.ca/about",
+   "title": "About Bright Future Vancouver",
+   "publisher": "Bright Future Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Bright Future Vancouver",
+   "topics": [
+    "housing",
+    "public_safety",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party origins (traced to 2025 BCGEU strike, founder Muhammad Ahmad), team, six beliefs and priorities."
+  },
+  {
+   "url": "https://www.brightfuturevancouver.ca/candidates/city-council",
+   "title": "BFV City Council candidates",
+   "publisher": "Bright Future Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-andy-lin",
+    "council-judith-kasiama",
+    "council-ibrahima-cisse",
+    "council-yadwinder-mangat",
+    "council-mohadeseh-gharib-p-arasi",
+    "council-bilal-khan"
+   ],
+   "party": "Bright Future Vancouver",
+   "topics": [
+    "housing",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Single page with bios of all six BFV council candidates (Lin: Marpole, business founder; Kasiama: Colour the Trails founder, Trans Canada Trail board; Cisse: Community Growth Media founder, managed a provincial campaign; Mangat: came from India at 15, cab driver/restaurant/security work; Gharib P. Arasi: health sciences/finance, entrepreneur; Khan: Point Grey Secondary, experienced homelessness)."
+  },
+  {
+   "url": "https://www.brightfuturevancouver.ca/muhammad-ahmad",
+   "title": "Muhammad Ahmad: Neighbourhoods first. Vancouver first.",
+   "publisher": "Bright Future Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "mayor-muhammad-ahmad"
+   ],
+   "party": "Bright Future Vancouver",
+   "topics": [
+    "housing",
+    "public_safety",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Mayoral bio: raised in Lahore, communications professional, Chair of Strategic Advisory Board at Alpharay Consulting, VP of Dunbar Memorial Preschool board; father of three."
+  },
+  {
+   "url": "https://cityhallwatch.wordpress.com/2026/08/25/election2026-party-series-bright-future-ahmad/",
+   "title": "Election 2026 - Getting to Know the Parties: Bright Future Vancouver & Muhammad Ahmad",
+   "publisher": "CityHallWatch",
+   "published": "2026-08-25",
+   "source_type": "commentary",
+   "candidates": [
+    "mayor-muhammad-ahmad"
+   ],
+   "party": "Bright Future Vancouver",
+   "topics": [
+    "housing",
+    "transit",
+    "governance"
+   ],
+   "perspective": "CityHallWatch, Vancouver civic watchdog blog; this series is written by the Fairview/South Granville Action Committee, a neighbourhood group generally critical of rapid rezoning/densification",
+   "access": "direct",
+   "notes": "Party-series profile of BFV and its mayoral candidate."
+  },
+  {
+   "url": "https://thetimesofcanada.com/muhammad-ahmad-launches-bright-future-vancouver-with-vision-to-restore-opportunity-and-affordability/",
+   "title": "Muhammad Ahmad Launches Bright Future Vancouver with Vision to Restore Opportunity and Affordability",
+   "publisher": "The Times of Canada",
+   "published": "2026-05-19",
+   "source_type": "news",
+   "candidates": [
+    "mayor-muhammad-ahmad"
+   ],
+   "party": "Bright Future Vancouver",
+   "topics": [
+    "housing",
+    "public_safety"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Launch coverage of BFV and The Vancouver Blueprint (reads like a press release; low independence)."
+  },
+  {
+   "url": "https://vancouver.citynews.ca/video/2026/09/12/meet-every-mayoral-candidate-for-vancouvers-2026-municipal-election/",
+   "title": "Meet every mayoral candidate for Vancouver's 2026 municipal election",
+   "publisher": "CityNews Vancouver",
+   "published": "2026-09-12",
+   "source_type": "news",
+   "candidates": [
+    "mayor-muhammad-ahmad",
+    "mayor-rebecca-bligh",
+    "mayor-kareem-allam",
+    "mayor-amauri-caliman",
+    "mayor-scott-gilbert"
+   ],
+   "party": null,
+   "topics": [
+    "housing",
+    "transit",
+    "public_safety"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Video profiles of all eight mayoral candidates."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/platform",
+   "title": "2026 Platform | Vancouver Liberals: Kareem Allam's Plan for Vancouver",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "economy",
+    "housing",
+    "coops_public_housing",
+    "public_services",
+    "parks",
+    "public_safety",
+    "drug_policy",
+    "homelessness",
+    "transit",
+    "active_transport",
+    "governance",
+    "education",
+    "taxes",
+    "displacement"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261012134932",
+   "notes": "Single full platform page in three parts (Council, Park Board, School Board): reinstate Economic Commission, adopt BC Building Code, remove viaducts, lift supportive-housing pause, community land trust, renters' office, 400 CUPE frontline workers, cap tax increases, cancel second City Hall for $1.35B parks plan, meth strategy, SkyTrain to UBC, protected bike lanes, keep elected Park Board, scrap beach/community-centre parking fees, seismic school safety, childcare on school grounds, keep reformed School Liaison Officer program."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/candidates_caucus",
+   "title": "Candidates & Caucus | Vancouver Liberals 2026",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "party_candidate_list",
+   "candidates": [
+    "mayor-kareem-allam",
+    "council-victoria-jung",
+    "council-jessica-walton",
+    "council-armor-valor",
+    "council-devin-clemens",
+    "council-john-coupar",
+    "council-moira-stilwell",
+    "council-michael-wu",
+    "park-mark-halyk",
+    "park-shayla-bird",
+    "park-scott-jensen",
+    "park-amanda-bains",
+    "park-amir-bajehkian",
+    "park-tricia-barker",
+    "school-darren-boidman",
+    "school-isabel-ochoa-prieto",
+    "school-noosha-mehdian",
+    "school-ishi-dinim",
+    "school-joshua-cameron"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261009220452",
+   "notes": "Slate listing with dated announcement blurbs for all 19 candidates (e.g. Jung 2026-09-26 card, Coupar 2026-08-06, Stilwell 2026-03-26) plus honorary co-chairs Michelle Mungall and Arminder Randhawa."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/meet_kareem_allam",
+   "title": "Meet Kareem Allam",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "mayor-kareem-allam"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "governance",
+    "economy"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260413122837",
+   "notes": "Party bio: Partner at Richardson Strategy Group; former Director of Public Policy at Vancouver Board of Trade; former Fraser Health board member; 25+ years in governance; 'bring young people back'."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/victoria_jung",
+   "title": "Victoria Jung - City Council candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-victoria-jung"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "childcare",
+    "education",
+    "housing",
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261011012452",
+   "notes": "Party bio: Current VSB chair; renter; childcare in schools, libraries, young families."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/jessica_walton",
+   "title": "Jessica Walton - City Council Candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-jessica-walton"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "housing",
+    "public_services",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260613191726",
+   "notes": "Party bio: Small business owner, former BCGEU shop steward and frontline government worker, managed two federal campaigns in Vancouver Centre; disability/accessibility advocate."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/armor_valor",
+   "title": "Armor Valor - City Council candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-armor-valor"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "governance",
+    "economy"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261004040655",
+   "notes": "Party bio: South Vancouver; cook at Children's Hospital and HEU member; former small business owner; previously ran for nomination with OneCity; supports exploring a ward system."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/devin_clemens",
+   "title": "Devin Clemens - City Council candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-devin-clemens"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "transit",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261010083918",
+   "notes": "Party bio: Works at UBC; 15 yrs public policy/advocacy; wants UBC Endowment Lands integrated into Vancouver, SkyTrain to UBC."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/john_coupar",
+   "title": "John Coupar - City Council candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-john-coupar"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "parks",
+    "taxes",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261010135400",
+   "notes": "Party bio: Former Park Board chair; co-founded Friends of the Bloedel; President of a carbon-neutral transportation company; fiscal responsibility."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/moira_stilwell",
+   "title": "Moira Stilwell - City Council candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-moira-stilwell"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "economy",
+    "transit",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261011143300",
+   "notes": "Party bio: Nuclear medicine physician at St. Paul's; MLA Vancouver-Langara 2009-2017 and cabinet minister; former chair Canadian Breast Cancer Foundation BC & Yukon; UBC-downtown connection."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/michael_wu",
+   "title": "Michael Wu - City Council candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-michael-wu"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "public_safety",
+    "economy"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261011135509",
+   "notes": "Party bio: Entrepreneur 30+ years; RCMP Auxiliary Constable from 2006 (Mandarin/Cantonese translation); previously a provincial MLA candidate 'for a major party'; public safety, small business."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/mark_halyk",
+   "title": "Mark Halyk - Park Board candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-mark-halyk"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261012135150",
+   "notes": "Party bio: 10+ years senior leader in Park Board Commercial Services (concessions, e.g. Batch at Kitsilano Pool); hospitality entrepreneur; financially sustainable independent Park Board."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/shayla_bird",
+   "title": "Shayla Bird - Park Board candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-shayla-bird"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261010175113",
+   "notes": "Party bio: Educator, founder of PLANher Consulting, public historian of Black history in BC (Hogan's Alley); recreation, festivals, equity of access."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/scott_jensen",
+   "title": "Scott Jensen - Park Board candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-scott-jensen"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261010175457",
+   "notes": "Party bio: Sitting commissioner; first Indigenous Park Board chair after 2022 election; Grade 3 teacher at Lord Roberts Elementary; opposed ABC effort to abolish Park Board."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/amanda_bains",
+   "title": "Amanda Bains - Park Board candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-amanda-bains"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261006015110",
+   "notes": "Party bio: Small business owner, HEU member, strata council president; facility retrofits, tree canopy, accessibility."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/tricia_barker",
+   "title": "Tricia Barker - Park Board candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-tricia-barker"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260921051432",
+   "notes": "Party bio: Personal trainer for seniors/terminally ill; Park Board Commissioner 2018-2022; seniors and disability access, protect golf courses and pools."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/noosha_mehdian",
+   "title": "Dr. Noosha Mehdian - School Board candidate",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "school-noosha-mehdian"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "education"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261012025910",
+   "notes": "Party bio: Educator/researcher, has taught at UBC; faculty senator/committee chair; responsible AI in education."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/press_release_amir_bajehkian",
+   "title": "Vancouver Liberals Announce Aviation Professional & Community Activist Amir Bajehkian as Candidate for Park Board",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-amir-bajehkian"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260914215351",
+   "notes": "Announcement/bio (his own candidate page was only archived as a redirect): came from Iran; volunteered with Canada's NDP in 2012 (Nathan Cullen campaign); motivated by opposition to abolishing the elected Park Board."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/press_release_john_coupar",
+   "title": "Vancouver Liberals Announce Former Park Board Chair & 11-year veteran of Park Board John Coupar as Candidate for City Council",
+   "publisher": "Vancouver Liberals",
+   "published": "2026-08-06",
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-john-coupar"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "parks",
+    "taxes",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260807043940",
+   "notes": "Announcement: 11-year Park Board veteran incl. chair; Friends of the Bloedel past president; VanDusen past governor; criticises Sim tax/fee increases."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/press_release_tricia_barker",
+   "title": "Vancouver Liberals Announce Fitness Consultant and Former Park Board Commissioner Tricia Barker as Candidate for Park Board",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-tricia-barker"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260914215344",
+   "notes": "Announcement: seniors/disability accessibility, more public washrooms, protect golf courses; joined because of threat to Park Board and Kareem Allam."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/preparing_our_children_for_the_world_ahead_what_should_we_expect_from_our_schools",
+   "title": "Preparing Our Children for the World Ahead With AI: What Should We Expect from Our Schools? (event)",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "school-noosha-mehdian"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "education"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261011005423",
+   "notes": "Event page with Mehdian bio: teaches at UBC and Adler University; collaborated with University of Oxford Department of Education on safe AI principles."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/press_release_vancouver_liberals_will_bring_young_people_back_to_vancouver",
+   "title": "Press Release - Vancouver Liberals Will Bring Young People Back to Vancouver",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "transit",
+    "housing",
+    "public_services",
+    "policing"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261009220350",
+   "notes": "Four-point summary of platform (UBC SkyTrain/innovation corridor, BC Building Code, 400 frontline workers, 'Tony Soprano' organized-crime approach), issued during advance voting."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/vancouver_mayor_s_former_chief_of_staff_starts_new_political_party",
+   "title": "Vancouver mayor's former chief of staff starts new political party (reposted coverage)",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "news",
+   "candidates": [
+    "mayor-kareem-allam"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260613183630",
+   "notes": "Party-site repost of news coverage of Allam launching the Vancouver Liberals; mentions Sim-Allam legal dispute."
+  },
+  {
+   "url": "https://www.vancouverliberals.com/brennan_brastyovanszky",
+   "title": "Brennan Bastyovanszky joins the Vancouver Liberals",
+   "publisher": "Vancouver Liberals",
+   "published": null,
+   "source_type": "news",
+   "candidates": [],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260613191823",
+   "notes": "Party page on sitting commissioner Brennan Bastyovanszky (ex-ABC, former Park Board chair) joining the party; he is NOT on the 2026 ballot - context for the ex-ABC commissioners' move."
+  },
+  {
+   "url": "https://cityhallwatch.wordpress.com/2026/09/09/election-2026-getting-to-know-the-parties-vancouver-liberals-kareem-allam/",
+   "title": "Election 2026 - Getting to Know the Parties: Vancouver Liberals & Kareem Allam",
+   "publisher": "CityHallWatch",
+   "published": "2026-09-09",
+   "source_type": "commentary",
+   "candidates": [
+    "mayor-kareem-allam"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "housing",
+    "governance"
+   ],
+   "perspective": "CityHallWatch, Vancouver civic watchdog blog; this series is written by the Fairview/South Granville Action Committee, a neighbourhood group generally critical of rapid rezoning/densification",
+   "access": "direct",
+   "notes": "Party-series profile of the Vancouver Liberals."
+  },
+  {
+   "url": "https://cityhallwatch.wordpress.com/2026/09/22/election-2026-getting-to-know-the-parties-vote-vancouver-bligh/",
+   "title": "Election 2026 - Getting to Know the Parties: Vote Vancouver & Rebecca Bligh",
+   "publisher": "CityHallWatch",
+   "published": "2026-09-22",
+   "source_type": "commentary",
+   "candidates": [
+    "mayor-rebecca-bligh"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "housing",
+    "governance"
+   ],
+   "perspective": "CityHallWatch, Vancouver civic watchdog blog; this series is written by the Fairview/South Granville Action Committee, a neighbourhood group generally critical of rapid rezoning/densification",
+   "access": "direct",
+   "notes": "Party-series profile of Vote Vancouver."
+  },
+  {
+   "url": "https://globalnews.ca/news/11020156/abc-expels-rebecca-bligh",
+   "title": "ABC Vancouver boots Rebecca Bligh from council caucus",
+   "publisher": "Global News",
+   "published": "2025-02-14",
+   "source_type": "news",
+   "candidates": [
+    "mayor-rebecca-bligh"
+   ],
+   "party": null,
+   "topics": [
+    "governance",
+    "housing"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Bligh removed from ABC caucus; party says not aligned with team approach; followed her dissent on supportive-housing freeze."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Rebecca_Bligh",
+   "title": "Rebecca Bligh",
+   "publisher": "Wikipedia",
+   "published": null,
+   "source_type": "reference",
+   "candidates": [
+    "mayor-rebecca-bligh"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Career summary: elected 2018 (NPA) and 2022 (ABC); removed from ABC caucus 2025-02-14 after natural-gas vote and supportive-housing dissent; announced Vote Vancouver 2025-09-22."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/rebecca-bligh-vancouver-mayoral-campaign",
+   "title": "Rebecca Bligh commits to Vancouver mayoral race, unveils platform",
+   "publisher": "Daily Hive",
+   "published": "2026-09-09",
+   "source_type": "news",
+   "candidates": [
+    "mayor-rebecca-bligh"
+   ],
+   "party": "Vote Vancouver",
+   "topics": [
+    "housing",
+    "transit",
+    "childcare",
+    "economy"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Bligh files nomination; platform: non-market housing on City land, childcare in schools, free transit under 18, City Hall hubs."
+  },
+  {
+   "url": "https://www.cbc.ca/news/canada/british-columbia/vancouver-school-board-chair-leaves-abc-party-goes-independent-1.7287792",
+   "title": "Vancouver school board chair leaves ABC party, goes independent",
+   "publisher": "CBC News",
+   "published": "2024-08-07",
+   "source_type": "news",
+   "candidates": [
+    "council-victoria-jung"
+   ],
+   "party": null,
+   "topics": [
+    "education",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "VSB chair Victoria Jung leaves ABC citing events questioning the Integrity Commissioner's office; stays on as chair, sits as independent."
+  },
+  {
+   "url": "https://www.vsb.bc.ca/page/26692/trustees",
+   "title": "Trustees",
+   "publisher": "Vancouver School Board",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "council-victoria-jung",
+    "school-christopher-jk-richardson"
+   ],
+   "party": null,
+   "topics": [
+    "education"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Official trustee list: Victoria Jung (Chair) and Christopher Richardson (Trustee) currently serving."
+  },
+  {
+   "url": "https://vsb.bc.ca/page/60318/christopher-richardson",
+   "title": "Christopher Richardson (trustee bio)",
+   "publisher": "Vancouver School Board",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "school-christopher-jk-richardson"
+   ],
+   "party": null,
+   "topics": [
+    "education"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Official bio: Park Board Commissioner elected 1986, 1988, 1999; VSB trustee from 2014 (chair 2014-2015); re-elected trustee 2022; FCPA/FCA; VPD special constable."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Vancouver_Liberal_Electors_Association",
+   "title": "Vancouver Liberal Electors Association",
+   "publisher": "Wikipedia",
+   "published": null,
+   "source_type": "reference",
+   "candidates": [
+    "mayor-kareem-allam",
+    "council-victoria-jung",
+    "park-scott-jensen"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party history: founded 2025-07-03 by Kareem Allam (left Sim's office Feb 2023); Jensen joined Jan 2026; Jung announced late Jan 2026; Bastyovanszky joined 2026-02-17; candidate list with occupations."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Vancouver_Park_Board",
+   "title": "Vancouver Park Board",
+   "publisher": "Wikipedia",
+   "published": null,
+   "source_type": "reference",
+   "candidates": [
+    "park-scott-jensen",
+    "park-tricia-barker"
+   ],
+   "party": null,
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Commissioner list: Jensen ABC 2022-2023, independent 2023-2026 (left ABC 2023-12-06 with Bastyovanszky and Christensen), joined Vancouver Liberals 2026-01-18."
+  },
+  {
+   "url": "https://thebreaker.news/business/allam-quits-sim-office/",
+   "title": "Mayor Sim's top staffer quits",
+   "publisher": "theBreaker.news",
+   "published": "2023-02-08",
+   "source_type": "news",
+   "candidates": [
+    "mayor-kareem-allam"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Allam leaves post as Mayor Ken Sim's chief of staff after ~3 months (later reporting says he was fired)."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/john-coupar-vancouver-liberals-city-council-election",
+   "title": "John Coupar to run for Vancouver City Council under Liberals civic party",
+   "publisher": "Daily Hive",
+   "published": "2026-08-06",
+   "source_type": "news",
+   "candidates": [
+    "council-john-coupar"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Coupar was a Park Board commissioner 2011-2022, three elections under NPA; now Vancouver Liberals council candidate."
+  },
+  {
+   "url": "https://www.straight.com/city-culture/former-park-board-commissioner-john-coupar-to-run-for-council-with-vancouver-liberals",
+   "title": "Former Park Board commissioner John Coupar to run for council with Vancouver Liberals",
+   "publisher": "Georgia Straight",
+   "published": "2026-08-06",
+   "source_type": "news",
+   "candidates": [
+    "council-john-coupar"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Coupar described as former Park Board commissioner and BC Conservative candidate joining the Vancouver Liberals."
+  },
+  {
+   "url": "https://www.cbc.ca/news/canada/british-columbia/john-coupar-npa-vancouver-resigned-1.6542813",
+   "title": "John Coupar resigns as NPA mayoral candidate",
+   "publisher": "CBC News",
+   "published": "2022-08-05",
+   "source_type": "news",
+   "candidates": [
+    "council-john-coupar"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "NPA announces sitting park commissioner Coupar resigned as its 2022 mayoral candidate."
+  },
+  {
+   "url": "https://ssl.straight.com/news/781451/new-chair-john-coupar-looks-re-establish-independent-park-board",
+   "title": "New chair John Coupar looks to re-establish 'independent' park board",
+   "publisher": "Georgia Straight",
+   "published": null,
+   "source_type": "news",
+   "candidates": [
+    "council-john-coupar"
+   ],
+   "party": null,
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Coupar elected Park Board chair at the new board's inaugural meeting (Dec 2018); priorities as chair."
+  },
+  {
+   "url": "https://globalnews.ca/news/9100701/npa-park-board-quit-team",
+   "title": "Two park board candidates defect from NPA to TEAM with weeks to Vancouver elections",
+   "publisher": "Global News",
+   "published": "2022-09-01",
+   "source_type": "news",
+   "candidates": [
+    "park-tricia-barker"
+   ],
+   "party": null,
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Incumbent NPA commissioner Tricia Barker and Kumi Kimura leave NPA to run with TEAM for a Livable Vancouver in 2022."
+  },
+  {
+   "url": "https://bc.ctvnews.ca/npa-park-board-candidates-swap-parties-weeks-before-vancouver-election-1.6052152",
+   "title": "NPA park board candidates swap parties weeks before Vancouver election",
+   "publisher": "CTV News",
+   "published": "2022-09-01",
+   "source_type": "news",
+   "candidates": [
+    "park-tricia-barker"
+   ],
+   "party": null,
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Same Barker NPA-to-TEAM switch (2022)."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-council-candidates-2026-election",
+   "title": "Candidates running for Vancouver council include familiar faces",
+   "publisher": "Daily Hive",
+   "published": "2026-10-14",
+   "source_type": "news",
+   "candidates": [
+    "council-geoff-teoli",
+    "council-keerit-jutla",
+    "council-steve-jedreicich",
+    "council-rebecca-hasdell",
+    "council-bhavna-solecki",
+    "council-john-boychuk",
+    "council-victoria-jung",
+    "council-jessica-walton",
+    "council-armor-valor",
+    "council-devin-clemens",
+    "council-john-coupar",
+    "council-moira-stilwell",
+    "council-michael-wu",
+    "council-andy-lin",
+    "council-judith-kasiama",
+    "council-ibrahima-cisse",
+    "council-yadwinder-mangat",
+    "council-mohadeseh-gharib-p-arasi",
+    "council-bilal-khan",
+    "council-naomi-chocyk",
+    "council-john-jones",
+    "council-rollergirl",
+    "council-noi-soudarack"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Council-field roundup: notes Valor previously sought OneCity nomination; TrueBlue candidates reportedly at a Charlie Kirk vigil (Instagram); says John Jones runs under 'Vote Palestine Vancouver' (conflicts with ballot/own site: independent); ROLLERGIRL = Angela Dawson, 2018 mayoral candidate; Noi Soudarack apparently independent."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-2026-civic-election-candidates-ballot-order",
+   "title": "Vancouver's 2026 civic election candidate list is set: All 130 names in ballot order",
+   "publisher": "Daily Hive",
+   "published": "2026-09-22",
+   "source_type": "news",
+   "candidates": [],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Full ballot-order list for all races with elector-organization labels (covers every candidate in this set)."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-mayoral-candidates-2026-civic-election-pitches",
+   "title": "Five candidates for Vancouver mayor lay out plans for residents and businesses",
+   "publisher": "Daily Hive",
+   "published": "2026-10-06",
+   "source_type": "news",
+   "candidates": [
+    "mayor-rebecca-bligh",
+    "mayor-kareem-allam"
+   ],
+   "party": null,
+   "topics": [
+    "housing",
+    "economy",
+    "public_safety"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Board of Trade forum: pitches from Sim, Fry, Allam, Bligh, Hardwick."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Moira_Stilwell",
+   "title": "Moira Stilwell",
+   "publisher": "Wikipedia",
+   "published": null,
+   "source_type": "reference",
+   "candidates": [
+    "council-moira-stilwell"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "BC Liberal MLA for Vancouver-Langara 2009-2017; cabinet roles; 2010-11 BC Liberal leadership bid."
+  },
+  {
+   "url": "https://www.canadianlawyermag.com/inhouse/news/general/natural-resources-lawyer-keerit-jutla-joins-association-for-mineral-exploration-as-president-and-ceo/379352",
+   "title": "Natural resources lawyer Keerit Jutla joins Association for Mineral Exploration as president and CEO",
+   "publisher": "Canadian Lawyer",
+   "published": "2023-09-05",
+   "source_type": "news",
+   "candidates": [
+    "council-keerit-jutla"
+   ],
+   "party": null,
+   "topics": [
+    "economy"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Jutla appointed AME president & CEO (2023)."
+  },
+  {
+   "url": "https://ame.ca/news/ame-announces-change-in-senior-leadership/",
+   "title": "AME Announces Change in Senior Leadership",
+   "publisher": "Association for Mineral Exploration",
+   "published": null,
+   "source_type": "employer_bio",
+   "candidates": [
+    "council-keerit-jutla"
+   ],
+   "party": null,
+   "topics": [
+    "economy"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "AME release acknowledging Jutla's departure as president & CEO (early 2025)."
+  },
+  {
+   "url": "https://tctrail.ca/people/trans-canada-trail-directors/judith-kasiama/",
+   "title": "Judith Kasiama (Trans Canada Trail director)",
+   "publisher": "Trans Canada Trail",
+   "published": "2021-11-16",
+   "source_type": "employer_bio",
+   "candidates": [
+    "council-judith-kasiama"
+   ],
+   "party": null,
+   "topics": [
+    "parks",
+    "active_transport"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Board-director bio: founder of Colour the Trails."
+  },
+  {
+   "url": "https://globalnews.ca/news/5854852/canada-election-vancouver-granville",
+   "title": "2019 Canada election results: Vancouver Granville",
+   "publisher": "Global News",
+   "published": "2019-09-22",
+   "source_type": "news",
+   "candidates": [
+    "council-naomi-chocyk",
+    "school-naomi-chocyk"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Lists Naomi Chocyk as People's Party of Canada candidate in Vancouver Granville (2019 federal)."
+  },
+  {
+   "url": "https://globalnews.ca/news/10617857/stanley-park-tree-removal-lawsuit/",
+   "title": "'We tried to negotiate': Lawsuit launched over Stanley Park tree removal",
+   "publisher": "Global News",
+   "published": "2024-07-11",
+   "source_type": "news",
+   "candidates": [
+    "park-michael-robert-caditz"
+   ],
+   "party": "Independent Parks Party",
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Caditz is one of four self-represented plaintiffs suing City/Park Board over Stanley Park tree removal."
+  },
+  {
+   "url": "https://www.cbc.ca/news/canada/british-columbia/city-of-vancouver-lawsuit-tree-cutting-1.7263456",
+   "title": "City of Vancouver faces lawsuit over Stanley Park tree-cutting",
+   "publisher": "CBC News",
+   "published": "2024-07-15",
+   "source_type": "news",
+   "candidates": [
+    "park-michael-robert-caditz"
+   ],
+   "party": "Independent Parks Party",
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Coverage of the Stanley Park tree-cutting negligence suit (Caditz among plaintiffs)."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Municipal_political_parties_in_Vancouver",
+   "title": "Municipal political parties in Vancouver",
+   "publisher": "Wikipedia",
+   "published": null,
+   "source_type": "reference",
+   "candidates": [
+    "council-eric-redmond",
+    "park-michael-robert-caditz"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party table: Affordable Housing Coalition (founded 2022, leader Eric Redmond, 'pro-housing development'); TrueBlue Vancouver (2026, leader Frederick Thiele); Vancouver Independent Parks Party (2026, leader Michael Robert Caditz); BFV 2026; Vote Vancouver 2025; VLEA 2025."
+  },
+  {
+   "url": "https://truebluevancouver.com/",
+   "title": "True Blue Vancouver - A City That Works",
+   "publisher": "TrueBlue Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TrueBlue Vancouver",
+   "topics": [
+    "taxes",
+    "public_safety",
+    "drug_policy",
+    "housing",
+    "education"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party homepage: fiscal honesty (zero-based budgeting), 'recovery first' DTES response, accountable schools; 'Municipal Political Party, Est. 2023'."
+  },
+  {
+   "url": "https://truebluevancouver.com/platform",
+   "title": "TrueBlue Vancouver Platform",
+   "publisher": "TrueBlue Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TrueBlue Vancouver",
+   "topics": [
+    "housing",
+    "taxes",
+    "policing",
+    "drug_policy",
+    "transit",
+    "active_transport",
+    "economy",
+    "parks",
+    "homelessness",
+    "education",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Platform summary: cut fees/red tape, control property tax, properly funded police, recovery-first drug policy, oppose congestion pricing and audit bike lanes, address encampments, police liaison in schools, race-neutral policy."
+  },
+  {
+   "url": "https://truebluevancouver.com/downloads/trueblue-vancouver-2026-full-platform.pdf",
+   "title": "TrueBlue Vancouver 2026 Full Platform (49-page PDF)",
+   "publisher": "TrueBlue Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TrueBlue Vancouver",
+   "topics": [
+    "housing",
+    "taxes",
+    "policing",
+    "drug_policy",
+    "transit",
+    "education",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Complete 49-page platform PDF."
+  },
+  {
+   "url": "https://truebluevancouver.com/about",
+   "title": "About TrueBlue Vancouver",
+   "publisher": "TrueBlue Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TrueBlue Vancouver",
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Describes itself as a party 'in formation', 'not yet registered' with Elections BC and not affiliated with any federal/provincial party (page apparently not updated since nomination); financial agent Frederick Thiele."
+  },
+  {
+   "url": "https://naomichocyk.com/",
+   "title": "Naomi Chocyk | Vancouver 2026",
+   "publisher": "Naomi Chocyk campaign",
+   "published": null,
+   "source_type": "campaign_site",
+   "candidates": [
+    "council-naomi-chocyk",
+    "school-naomi-chocyk"
+   ],
+   "party": "TrueBlue Vancouver",
+   "topics": [
+    "taxes",
+    "public_safety",
+    "education"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Joint council + school-trustee campaign site: UBC Political Science/IR; former political aide and parliamentary staffer; mental-health/peer-support advocacy; affordability, public safety, schools."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13537",
+   "title": "Naomi Chocyk (Council), TrueBlue for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "council-naomi-chocyk"
+   ],
+   "party": "TrueBlue Vancouver",
+   "topics": [
+    "climate",
+    "transit",
+    "taxes"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Party-supplied promises (repeal green-building mandates/gas-stove bans, oppose road pricing, protect parking, drainage over 'activist' projects); no individual bio."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13538",
+   "title": "Naomi Chocyk (School Board), TrueBlue for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "school-naomi-chocyk"
+   ],
+   "party": "TrueBlue Vancouver",
+   "topics": [
+    "climate",
+    "transit",
+    "taxes"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Party-supplied promises (repeal green-building mandates/gas-stove bans, oppose road pricing, protect parking, drainage over 'activist' projects); no individual bio."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13536",
+   "title": "Travers Fenton, TrueBlue for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "school-travers-fenton"
+   ],
+   "party": "TrueBlue Vancouver",
+   "topics": [
+    "climate",
+    "transit",
+    "taxes"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Party-supplied promises (repeal green-building mandates/gas-stove bans, oppose road pricing, protect parking, drainage over 'activist' projects); no individual bio."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13556",
+   "title": "Blair Coleman, TrueBlue for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "school-blair-coleman"
+   ],
+   "party": "TrueBlue Vancouver",
+   "topics": [
+    "climate",
+    "transit",
+    "taxes"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Party-supplied promises (repeal green-building mandates/gas-stove bans, oppose road pricing, protect parking, drainage over 'activist' projects); no individual bio."
+  },
+  {
+   "url": "https://parksparty.vote/",
+   "title": "Independent Parks Party (parksparty.vote)",
+   "publisher": "Independent Parks Party",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "Independent Parks Party",
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260415163736",
+   "notes": "Party site (Blazor app; 'A project of Association for the Promotion of Science in Governance'); sections: Your Park, Community Centres, Farmers Markets, Parks Party Candidates, Citizen Assemblies, Stanley Park, Vancouver Aquatic Centre. Live site timed out from here; little text in archived copy."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13798",
+   "title": "Niknaz Alemi, IPP for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "park-niknaz-alemi"
+   ],
+   "party": "Independent Parks Party",
+   "topics": [
+    "parks"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Bio: longtime resident, immigrant, background in economics/peace/climate; 33 promises incl. Green Canopy Office approval for tree removal, monthly town halls, $1/hr Spanish Banks parking."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13801",
+   "title": "Michael Robert Caditz, IPP for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "park-michael-robert-caditz"
+   ],
+   "party": "Independent Parks Party",
+   "topics": [
+    "parks"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Short statement rejecting 'Chicago School' corporate ideology; links to party documents on Stanley Park lease and commemorative integrity."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13806",
+   "title": "Brynja Marshall, IPP for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "park-brynja-marshall"
+   ],
+   "party": "Independent Parks Party",
+   "topics": [
+    "parks"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Empty profile (no bio/promises)."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13810",
+   "title": "Cam Rothery, IPP for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "park-cam-rothery"
+   ],
+   "party": "Independent Parks Party",
+   "topics": [
+    "parks"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Empty profile (no bio/promises)."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13812",
+   "title": "Leonard Vanderstar, IPP for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "park-leonard-vanderstar"
+   ],
+   "party": "Independent Parks Party",
+   "topics": [
+    "parks"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Empty profile (no bio/promises)."
+  },
+  {
+   "url": "https://johnjonesvancouver.netlify.app/",
+   "title": "John Jones for Vancouver City Council 2026 | Ballot 104",
+   "publisher": "John Jones campaign",
+   "published": null,
+   "source_type": "campaign_site",
+   "candidates": [
+    "council-john-jones"
+   ],
+   "party": null,
+   "topics": [
+    "housing",
+    "drug_policy",
+    "governance",
+    "active_transport"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Independent campaign site: ward system, tenant rights, co-op/social housing, treat addiction as health issue; frequent issue posts (Oct 2026)."
+  },
+  {
+   "url": "https://johnjonesvancouver.netlify.app/meet-john/",
+   "title": "Meet John Jones, Independent for Vancouver City Council",
+   "publisher": "John Jones campaign",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-john-jones"
+   ],
+   "party": null,
+   "topics": [
+    "housing",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Bio: tenancy, disability and human-rights advocate; back in Vancouver since 2019; accepts no donations."
+  },
+  {
+   "url": "https://christopherrichardson.ca/",
+   "title": "Christopher JK Richardson - 2026 Vancouver School Board Candidate for Re-Election",
+   "publisher": "Christopher Richardson campaign",
+   "published": null,
+   "source_type": "campaign_site",
+   "candidates": [
+    "school-christopher-jk-richardson"
+   ],
+   "party": null,
+   "topics": [
+    "education"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Independent re-election site: priority/special-needs learners, safe and sustainable schools, VSB strategic plan renewal."
+  },
+  {
+   "url": "https://christopherrichardson.ca/about/",
+   "title": "My Story - Christopher JK Richardson",
+   "publisher": "Christopher Richardson campaign",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "school-christopher-jk-richardson"
+   ],
+   "party": null,
+   "topics": [
+    "education"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Bio: FCPA charitable gift planner; MEd UBC 2025 (inclusive education); VPD special constable since 1973; community centre association volunteer."
+  },
+  {
+   "url": "https://draintheswamp.ca/",
+   "title": "Scott Gilbert for Mayor of Vancouver",
+   "publisher": "Scott Gilbert campaign",
+   "published": null,
+   "source_type": "campaign_site",
+   "candidates": [
+    "mayor-scott-gilbert"
+   ],
+   "party": null,
+   "topics": [
+    "drug_policy",
+    "housing",
+    "policing",
+    "public_services",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260929090508",
+   "notes": "Platform: walk-in detox on Hastings, public toilets, rat control, first homes on public land with shared equity, victim-focused policing, published street-repair backlogs, 'Agora' civic app. Live domain returned 404 here; archived copy used."
+  },
+  {
+   "url": "https://vancouver.ca/your-government/2026-candidates-mayor.aspx",
+   "title": "2026 candidates for Mayor",
+   "publisher": "City of Vancouver",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "mayor-rebecca-bligh",
+    "mayor-muhammad-ahmad",
+    "mayor-kareem-allam",
+    "mayor-amauri-caliman",
+    "mayor-scott-gilbert"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261012082952",
+   "notes": "Official mayoral candidate page: party, contact/social links and nomination-paper PDFs (Caliman: Instagram/TikTok calimanformayor; Gilbert: draintheswamp.ca)."
+  },
+  {
+   "url": "https://vancouver.ca/your-government/2026-candidates-school-trustee.aspx",
+   "title": "2026 candidates for School Trustee",
+   "publisher": "City of Vancouver",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "school-christopher-jk-richardson",
+    "school-naomi-chocyk",
+    "school-travers-fenton",
+    "school-blair-coleman",
+    "school-darren-boidman",
+    "school-ishi-dinim",
+    "school-joshua-cameron",
+    "school-noosha-mehdian",
+    "school-tasha-doucas",
+    "school-mandy-potter",
+    "school-amarys-joseph"
+   ],
+   "party": null,
+   "topics": [
+    "education"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261001164108",
+   "notes": "Official school-trustee candidate page with party labels, contact links and nomination papers."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13782",
+   "title": "Amauri Caliman, independent for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "mayor-amauri-caliman"
+   ],
+   "party": null,
+   "topics": [
+    "housing",
+    "transit",
+    "active_transport",
+    "economy"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "H.O.M.E. platform (Housing, Opportunity, Mobility, Everyone): measurable delivery of homes, business growth, safer multimodal transport; contact connect@calimanformayor.ca."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13783",
+   "title": "Scott Gilbert, independent for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "mayor-scott-gilbert"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Empty profile; links to draintheswamp.ca."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13784",
+   "title": "Guy Dubé, independent for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "council-guy-dube"
+   ],
+   "party": null,
+   "topics": [
+    "parks",
+    "housing"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Bio: queer West End renter; running mainly to amplify Save Nelson Park campaign; opposes AI data centres."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13787",
+   "title": "John Jones, independent for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "council-john-jones"
+   ],
+   "party": null,
+   "topics": [
+    "governance",
+    "economy"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Promises incl. environmental assessment of major projects, Host Nations involvement (UNDRIP plan), easier business permits; links campaign site."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13791",
+   "title": "Eric Redmond, independent for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "council-eric-redmond"
+   ],
+   "party": null,
+   "topics": [
+    "housing"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Empty profile (no bio, promises or links); ballot label 'Affordable Housing'."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13792",
+   "title": "Rollergirl, independent for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "council-rollergirl"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Empty 2026 profile."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13794",
+   "title": "Noi Soudarack, independent for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "council-noi-soudarack"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Empty profile."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13795",
+   "title": "Parris J. Williams, independent for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "council-parris-j-williams"
+   ],
+   "party": null,
+   "topics": [
+    "drug_policy",
+    "homelessness",
+    "active_transport",
+    "parks"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Bio: from Victoria, in Vancouver since 2022, lived experience navigating mental-health/addiction supports; 6 promises: three-stage supportive housing for substance use, PEV network, park gathering spaces."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13797",
+   "title": "Job Zhao, independent for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "council-job-zhao"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Empty profile."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13823",
+   "title": "Christopher JK Richardson, independent for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "school-christopher-jk-richardson"
+   ],
+   "party": null,
+   "topics": [
+    "education"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Empty profile; links christopherrichardson.ca."
+  },
+  {
+   "url": "https://votemate.org/c/11335?riding=762",
+   "title": "Guy Dubé, independent for Vancouver | 2025 Vancouver By-Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": "2025",
+   "source_type": "questionnaire",
+   "candidates": [
+    "council-guy-dube"
+   ],
+   "party": null,
+   "topics": [
+    "housing"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "2025 by-election profile: in Vancouver since 1999; owned Coming Home Cafe 2005-2022; inaugural president New West Pride 2010; Rainbow Refugee volunteer; rent-geared-to-income housing."
+  },
+  {
+   "url": "https://votemate.org/c/11344?riding=762",
+   "title": "Rollergirl, independent for Vancouver | 2025 Vancouver By-Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": "2025",
+   "source_type": "questionnaire",
+   "candidates": [
+    "council-rollergirl"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "2025 by-election profile: first-person quotes on kindness/community; no policy detail."
+  },
+  {
+   "url": "https://tricitynews.com/bc-news/roller-girl-seeks-vancouver-park-board-seat-5863706",
+   "title": "Vancouver's 'Roller Girl' to run for office",
+   "publisher": "Vancouver Is Awesome / Glacier Media",
+   "published": "2022-09-23",
+   "source_type": "news",
+   "candidates": [
+    "council-rollergirl"
+   ],
+   "party": null,
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "2022 coverage of Roller Girl running for Park Board as an independent."
+  },
+  {
+   "url": "https://www.straight.com/news/1137041/twenty-one-candidates-enter-vancouver-mayoral-race-including-connie-fogal-jason",
+   "title": "Twenty-one candidates enter Vancouver mayoral race, including Connie Fogal, Jason Lamarche, and Roller Girl",
+   "publisher": "Georgia Straight",
+   "published": "2018-09-15",
+   "source_type": "news",
+   "candidates": [
+    "council-rollergirl"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "2018 mayoral field including Roller Girl."
+  },
+  {
+   "url": "https://vancouverpublicspace.ca/our-work/greenspaces/2022-park-board-survey/rollergirl-211-independent/",
+   "title": "Rollergirl (#211, Independent) - 2022 Park Board survey",
+   "publisher": "Vancouver Public Space Network",
+   "published": "2022",
+   "source_type": "questionnaire",
+   "candidates": [
+    "council-rollergirl"
+   ],
+   "party": null,
+   "topics": [
+    "parks",
+    "housing"
+   ],
+   "perspective": "Vancouver Public Space Network, advocacy group for public space, parks and active transportation",
+   "access": "direct",
+   "notes": "2022 Park Board candidate survey response; several questions unanswered."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13813",
+   "title": "Darren Boidman, Liberal for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "school-darren-boidman"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "education"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Bio: Vancouver business owner and talent manager (film/TV), McGill degrees and MBA Finance; arts education; plus party promises. (His party page was not archived.)"
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13814",
+   "title": "Joshua Cameron, Liberal for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "school-joshua-cameron"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "education"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Bio: born and raised in Vancouver, University of Victoria graduate; strong public services; plus party promises."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13815",
+   "title": "Ishi Dinim, Liberal for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "school-ishi-dinim"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "education"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Bio: Henry Hudson Elementary / Kitsilano Secondary alum, Emily Carr BFA, working artist; long-time DPAC parent advocate; plus party promises."
+  },
+  {
+   "url": "https://votemate.org/bc2026/candidates/13821",
+   "title": "Isabel Ochoa Prieto, Liberal for Vancouver | 2026 BC Local Elections - VoteMate",
+   "publisher": "VoteMate",
+   "published": null,
+   "source_type": "questionnaire",
+   "candidates": [
+    "school-isabel-ochoa-prieto"
+   ],
+   "party": "Vancouver Liberals",
+   "topics": [
+    "education"
+   ],
+   "perspective": "VoteMate (votemate.org), non-partisan volunteer-run voter-information site; profiles, bios and 'promises' are submitted by candidates or their parties and not independently verified",
+   "access": "direct",
+   "notes": "Bio: born in Toronto, grew up in Mexico City, UBC Political Science/Sociology; equitable resources and inclusive schools; plus party promises."
+  }
+ ],
+ "affiliations": [
+  {
+   "candidate_id": "mayor-rebecca-bligh",
+   "organization": "Vancouver City Council",
+   "role": "councillor",
+   "start": "2018",
+   "end": null,
+   "source_url": "https://en.wikipedia.org/wiki/Rebecca_Bligh",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "mayor-rebecca-bligh",
+   "organization": "Non-Partisan Association (NPA)",
+   "role": "councillor elected on NPA slate",
+   "start": "2018",
+   "end": "2022",
+   "source_url": "https://en.wikipedia.org/wiki/Rebecca_Bligh",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "mayor-rebecca-bligh",
+   "organization": "ABC Vancouver",
+   "role": "councillor (caucus member); removed from caucus 2025-02-14",
+   "start": "2022",
+   "end": "2025-02",
+   "source_url": "https://globalnews.ca/news/11020156/abc-expels-rebecca-bligh",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "mayor-rebecca-bligh",
+   "organization": "Independent (no party)",
+   "role": "councillor sitting as independent after ABC expulsion",
+   "start": "2025-02",
+   "end": "2025-09",
+   "source_url": "https://en.wikipedia.org/wiki/Rebecca_Bligh",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "mayor-rebecca-bligh",
+   "organization": "Vote Vancouver",
+   "role": "founder and mayoral candidate (party announced 2025-09-22)",
+   "start": "2025-09",
+   "end": null,
+   "source_url": "https://en.wikipedia.org/wiki/Rebecca_Bligh",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "mayor-rebecca-bligh",
+   "organization": "Federation of Canadian Municipalities",
+   "role": "former President",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.votevancouver.ca/rebecca-bligh",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "mayor-rebecca-bligh",
+   "organization": "Metro Vancouver",
+   "role": "Director",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.votevancouver.ca/rebecca-bligh",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "mayor-kareem-allam",
+   "organization": "ABC Vancouver",
+   "role": "2022 campaign manager for Ken Sim/ABC",
+   "start": "2022",
+   "end": "2022",
+   "source_url": "https://dailyhive.com/vancouver/vancouver-council-candidates-2026-election",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "mayor-kareem-allam",
+   "organization": "Office of the Mayor of Vancouver (Ken Sim)",
+   "role": "chief of staff; left ~3 months in (reported as quitting, later described as fired)",
+   "start": "2022",
+   "end": "2023-02",
+   "source_url": "https://thebreaker.news/business/allam-quits-sim-office/",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "mayor-kareem-allam",
+   "organization": "Vancouver Liberals (Vancouver Liberal Electors Association)",
+   "role": "founder (registered 2025-07-03) and mayoral candidate",
+   "start": "2025-07",
+   "end": null,
+   "source_url": "https://en.wikipedia.org/wiki/Vancouver_Liberal_Electors_Association",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "mayor-kareem-allam",
+   "organization": "Richardson Strategy Group",
+   "role": "partner",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20260413122837/https://www.vancouverliberals.com/meet_kareem_allam",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "mayor-kareem-allam",
+   "organization": "Greater Vancouver Board of Trade",
+   "role": "former Director of Public Policy",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20260413122837/https://www.vancouverliberals.com/meet_kareem_allam",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "mayor-kareem-allam",
+   "organization": "Fraser Health Board of Directors",
+   "role": "board member (one term)",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20260413122837/https://www.vancouverliberals.com/meet_kareem_allam",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-victoria-jung",
+   "organization": "Vancouver School Board",
+   "role": "trustee",
+   "start": "2022",
+   "end": null,
+   "source_url": "https://www.vsb.bc.ca/page/26692/trustees",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "council-victoria-jung",
+   "organization": "Vancouver School Board",
+   "role": "chair",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.vsb.bc.ca/page/26692/trustees",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "council-victoria-jung",
+   "organization": "ABC Vancouver",
+   "role": "trustee (elected on ABC slate); left party 2024-08",
+   "start": "2022",
+   "end": "2024-08",
+   "source_url": "https://www.cbc.ca/news/canada/british-columbia/vancouver-school-board-chair-leaves-abc-party-goes-independent-1.7287792",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-victoria-jung",
+   "organization": "Independent (no party)",
+   "role": "trustee sitting as independent",
+   "start": "2024-08",
+   "end": "2026-01",
+   "source_url": "https://www.cbc.ca/news/canada/british-columbia/vancouver-school-board-chair-leaves-abc-party-goes-independent-1.7287792",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-victoria-jung",
+   "organization": "Vancouver Liberals",
+   "role": "council candidate (announced late Jan 2026)",
+   "start": "2026-01",
+   "end": null,
+   "source_url": "https://en.wikipedia.org/wiki/Vancouver_Liberal_Electors_Association",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-scott-jensen",
+   "organization": "Vancouver Park Board",
+   "role": "commissioner (first Indigenous chair after 2022 election)",
+   "start": "2022",
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261010175457/https://www.vancouverliberals.com/scott_jensen",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "park-scott-jensen",
+   "organization": "ABC Vancouver",
+   "role": "commissioner; left/removed with Bastyovanszky and Christensen 2023-12-06",
+   "start": "2022",
+   "end": "2023-12",
+   "source_url": "https://en.wikipedia.org/wiki/Vancouver_Park_Board",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-scott-jensen",
+   "organization": "Independent (no party)",
+   "role": "commissioner sitting as independent",
+   "start": "2023-12",
+   "end": "2026-01",
+   "source_url": "https://en.wikipedia.org/wiki/Vancouver_Park_Board",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-scott-jensen",
+   "organization": "Vancouver Liberals",
+   "role": "commissioner/candidate (joined 2026-01-18)",
+   "start": "2026-01",
+   "end": null,
+   "source_url": "https://en.wikipedia.org/wiki/Vancouver_Park_Board",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-scott-jensen",
+   "organization": "Vancouver School Board (Lord Roberts Elementary)",
+   "role": "Grade 3 teacher",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261010175457/https://www.vancouverliberals.com/scott_jensen",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-john-coupar",
+   "organization": "Vancouver Park Board",
+   "role": "commissioner (three terms)",
+   "start": "2011",
+   "end": "2022",
+   "source_url": "https://dailyhive.com/vancouver/john-coupar-vancouver-liberals-city-council-election",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "council-john-coupar",
+   "organization": "Vancouver Park Board",
+   "role": "chair (elected Dec 2018; party release says two years as chair; end given as upper bound = left board 2022)",
+   "start": "2018-12",
+   "end": "2022",
+   "source_url": "https://ssl.straight.com/news/781451/new-chair-john-coupar-looks-re-establish-independent-park-board",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "council-john-coupar",
+   "organization": "Non-Partisan Association (NPA)",
+   "role": "park commissioner; 2022 NPA mayoral candidate, resigned candidacy 2022-08-05",
+   "start": "2011",
+   "end": "2022-08",
+   "source_url": "https://www.cbc.ca/news/canada/british-columbia/john-coupar-npa-vancouver-resigned-1.6542813",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-john-coupar",
+   "organization": "Conservative Party of BC",
+   "role": "provincial candidate (2024 election)",
+   "start": "2024",
+   "end": "2024",
+   "source_url": "https://www.straight.com/city-culture/former-park-board-commissioner-john-coupar-to-run-for-council-with-vancouver-liberals",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-john-coupar",
+   "organization": "Vancouver Liberals",
+   "role": "council candidate (announced 2026-08-06)",
+   "start": "2026-08",
+   "end": null,
+   "source_url": "https://web.archive.org/web/20260807043940/https://www.vancouverliberals.com/press_release_john_coupar",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-john-coupar",
+   "organization": "Friends of the Bloedel Association",
+   "role": "co-founder / past president",
+   "start": "2009",
+   "end": null,
+   "source_url": "https://web.archive.org/web/20260807043940/https://www.vancouverliberals.com/press_release_john_coupar",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-john-coupar",
+   "organization": "VanDusen Botanical Gardens",
+   "role": "past governor",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20260807043940/https://www.vancouverliberals.com/press_release_john_coupar",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "park-tricia-barker",
+   "organization": "Vancouver Park Board",
+   "role": "commissioner",
+   "start": "2018",
+   "end": "2022",
+   "source_url": "https://web.archive.org/web/20260921051432/https://www.vancouverliberals.com/tricia_barker",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "park-tricia-barker",
+   "organization": "Non-Partisan Association (NPA)",
+   "role": "commissioner elected on NPA slate; left 2022-09",
+   "start": "2018",
+   "end": "2022-09",
+   "source_url": "https://globalnews.ca/news/9100701/npa-park-board-quit-team",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-tricia-barker",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2022 park board candidate",
+   "start": "2022-09",
+   "end": "2022",
+   "source_url": "https://globalnews.ca/news/9100701/npa-park-board-quit-team",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-tricia-barker",
+   "organization": "Vancouver Liberals",
+   "role": "park board candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://web.archive.org/web/20260914215344/https://www.vancouverliberals.com/press_release_tricia_barker",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-armor-valor",
+   "organization": "OneCity Vancouver",
+   "role": "sought OneCity council nomination (before joining Liberals)",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261004040655/https://www.vancouverliberals.com/armor_valor",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-armor-valor",
+   "organization": "Vancouver Liberals",
+   "role": "council candidate (announced 2026-05-29 per slate page)",
+   "start": "2026-05",
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261009220452/https://www.vancouverliberals.com/candidates_caucus",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-armor-valor",
+   "organization": "BC Children's Hospital / Hospital Employees' Union",
+   "role": "cook; HEU member",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261004040655/https://www.vancouverliberals.com/armor_valor",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-moira-stilwell",
+   "organization": "BC Legislature (Vancouver-Langara)",
+   "role": "MLA (BC Liberal); cabinet minister",
+   "start": "2009",
+   "end": "2017",
+   "source_url": "https://web.archive.org/web/20261011143300/https://www.vancouverliberals.com/moira_stilwell",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "council-moira-stilwell",
+   "organization": "St. Paul's Hospital",
+   "role": "nuclear medicine physician",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261011143300/https://www.vancouverliberals.com/moira_stilwell",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-moira-stilwell",
+   "organization": "Canadian Breast Cancer Foundation, BC & Yukon Chapter",
+   "role": "chair",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261011143300/https://www.vancouverliberals.com/moira_stilwell",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-michael-wu",
+   "organization": "Royal Canadian Mounted Police",
+   "role": "auxiliary constable",
+   "start": "2006",
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261011135509/https://www.vancouverliberals.com/michael_wu",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-jessica-walton",
+   "organization": "BCGEU",
+   "role": "shop steward",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20260613191726/https://www.vancouverliberals.com/jessica_walton",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-devin-clemens",
+   "organization": "University of British Columbia",
+   "role": "staff (graduate programs/policy)",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261010083918/https://www.vancouverliberals.com/devin_clemens",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "park-mark-halyk",
+   "organization": "Vancouver Park Board",
+   "role": "senior leader, Commercial Services (10+ years)",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261012135150/https://www.vancouverliberals.com/mark_halyk",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "park-mark-halyk",
+   "organization": "Christ Church Cathedral",
+   "role": "trustee and Rector's Warden",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261012135150/https://www.vancouverliberals.com/mark_halyk",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "park-shayla-bird",
+   "organization": "PLANher Consulting",
+   "role": "founder",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261010175113/https://www.vancouverliberals.com/shayla_bird",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "park-amanda-bains",
+   "organization": "Hospital Employees' Union",
+   "role": "member",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261006015110/https://www.vancouverliberals.com/amanda_bains",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "park-amir-bajehkian",
+   "organization": "New Democratic Party of Canada",
+   "role": "volunteer (Nathan Cullen leadership campaign)",
+   "start": "2012",
+   "end": null,
+   "source_url": "https://web.archive.org/web/20260914215351/https://www.vancouverliberals.com/press_release_amir_bajehkian",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-noosha-mehdian",
+   "organization": "University of British Columbia; Adler University",
+   "role": "instructor",
+   "start": null,
+   "end": null,
+   "source_url": "https://web.archive.org/web/20261011005423/https://www.vancouverliberals.com/preparing_our_children_for_the_world_ahead_what_should_we_expect_from_our_schools",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-keerit-jutla",
+   "organization": "Association for Mineral Exploration",
+   "role": "President & CEO",
+   "start": "2023-09",
+   "end": "2025-02",
+   "source_url": "https://www.canadianlawyermag.com/inhouse/news/general/natural-resources-lawyer-keerit-jutla-joins-association-for-mineral-exploration-as-president-and-ceo/379352",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-keerit-jutla",
+   "organization": "Invicta Metals Corp.",
+   "role": "CEO and founder",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.votevancouver.ca/keerit-jutla",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-geoff-teoli",
+   "organization": "City of Vancouver",
+   "role": "Vancouver Film Commissioner; senior leader for film and special events",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.votevancouver.ca/geoff-teoli",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-rebecca-hasdell",
+   "organization": "BC Centre for Disease Control",
+   "role": "population health leader",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.votevancouver.ca/rebecca-hasdell",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "park-stephen-menon",
+   "organization": "Qmunity",
+   "role": "board treasurer",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.votevancouver.ca/stephen-menon",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "park-summit-wannamaker",
+   "organization": "UBC Young Liberals",
+   "role": "president",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.votevancouver.ca/summit-wannamaker",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-mandy-potter",
+   "organization": "Misfit Ventures",
+   "role": "founder and managing partner",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.votevancouver.ca/mandy-potter",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "school-amarys-joseph",
+   "organization": "Surfrider (board of directors)",
+   "role": "secretary",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.votevancouver.ca/amarys-joseph",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "mayor-muhammad-ahmad",
+   "organization": "Bright Future Vancouver",
+   "role": "founder and mayoral candidate (launched May 2026)",
+   "start": "2026-05",
+   "end": null,
+   "source_url": "https://thetimesofcanada.com/muhammad-ahmad-launches-bright-future-vancouver-with-vision-to-restore-opportunity-and-affordability/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "mayor-muhammad-ahmad",
+   "organization": "Alpharay Consulting",
+   "role": "Chair, Strategic Advisory Board",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.brightfuturevancouver.ca/muhammad-ahmad",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "mayor-muhammad-ahmad",
+   "organization": "Dunbar Memorial Preschool",
+   "role": "Vice President, Board of Directors",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.brightfuturevancouver.ca/muhammad-ahmad",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-judith-kasiama",
+   "organization": "Colour the Trails",
+   "role": "founder",
+   "start": "2017",
+   "end": null,
+   "source_url": "https://www.brightfuturevancouver.ca/candidates/city-council",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-judith-kasiama",
+   "organization": "Trans Canada Trail",
+   "role": "board director",
+   "start": "2021",
+   "end": null,
+   "source_url": "https://tctrail.ca/people/trans-canada-trail-directors/judith-kasiama/",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-ibrahima-cisse",
+   "organization": "Community Growth Media",
+   "role": "founder",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.brightfuturevancouver.ca/candidates/city-council",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-naomi-chocyk",
+   "organization": "People's Party of Canada",
+   "role": "federal candidate, Vancouver Granville",
+   "start": "2019",
+   "end": "2019",
+   "source_url": "https://globalnews.ca/news/5854852/canada-election-vancouver-granville",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-naomi-chocyk",
+   "organization": "People's Party of Canada",
+   "role": "federal candidate, Vancouver Granville",
+   "start": "2019",
+   "end": "2019",
+   "source_url": "https://globalnews.ca/news/5854852/canada-election-vancouver-granville",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-naomi-chocyk",
+   "organization": "TrueBlue Vancouver",
+   "role": "council candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://votemate.org/bc2026/candidates/13537",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-naomi-chocyk",
+   "organization": "TrueBlue Vancouver",
+   "role": "school trustee candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://votemate.org/bc2026/candidates/13538",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-christopher-jk-richardson",
+   "organization": "Vancouver Park Board",
+   "role": "commissioner (elected 1986, 1988 and 1999; exact term end dates not verified - end is last election year cited)",
+   "start": "1986",
+   "end": "1999",
+   "source_url": "https://vsb.bc.ca/page/60318/christopher-richardson",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "school-christopher-jk-richardson",
+   "organization": "Vancouver School Board",
+   "role": "trustee elected 2014; board chair 2014-2015 (end of that trusteeship not verified - end = end of chair term)",
+   "start": "2014",
+   "end": "2015",
+   "source_url": "https://vsb.bc.ca/page/60318/christopher-richardson",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "school-christopher-jk-richardson",
+   "organization": "Vancouver School Board",
+   "role": "trustee (re-elected 2022; seeking re-election as independent 2026)",
+   "start": "2022",
+   "end": null,
+   "source_url": "https://www.vsb.bc.ca/page/26692/trustees",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "school-christopher-jk-richardson",
+   "organization": "ABC Vancouver",
+   "role": "2022 trustee candidate on ABC slate (VoteMate 2022 lists him as ABC); ABC later withdrew endorsement in Sept 2022 over a CRA charity revocation - not independently fetched",
+   "start": "2022",
+   "end": "2022",
+   "source_url": "https://votemate.org/c/7052?riding=24",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-christopher-jk-richardson",
+   "organization": "Vancouver Police Department",
+   "role": "special constable",
+   "start": "1973",
+   "end": null,
+   "source_url": "https://christopherrichardson.ca/about/",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "park-michael-robert-caditz",
+   "organization": "Independent Parks Party (Vancouver Independent Parks Party)",
+   "role": "leader",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://en.wikipedia.org/wiki/Municipal_political_parties_in_Vancouver",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-eric-redmond",
+   "organization": "Affordable Housing Coalition (ballot label 'Affordable Housing')",
+   "role": "leader (party listed as founded 2022)",
+   "start": "2022",
+   "end": null,
+   "source_url": "https://en.wikipedia.org/wiki/Municipal_political_parties_in_Vancouver",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-guy-dube",
+   "organization": "Coming Home Cafe",
+   "role": "owner",
+   "start": "2005",
+   "end": "2022",
+   "source_url": "https://votemate.org/c/11335?riding=762",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-guy-dube",
+   "organization": "New West Pride",
+   "role": "inaugural president",
+   "start": "2010",
+   "end": null,
+   "source_url": "https://votemate.org/c/11335?riding=762",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-rollergirl",
+   "organization": "Independent",
+   "role": "2018 mayoral candidate; 2022 park board candidate (#211); 2025 council by-election candidate",
+   "start": "2018",
+   "end": null,
+   "source_url": "https://dailyhive.com/vancouver/vancouver-council-candidates-2026-election",
+   "kind": "party"
+  }
+ ],
+ "gaps": [
+  {
+   "candidate_id": "council-eric-redmond",
+   "what": "No bio, campaign site or news coverage found; only ballot label 'Affordable Housing' and a Wikipedia party-table entry (Affordable Housing Coalition, founded 2022, leader Eric Redmond).",
+   "tried": "VoteMate 2026 profile (empty); web searches for \"Eric Redmond\" Vancouver/candidate/Affordable Housing; Daily Hive council roundup."
+  },
+  {
+   "candidate_id": "council-job-zhao",
+   "what": "No bio, campaign site or news coverage found.",
+   "tried": "VoteMate 2026 profile (empty); web search \"Job Zhao\" Vancouver; Daily Hive council roundup (lists name only)."
+  },
+  {
+   "candidate_id": "council-noi-soudarack",
+   "what": "No bio or campaign site; Daily Hive links only an Instagram account (instagram.com/noisoudarack, not fetchable).",
+   "tried": "VoteMate 2026 profile (empty); web searches; Daily Hive 2026-10-14 roundup."
+  },
+  {
+   "candidate_id": "council-rollergirl",
+   "what": "No 2026 platform or bio; only prior-run material (2018 mayor, 2022 park board, 2025 by-election).",
+   "tried": "VoteMate 2026 (empty); searches for Rollergirl/Angela Dawson 2026."
+  },
+  {
+   "candidate_id": "park-brynja-marshall",
+   "what": "No bio found; IPP site candidate page not readable (Blazor app, live site timed out).",
+   "tried": "VoteMate 2026 (empty); parksparty.vote live and Wayback; web search."
+  },
+  {
+   "candidate_id": "park-cam-rothery",
+   "what": "No bio found.",
+   "tried": "VoteMate 2026 (empty); parksparty.vote live and Wayback; web search."
+  },
+  {
+   "candidate_id": "park-leonard-vanderstar",
+   "what": "No bio found.",
+   "tried": "VoteMate 2026 (empty); parksparty.vote live and Wayback; web search."
+  },
+  {
+   "candidate_id": "mayor-amauri-caliman",
+   "what": "No campaign website or news coverage; calimanformayor.ca unreachable and not in Wayback; only VoteMate H.O.M.E. statement and social accounts.",
+   "tried": "calimanformayor.ca (timeout), Wayback CDX (none), web search, CoV mayor page."
+  },
+  {
+   "candidate_id": "mayor-scott-gilbert",
+   "what": "No independent news coverage found; draintheswamp.ca now 404 (archived copy used).",
+   "tried": "web search; Daily Hive mayoral pieces; Wayback."
+  },
+  {
+   "candidate_id": "council-parris-j-williams",
+   "what": "VoteParris.com is a JavaScript-only page with no extractable text; only VoteMate profile has content; no news coverage.",
+   "tried": "voteparris.com (empty HTML shell), VoteMate, web search."
+  },
+  {
+   "candidate_id": "school-travers-fenton",
+   "what": "Campaign site fentontravers.com returns a hosting error page; no individual bio found.",
+   "tried": "fentontravers.com; VoteMate (party promises only); CoV school trustee page."
+  },
+  {
+   "candidate_id": "school-blair-coleman",
+   "what": "No individual bio or site; VoteMate has party promises only.",
+   "tried": "VoteMate; CoV school trustee page; web search."
+  },
+  {
+   "candidate_id": "school-isabel-ochoa-prieto",
+   "what": "Party bio page (vancouverliberals.com/isabel_ochoa) not archived; used VoteMate bio instead.",
+   "tried": "Wayback CDX for isabel_ochoa / isabel_ochoa_prieto."
+  },
+  {
+   "candidate_id": "school-darren-boidman",
+   "what": "Party bio page (vancouverliberals.com/darren_boidman) not archived; used VoteMate bio.",
+   "tried": "Wayback CDX."
+  },
+  {
+   "candidate_id": "school-ishi-dinim",
+   "what": "Party bio page (vancouverliberals.com/ishi_dinim) not archived; used VoteMate bio.",
+   "tried": "Wayback CDX."
+  },
+  {
+   "candidate_id": "school-joshua-cameron",
+   "what": "Party bio page (vancouverliberals.com/joshua_cameron) not archived; used VoteMate bio.",
+   "tried": "Wayback CDX."
+  },
+  {
+   "candidate_id": "park-amir-bajehkian",
+   "what": "Party candidate page only archived as a redirect to homepage; used archived press release instead.",
+   "tried": "Wayback vancouverliberals.com/amir_bajehkian."
+  },
+  {
+   "candidate_id": "mayor-kareem-allam",
+   "what": "Party page /kareem_allam archived with empty body (JS); used /meet_kareem_allam. Tyee interview (2026-05-22), Coast Reporter and Castanet launch stories returned 403 and had no Wayback copy checked/available.",
+   "tried": "Wayback; direct fetch of thetyee.ca, coastreporter.net, castanetkamloops.net (403)."
+  },
+  {
+   "candidate_id": "council-michael-wu",
+   "what": "Prior provincial candidacy (reported as BC United then Conservative, Burnaby North 2024) not verified: BurnabyNow/Vancouver Is Awesome returned Cloudflare 403 and conservativebc.ca page 404; party bio only says 'a major party'.",
+   "tried": "burnabynow.com, conservativebc.ca, web search."
+  },
+  {
+   "candidate_id": "council-john-jones",
+   "what": "Daily Hive (2026-10-14) says he runs under 'Vote Palestine Vancouver', but ballot shows no affiliation and his own site says Independent; unresolved.",
+   "tried": "Daily Hive roundup, VoteMate, johnjonesvancouver.netlify.app."
+  },
+  {
+   "candidate_id": "mayor-muhammad-ahmad",
+   "what": "Tyee 'Does Vancouver Need a Fourth Left-Wing Party?' (2026-10-13) and Vancity Lookout profile returned 403; no Wayback copy found.",
+   "tried": "direct fetch; Wayback CDX."
+  },
+  {
+   "candidate_id": "school-christopher-jk-richardson",
+   "what": "ABC 2022 statement withdrawing his endorsement (abcvancouver.ca) is Cloudflare-blocked; outcome of the CRA charity matter and his caucus status after 2022 not verified.",
+   "tried": "abcvancouver.ca (403); web search."
+  }
+ ]
+}

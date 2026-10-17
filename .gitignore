@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+server.log
+raw_probe/
+data/cache/
+data/text/
+data/embeddings/
+data/processed/
+data/site/
+data/exports/
+server.pid

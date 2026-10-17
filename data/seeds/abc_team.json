@@ -1,0 +1,3621 @@
+{
+ "sources": [
+  {
+   "url": "https://www.voteteam.ca/platform",
+   "title": "Our Platform",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "housing",
+    "governance",
+    "parks",
+    "taxes",
+    "public_services",
+    "policing",
+    "drug_policy"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "2026 platform hub: nine planks (Respect for Neighbourhoods/repeal ODP, ward system, Save Park Board, environment, accountability, Services-Stability-Safety Guarantee, public safety & recovery, local economy, DTES audit), each linking a PDF."
+  },
+  {
+   "url": "https://www.voteteam.ca/our-positions-home-2026",
+   "title": "Our Positions",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "governance",
+    "housing",
+    "parks",
+    "education",
+    "transit",
+    "taxes"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Index of 10 2026 position pages (community representation, planning, environment, finance, safety, transportation, economy, arts, parks, schools)."
+  },
+  {
+   "url": "https://www.voteteam.ca/our-positions-home-2026/planning-for-livability-and-affordability",
+   "title": "Planning for Livability and Affordability",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "housing",
+    "displacement",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM 2026 position page 'Planning for Livability and Affordability': 'What's gone wrong / The TEAM difference / Our solutions'."
+  },
+  {
+   "url": "https://www.voteteam.ca/our-positions-home-2026/community-representation-2026",
+   "title": "Community Representation",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM 2026 position page 'Community Representation': 'What's gone wrong / The TEAM difference / Our solutions'."
+  },
+  {
+   "url": "https://www.voteteam.ca/our-positions-home-2026/finance-and-administration-2026",
+   "title": "Finance & Administration",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "taxes",
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM 2026 position page 'Finance & Administration': 'What's gone wrong / The TEAM difference / Our solutions'."
+  },
+  {
+   "url": "https://www.voteteam.ca/our-positions-home-2026/safety-for-all-2026",
+   "title": "Safety for All",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "policing",
+    "drug_policy",
+    "homelessness"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM 2026 position page 'Safety for All': 'What's gone wrong / The TEAM difference / Our solutions'."
+  },
+  {
+   "url": "https://www.voteteam.ca/our-positions-home-2026/transportation-2026",
+   "title": "Transportation",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "transit",
+    "active_transport"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM 2026 position page 'Transportation': 'What's gone wrong / The TEAM difference / Our solutions'."
+  },
+  {
+   "url": "https://www.voteteam.ca/our-positions-home-2026/parks-and-recreation-2026",
+   "title": "Parks & Recreation",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM 2026 position page 'Parks & Recreation': 'What's gone wrong / The TEAM difference / Our solutions'."
+  },
+  {
+   "url": "https://www.voteteam.ca/our-positions-home-2026/schools-2026",
+   "title": "Schools",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "education"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM 2026 position page 'Schools': 'What's gone wrong / The TEAM difference / Our solutions'."
+  },
+  {
+   "url": "https://www.voteteam.ca/our-positions-home-2026/our-environment-2026",
+   "title": "Our Environment",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "environment"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM 2026 position page 'Our Environment': 'What's gone wrong / The TEAM difference / Our solutions'."
+  },
+  {
+   "url": "https://www.voteteam.ca/our-positions-home-2026/economic-development-2026",
+   "title": "Economic Development",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "economy",
+    "taxes"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM 2026 position page 'Economic Development': 'What's gone wrong / The TEAM difference / Our solutions'."
+  },
+  {
+   "url": "https://www.voteteam.ca/our-positions-home-2026/arts-and-culture-2026",
+   "title": "Arts & Culture",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "arts_culture"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM 2026 position page 'Arts & Culture': 'What's gone wrong / The TEAM difference / Our solutions'."
+  },
+  {
+   "url": "https://www.voteteam.ca/_files/ugd/4e865a_565f9710063043cea7c23dc781caf56f.pdf",
+   "title": "Respect for Neighbourhoods (platform PDF)",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": "2026-07-15",
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "housing",
+    "displacement",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Three-part plan: repeal the Vancouver ODP, restore community planning, regulate multiplexes per neighbourhood."
+  },
+  {
+   "url": "https://www.voteteam.ca/_files/ugd/4e865a_61087c7c8aa54996b2ce4f1a70931f11.pdf",
+   "title": "A Stronger Voice for Neighbourhoods (platform PDF)",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Ward system, neighbourhood councils, more accessible City Hall."
+  },
+  {
+   "url": "https://www.voteteam.ca/_files/ugd/4e865a_82115d68a3164a3ba621882af89cd221.pdf",
+   "title": "Better Parks and Recreation for Everyone (platform PDF)",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Save the elected Park Board, protect parkland, recreation facilities investment pledge (incl. 50m pool at VAC per TEAM releases)."
+  },
+  {
+   "url": "https://www.voteteam.ca/_files/ugd/4e865a_999ddd865ad54136b87be9d316d5cc02.pdf",
+   "title": "Local Environmental Action (policy document #3)",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "environment"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Tree policy, clean waters, environmental resilience."
+  },
+  {
+   "url": "https://www.voteteam.ca/_files/ugd/4e865a_d4dc13183a5045978baa535d69483f1f.pdf",
+   "title": "Accountable Government Action Plan (policy announcement #9)",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Auditor General/Integrity Commissioner oversight, lobbyist registry, housing/development dashboard."
+  },
+  {
+   "url": "https://www.voteteam.ca/_files/ugd/4e865a_3595a34f1dd440ba8bef039c2cbf7f39.pdf",
+   "title": "Services. Stability. Safety. Guarantee (platform PDF)",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "taxes",
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Core services first; predictable property tax pledge (no increases above inflation); line-by-line budget review."
+  },
+  {
+   "url": "https://www.voteteam.ca/_files/ugd/4e865a_d06deb093778427cb387361a163e2aa9.pdf",
+   "title": "Restoring Order to Our City: Public Safety and Recovery Plan (platform PDF)",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "policing",
+    "drug_policy",
+    "homelessness"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Four-part plan: restore order, neighbourhood policing, protect from violence, recovery-oriented addiction approach."
+  },
+  {
+   "url": "https://www.voteteam.ca/_files/ugd/4e865a_c6f99efeb26c4ba8b8448fe92889e164.pdf",
+   "title": "A Local Economy that Works for Residents (policy announcement)",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "economy"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Local business, main streets, diversify economy beyond real estate."
+  },
+  {
+   "url": "https://www.voteteam.ca/_files/ugd/4e865a_fd3dd4cab97c4a4d9a71ff9204930230.pdf",
+   "title": "Downtown Eastside Audit (platform PDF)",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "homelessness",
+    "drug_policy",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Proposes a DTES audit of public spending and program outcomes."
+  },
+  {
+   "url": "https://www.voteteam.ca/post/team-releases-full-nine-plank-platform-unveils-accountable-government-action-plan",
+   "title": "TEAM Releases Full Nine-Plank Platform, Unveils Accountable Government Action Plan",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": "2026-10-08",
+   "source_type": "party_platform",
+   "candidates": [
+    "mayor-colleen-hardwick"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "governance",
+    "housing",
+    "taxes",
+    "policing",
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Press release listing the nine platform planks; Hardwick quote."
+  },
+  {
+   "url": "https://www.voteteam.ca/listening-to-residents",
+   "title": "Listening to Residents (survey)",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "governance",
+    "housing",
+    "taxes",
+    "policing"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Party survey summarizing key proposals (replace ODP/Villages, property taxes not above inflation, ward system, etc.)."
+  },
+  {
+   "url": "https://www.voteteam.ca/post/team-backs-plan-aimed-at-delivering-affordable-middle-income-housing",
+   "title": "TEAM Backs Plan Aimed at Delivering Affordable Middle-Income Housing",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": "2026-09-09",
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "housing"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Housing position: public-private cooperation to deliver middle-income housing."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026",
+   "title": "Our Candidates",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_candidate_list",
+   "candidates": [
+    "mayor-colleen-hardwick",
+    "council-amanda-boggan",
+    "council-charles-kelly",
+    "council-kathleen-larsen",
+    "council-jonathan-weisman",
+    "council-raj-mundra",
+    "council-patrick-sauriol",
+    "council-josh-gordon",
+    "park-allan-fawley",
+    "park-jon-girard",
+    "park-mayeli-alvarez",
+    "park-alex-tkach",
+    "park-wah-gee",
+    "school-kat-nystedt"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Lists all 14 TEAM 2026 candidates with links to bio pages; links one-page summary PDF and ballot slate PDF."
+  },
+  {
+   "url": "https://www.voteteam.ca/_files/ugd/772988_9b24a2620bf34351b1d5dfc9b2b1707f.pdf",
+   "title": "TEAM ballot slate (take-to-the-poll card)",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_candidate_list",
+   "candidates": [
+    "mayor-colleen-hardwick",
+    "council-amanda-boggan",
+    "council-charles-kelly",
+    "council-kathleen-larsen",
+    "council-jonathan-weisman",
+    "council-raj-mundra",
+    "council-patrick-sauriol",
+    "council-josh-gordon",
+    "park-allan-fawley",
+    "park-jon-girard",
+    "park-mayeli-alvarez",
+    "park-alex-tkach",
+    "park-wah-gee",
+    "school-kat-nystedt"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "One-page slate with ballot numbers for all TEAM candidates."
+  },
+  {
+   "url": "https://www.voteteam.ca/_files/ugd/4e865a_d0f02648d30945c5b6163717c7ab17ea.pdf",
+   "title": "TEAM candidates one-page summary",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "party_candidate_list",
+   "candidates": [
+    "mayor-colleen-hardwick",
+    "council-amanda-boggan",
+    "council-charles-kelly",
+    "council-kathleen-larsen",
+    "council-jonathan-weisman",
+    "council-raj-mundra",
+    "council-patrick-sauriol",
+    "council-josh-gordon",
+    "park-allan-fawley",
+    "park-jon-girard",
+    "park-mayeli-alvarez",
+    "park-alex-tkach",
+    "park-wah-gee",
+    "school-kat-nystedt"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Two-page summary of candidate backgrounds (opens with Hardwick: served on council four years until 2022)."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/colleen-for-mayor",
+   "title": "Colleen Hardwick For Mayor",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "mayor-colleen-hardwick"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Former councillor (2018-2022); B.A. UBC 1983, M.A. UBC 2011; founded New City Productions and PlaceSpeak; father Walter Hardwick councillor 1968-74."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/raj-mundra-for-council",
+   "title": "Raj Mundra For City Council",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-raj-mundra"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Civil engineer ~30 yrs in local building industry; boards incl. Society of Punjabi Engineers and Technologists of BC; Diabetes Canada volunteer; focus permit timelines."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/josh-gordon-for-council",
+   "title": "Josh Gordon For City Council",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-josh-gordon"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "PhD (U of T), 7 yrs Asst Prof SFU School of Public Policy; Statistics Canada since 2021 (housing data, poverty measurement); treatment/prevention approach to addiction."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/charles-for-council",
+   "title": "Charles Kelly For City Council",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-charles-kelly"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Former federal public servant (housing policy); 30+ yrs management consulting; Commissioner General of UN World Urban Forum in Vancouver; ran Blarney Stone in Gastown 14 yrs."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/amanda-boggan-for-council",
+   "title": "Amanda Boggan For City Council",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-amanda-boggan"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "DTES resident; former president of Downtown Eastside Neighbourhood Council; interest in rule of law, access to information, accountability."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/patrick-sauriol-for-council",
+   "title": "Patrick Sauriol For City Council",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-patrick-sauriol"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Digital entrepreneur (Coming Attractions website); 3 yrs Executive Director of DigiBC; instructor; wants economy diversified beyond tourism/real estate."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/kathleen-for-council",
+   "title": "Kathleen Larsen For City Council",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-kathleen-larsen"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "26 yrs municipal planning (community/heritage planner); Toronto Committee of Adjustment 2017-2020; appointed 2021 Director, Vancouver Heritage Foundation; TEAM Park Board candidate 2022."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/jonathan-weisman-for-council",
+   "title": "Jonathan Weisman For City Council",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-jonathan-weisman"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Lawyer; community centre board chair; Scout leader; pro bono clinic volunteer."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/alex-tkach-for-park-board",
+   "title": "Alex Tkach For Park Board",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-alex-tkach"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Digital effects/film post-production career (Emmy nomination 1982); defender of Langara Golf Course; parks as core services."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/allan-fawley-for-park-board",
+   "title": "Allan Fawley For Park Board",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-allan-fawley"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Vancouver educator 20 yrs; graduate degrees in urban planning and education."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/jon-girard-for-park-board",
+   "title": "Jon Girard For Park Board",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-jon-girard"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Software consultant; founding managing director of Protecting Our Vancouver Aquatic Centre Society (raised $110k+, judicial review vs City/Park Board)."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/mayeli-alvarez-for-park-board",
+   "title": "Mayeli Alvarez For Park Board",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-mayeli-alvarez"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "UBC Environmental Design; MSc Architectural Conservation (Edinburgh); director of Protecting Our Vancouver Aquatic Centre Society."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/wah-gee-for-park-board",
+   "title": "Wah Gee For Park Board",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-wah-gee"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Surrey elementary teacher and Indigenous Lead Teacher; serves on City of Vancouver Children, Youth and Families Advisory Committee; affordable recreation priority."
+  },
+  {
+   "url": "https://www.voteteam.ca/candidates-2026/kat-nystedt-for-school-board",
+   "title": "Kat Nystedt For School Board",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "school-kat-nystedt"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Parent of two at the Vancouver elementary she attended; restaurant server/supervisor in Kitsilano; UBCP member."
+  },
+  {
+   "url": "https://www.voteteam.ca/post/colleen-hardwick-chosen-as-team-s-mayoral-candidate-along-with-three-council-candidates",
+   "title": "Colleen Hardwick chosen as TEAM's mayoral candidate along with council candidates",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": "2026-04-13",
+   "source_type": "party_candidate_list",
+   "candidates": [
+    "mayor-colleen-hardwick",
+    "council-charles-kelly",
+    "council-kathleen-larsen"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Members chose Hardwick for mayor (Apr 12, 2026) and first council candidates."
+  },
+  {
+   "url": "https://www.voteteam.ca/post/team-chooses-two-more-city-council-candidates",
+   "title": "TEAM Chooses Two More City Council Candidates",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": "2026-06-09",
+   "source_type": "party_candidate_list",
+   "candidates": [
+    "council-amanda-boggan",
+    "council-jonathan-weisman",
+    "council-kathleen-larsen",
+    "council-charles-kelly"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Adds Boggan (ex-president DTES Neighbourhood Council) and Weisman (Dunbar lawyer)."
+  },
+  {
+   "url": "https://www.voteteam.ca/post/team-announces-new-candidate-for-council-raj-mundra",
+   "title": "TEAM announces new candidate for council: Raj Mundra",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": "2026-08-26",
+   "source_type": "party_candidate_list",
+   "candidates": [
+    "council-raj-mundra"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "housing"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Mundra nomination; streamlining building process within existing zoning; South Vancouver."
+  },
+  {
+   "url": "https://www.voteteam.ca/post/team-announces-three-more-park-board-candidates",
+   "title": "TEAM announces three more Park Board candidates",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": "2026-08-27",
+   "source_type": "party_candidate_list",
+   "candidates": [
+    "park-mayeli-alvarez",
+    "park-jon-girard",
+    "park-allan-fawley"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Alvarez and Girard are directors of Protecting Our Vancouver Aquatic Centre Society; 50m pool advocacy."
+  },
+  {
+   "url": "https://www.voteteam.ca/post/court-puts-the-brakes-on-plan-to-demolish-aquatic-centre",
+   "title": "Court puts the brakes on plan to demolish Aquatic Centre",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": "2026-10-13",
+   "source_type": "party_platform",
+   "candidates": [
+    "park-jon-girard",
+    "park-mayeli-alvarez"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM release on BC Court of Appeal pausing VAC demolition until Nov 3; credits Girard and the society."
+  },
+  {
+   "url": "https://www.voteteam.ca/post/save-nelson-park",
+   "title": "Save Nelson Park!",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": "2026-10-15",
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM majority would rescind Park Board authorization of BC Hydro substation land-use agreements in Nelson Park."
+  },
+  {
+   "url": "https://www.voteteam.ca/post/human-intelliigence-comes-first",
+   "title": "Human Intelligence Comes First",
+   "publisher": "TEAM for a Livable Vancouver",
+   "published": "2026-10-10",
+   "source_type": "campaign_site",
+   "candidates": [
+    "council-patrick-sauriol"
+   ],
+   "party": "TEAM for a Livable Vancouver",
+   "topics": [
+    "economy"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Op-ed by candidate Patrick Sauriol on AI and creative industries."
+  },
+  {
+   "url": "https://abcvancouver.ca/abc-team/",
+   "title": "Meet the ABC Team",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "party_candidate_list",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-joyce-gillespie",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-arezo-zarrabian",
+    "council-lorraine-lowe",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-david-grewal",
+    "council-lenny-zhou",
+    "park-stephen-molnar",
+    "park-marie-rogers",
+    "park-christian-kyle",
+    "park-chris-qiu",
+    "park-jas-virdi",
+    "park-cheryl-grant",
+    "park-jay-bailey",
+    "school-alfred-chien",
+    "school-shirley-sio",
+    "school-maria-kritikos",
+    "school-matt-kroeker",
+    "school-rob-nijjar",
+    "school-preeti-faridkot",
+    "school-lina-vargas"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260913010239",
+   "notes": "Full 2026 ABC slate: mayor, 5 incumbent + 4 new council, 7 Park Board (Virdi incumbent), 7 School Board (Chien, Faridkot incumbent trustees)."
+  },
+  {
+   "url": "https://abcvancouver.ca/priorities/",
+   "title": "ABC Vancouver's Priorities",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "ABC Vancouver",
+   "topics": [
+    "policing",
+    "homelessness",
+    "taxes",
+    "public_services",
+    "parks",
+    "economy"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260816054158",
+   "notes": "2026 campaign priorities: encampment removal, police and nurses, property tax freeze 2026 & 2027, future increases tied to inflation, $104M roads/sidewalks, community centres, later bar hours."
+  },
+  {
+   "url": "https://abcvancouver.ca/platform/",
+   "title": "Platform (ABC Vancouver Platform 2022 - 93-Point Plan)",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "party_platform",
+   "candidates": [],
+   "party": "ABC Vancouver",
+   "topics": [
+    "housing",
+    "coops_public_housing",
+    "policing",
+    "governance",
+    "parks",
+    "education"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260808164354",
+   "notes": "2022 93-point platform text (e.g., double co-op units, 100 police + 100 nurses) with party claim that as of Feb 2025 it had 'actioned 80%'. As of the Aug 2026 snapshot this URL still held the 2022 platform."
+  },
+  {
+   "url": "https://abcvancouver.ca/2026/02/mayor-ken-sim-announces-re-election-bid-vows-to-keep-fighting-for-vancouver/",
+   "title": "Mayor Ken Sim Announces Re-Election Bid, Vows to Keep Fighting for Vancouver",
+   "publisher": "ABC Vancouver",
+   "published": "2026-02-05",
+   "source_type": "party_platform",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260516085657",
+   "notes": "Sim re-election announcement press release."
+  },
+  {
+   "url": "https://abcvancouver.ca/2025/11/mayor-ken-sim-and-the-abc-majority-approve-zero-means-zero-budget-with-0-property-tax-increase/",
+   "title": "Mayor Ken Sim and the ABC Majority Approve 'Zero Means Zero' Budget with 0% Property Tax Increase",
+   "publisher": "ABC Vancouver",
+   "published": "2025-11-26",
+   "source_type": "party_platform",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [
+    "taxes",
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260610005120",
+   "notes": "Party account of Nov 25, 2025 approval of 2026 budget with 0% property tax increase."
+  },
+  {
+   "url": "https://abcvancouver.ca/2026/05/abc-led-vancouver-city-council-votes-for-free-swimming-lessons-calls-for-end-to-covid-era-pool-restrictions/",
+   "title": "ABC-led Vancouver City Council votes for free swimming lessons, calls for end to COVID-era pool restrictions",
+   "publisher": "ABC Vancouver",
+   "published": "2026-05-20",
+   "source_type": "party_platform",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260609235457",
+   "notes": "Council unanimously approved Sim motion toward free introductory swim lessons (ages 3-12) and aquatic infrastructure planning."
+  },
+  {
+   "url": "https://abcvancouver.ca/team/ken/",
+   "title": "Ken Sim - ABC Vancouver",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260516084720",
+   "notes": "Co-founder Nurse Next Door and Rosemary Rocksalt; FCPA; ran for mayor with NPA 2018 (second); founding team of ABC after leaving NPA in 2020."
+  },
+  {
+   "url": "https://abcvancouver.ca/team/sarah-kirby-yung/",
+   "title": "Sarah Kirby-Yung - ABC Vancouver",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-sarah-kirby-yung"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260313140644",
+   "notes": "Vancouver City Council 2018-present; Park Board 2014-2018 (Commissioner and Chair)."
+  },
+  {
+   "url": "https://abcvancouver.ca/team/lisa-dominato/",
+   "title": "Lisa Dominato - ABC Vancouver",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-lisa-dominato"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260423034735",
+   "notes": "Vancouver City Council 2018-present; Vancouver School Board 2017-2018; former BC public service senior manager and Chief of Staff to Deputy Premier."
+  },
+  {
+   "url": "https://abcvancouver.ca/team/mike-klassen/",
+   "title": "Mike Klassen - ABC Vancouver",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-mike-klassen"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260609233159",
+   "notes": "Sworn in Nov 2022; former VP Public Affairs BC Care Providers Association (2016-2022); past Vancouver City Planning Commission vice-chair."
+  },
+  {
+   "url": "https://abcvancouver.ca/team/peter-meiszner/",
+   "title": "Peter Meiszner - ABC Vancouver",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-peter-meiszner"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260516081223",
+   "notes": "Former Global BC online news producer; UBC digital strategist; urbanYVR; ex vice-chair Gastown Historic Area Planning Committee (2022 campaign bio text)."
+  },
+  {
+   "url": "https://abcvancouver.ca/team/lenny-zhou/",
+   "title": "Lenny Zhou - ABC Vancouver",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-lenny-zhou"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260423030137",
+   "notes": "Operations engineering manager at BC Children's Hospital (PHSA), formerly Fraser Health (2022 campaign bio text)."
+  },
+  {
+   "url": "https://abcvancouver.ca/team/lorraine-lowe/",
+   "title": "Lorraine Lowe - ABC Vancouver",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "council-lorraine-lowe"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260922015152",
+   "notes": "2026 council candidate; ED H.R. MacMillan Space Centre and Vice-Chair Vancouver Police Board (on leave); former ED Dr. Sun Yat-Sen Classical Chinese Garden."
+  },
+  {
+   "url": "https://abcvancouver.ca/team/jaspreet-virdi/",
+   "title": "Jaspreet Virdi - ABC Vancouver",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "park-jas-virdi"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260313144205",
+   "notes": "Park Board Commissioner; pharmacist and pharmacy owner (2022 bio text)."
+  },
+  {
+   "url": "https://abcvancouver.ca/team/alfred-chien/",
+   "title": "Alfred Chien - ABC Vancouver",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "school-alfred-chien"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260516074212",
+   "notes": "School Board Trustee; CEO TUEX; banking career at CIBC, BMO, HSBC."
+  },
+  {
+   "url": "https://abcvancouver.ca/team/preeti-faridkot/",
+   "title": "Preeti Faridkot - ABC Vancouver",
+   "publisher": "ABC Vancouver",
+   "published": null,
+   "source_type": "candidate_bio",
+   "candidates": [
+    "school-preeti-faridkot"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260516082154",
+   "notes": "School Board Trustee; works with Richmond School District; S.U.C.C.E.S.S. volunteer (2022 bio text)."
+  },
+  {
+   "url": "https://vancouver.ca/your-government/mayor-ken-sim.aspx",
+   "title": "Mayor Ken Sim | City of Vancouver",
+   "publisher": "City of Vancouver",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261007124238",
+   "notes": "Official bio: elected 41st mayor in 2022, first Chinese Canadian mayor; links financial disclosures and monthly calendars."
+  },
+  {
+   "url": "https://vancouver.ca/your-government/sarah-kirby-yung.aspx",
+   "title": "Councillor Sarah Kirby-Yung | City of Vancouver",
+   "publisher": "City of Vancouver",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "council-sarah-kirby-yung"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260818030031",
+   "notes": "Official bio: second council term, former Park Board chair; Metro Vancouver director, Chair Zero Waste Committee; bio also lists Mayors' Council for TransLink; Vice-Chair Auditor General Committee; VAG trustee; Co-Chair UNDRIP task force; past UBCM executive and PNE chair."
+  },
+  {
+   "url": "https://vancouver.ca/your-government/lisa-dominato.aspx",
+   "title": "Councillor Lisa Dominato | City of Vancouver",
+   "publisher": "City of Vancouver",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "council-lisa-dominato"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260728000755",
+   "notes": "Official bio: VSB 2017 by-election, council 2018, re-elected 2022; Chair Metro Vancouver Air Quality and Climate Committee; FCM board; Chair Auditor General Committee; past PNE chair."
+  },
+  {
+   "url": "https://vancouver.ca/your-government/mike-klassen.aspx",
+   "title": "Councillor Mike Klassen | City of Vancouver",
+   "publisher": "City of Vancouver",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "council-mike-klassen"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260818030032",
+   "notes": "Official bio: elected 2022; Chair PNE board; Metro Vancouver director and Chair Finance Committee; Vice-Chair City Finance and Services; Invest Vancouver board."
+  },
+  {
+   "url": "https://vancouver.ca/your-government/peter-meiszner.aspx",
+   "title": "Councillor Peter Meiszner | City of Vancouver",
+   "publisher": "City of Vancouver",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "council-peter-meiszner"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260818030031",
+   "notes": "Official bio: Chair Standing Committee on Policy and Strategic Priorities; Metro Vancouver director (Water, Housing committees); VPL, Civic Theatres, EasyPark boards; mayor's alternate on Metro board."
+  },
+  {
+   "url": "https://vancouver.ca/your-government/lenny-zhou.aspx",
+   "title": "Councillor Lenny Zhou | City of Vancouver",
+   "publisher": "City of Vancouver",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260818030026",
+   "notes": "Official bio: first term; Chair Standing Committee on City Finance and Services; Metro Vancouver director (Zero Waste Committee); UNDRIP Task Force rep."
+  },
+  {
+   "url": "https://vancouver.ca/your-government/2026-candidates-mayor.aspx",
+   "title": "2026 mayor candidates",
+   "publisher": "City of Vancouver",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "mayor-ken-sim",
+    "mayor-colleen-hardwick"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261012082952",
+   "notes": "Official candidate list with nomination papers: #50 HARDWICK (TEAM), #54 SIM (ABC Vancouver)."
+  },
+  {
+   "url": "https://vancouver.ca/your-government/2026-candidates-park-board-commissioner.aspx",
+   "title": "2026 Park Board commissioner candidates",
+   "publisher": "City of Vancouver",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "park-stephen-molnar",
+    "park-marie-rogers",
+    "park-christian-kyle",
+    "park-chris-qiu",
+    "park-jas-virdi",
+    "park-cheryl-grant",
+    "park-jay-bailey",
+    "park-allan-fawley",
+    "park-jon-girard",
+    "park-mayeli-alvarez",
+    "park-alex-tkach",
+    "park-wah-gee"
+   ],
+   "party": null,
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260930073937",
+   "notes": "Official Park Board candidate list with nomination papers (7 ABC, 5 TEAM)."
+  },
+  {
+   "url": "https://vancouver.ca/your-government/2026-candidates-school-trustee.aspx",
+   "title": "2026 school trustee candidates",
+   "publisher": "City of Vancouver",
+   "published": null,
+   "source_type": "official_record",
+   "candidates": [
+    "school-alfred-chien",
+    "school-shirley-sio",
+    "school-maria-kritikos",
+    "school-matt-kroeker",
+    "school-rob-nijjar",
+    "school-preeti-faridkot",
+    "school-lina-vargas",
+    "school-kat-nystedt"
+   ],
+   "party": null,
+   "topics": [
+    "education"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261001164108",
+   "notes": "Official school trustee candidate list with nomination papers (7 ABC, 1 TEAM)."
+  },
+  {
+   "url": "https://vancouver.ca/news-calendar/council-approves-0-property-tax-nov-2025.aspx",
+   "title": "Council approves 2026 budget with 0% property tax increase",
+   "publisher": "City of Vancouver",
+   "published": "2025-11-25",
+   "source_type": "official_record",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "taxes",
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260421054803",
+   "notes": "City release: $2.39B 2026 operating budget with 0% property tax increase."
+  },
+  {
+   "url": "https://vsb.bc.ca/alfred-chien",
+   "title": "Alfred Chien (Trustee)",
+   "publisher": "Vancouver School Board",
+   "published": "2025-02-01",
+   "source_type": "official_record",
+   "candidates": [
+    "school-alfred-chien"
+   ],
+   "party": null,
+   "topics": [
+    "education"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Elected 2022; Chair Education Plan Committee; Vice-Chair Finance and Personnel Committee; Audit Committee member."
+  },
+  {
+   "url": "https://vsb.bc.ca/preeti-faridkot",
+   "title": "Preeti Faridkot (Trustee)",
+   "publisher": "Vancouver School Board",
+   "published": "2025-02-01",
+   "source_type": "official_record",
+   "candidates": [
+    "school-preeti-faridkot"
+   ],
+   "party": null,
+   "topics": [
+    "education"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Elected 2022; Chair Facilities Planning Committee; Finance and Personnel Committee member; IT analyst."
+  },
+  {
+   "url": "https://media.vsb.bc.ca/media/Default/medialib/26_01jan29_trustee-appointments_approved.94d8d787101.pdf",
+   "title": "2026 trustee appointments (approved Jan 29)",
+   "publisher": "Vancouver School Board",
+   "published": "2026-01-29",
+   "source_type": "official_record",
+   "candidates": [
+    "school-alfred-chien",
+    "school-preeti-faridkot"
+   ],
+   "party": null,
+   "topics": [
+    "education",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Board committee/liaison appointments for 2026."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/ken-sim-abc-vancouver-2026-civic-election-platform",
+   "title": "Ken Sim's ABC platform promises property tax freeze, end to parking permit fees",
+   "publisher": "Daily Hive",
+   "published": "2026-09-22",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "taxes",
+    "parks",
+    "transit"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "ABC 2026 platform: second straight property tax freeze in 2027, end residential parking permit fees and paid parking at beaches/community centres, new pools."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/abc-vancouver-housing-platform-strategy-priorities",
+   "title": "Ken Sim's ABC pitches 4,200 rental homes on City land, new supportive housing rules",
+   "publisher": "Daily Hive",
+   "published": "2026-10-06",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "housing",
+    "homelessness",
+    "coops_public_housing"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "ABC housing platform 'Keep Building Vancouver': 4,200 rentals on City land, consequences for supportive housing operators."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/ken-sim-vancouver-election-plebiscite-vac-pool",
+   "title": "Ken Sim defends public safety plebiscite, promises 50-metre VAC pool if re-elected",
+   "publisher": "Daily Hive",
+   "published": "2026-10-14",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung"
+   ],
+   "party": null,
+   "topics": [
+    "policing",
+    "drug_policy",
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Sim campaign: plebiscite defence and 50m Vancouver Aquatic Centre pool pledge."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/ken-sim-2022-campaign-promises",
+   "title": "Ken Sim made 93 campaign promises in 2022. How did he do?",
+   "publisher": "Daily Hive",
+   "published": "2026-09-16",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "policing",
+    "coops_public_housing",
+    "housing",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Promise review of 9 of 93 2022 pledges: 100 officers hired; 100 nurses revised (~50-57 mental health workers); co-op doubling not achieved (402 completed, net +334 per CHF BC)."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/abc-vancouver-city-council-candidates-2026-election-zarrabian-gillespie-lowe-grewal",
+   "title": "Ken Sim's ABC party names four new Vancouver City Council candidates",
+   "publisher": "Daily Hive",
+   "published": "2026-08-27",
+   "source_type": "news",
+   "candidates": [
+    "council-arezo-zarrabian",
+    "council-joyce-gillespie",
+    "council-lorraine-lowe",
+    "council-david-grewal",
+    "council-lisa-dominato",
+    "council-sarah-kirby-yung",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "governance",
+    "policing"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Bios: Zarrabian ~20 yrs VPD crime/data analyst; Gillespie GigHound co-founder, Dunbar Little League president; Lowe ED Space Centre, VPB vice-chair (on leave); Grewal senior advisor to Mayor Sim 4 yrs, ex-chair West End BIA. Montague not running."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/abc-vancouver-park-board-mayor-ken-sim-2026-election-approach",
+   "title": "Mayor Sim calls on Park Board to drop reservation system for pools",
+   "publisher": "Daily Hive",
+   "published": "2026-07-13",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "ABC drops Park Board abolition, will field Park Board candidates; background on 2023 abolition push."
+  },
+  {
+   "url": "https://www.ctvnews.ca/vancouver/article/vancouver-mayor-ken-sim-drops-plan-to-dissolve-citys-park-board/",
+   "title": "Mayor Ken Sim drops plan to dissolve Vancouver park board",
+   "publisher": "CTV News",
+   "published": "2026-07-13",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Sim abandons Park Board abolition plan, ABC to run Park Board slate."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-park-board-abolition-bc-legislation-halted",
+   "title": "B.C. government halts bill to abolish Park Board over First Nations concerns",
+   "publisher": "Daily Hive",
+   "published": "2025-10-28",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Province withdrew Bill 26 (Park Board abolition steps) before second reading."
+  },
+  {
+   "url": "https://www.theglobeandmail.com/canada/article-vancouver-park-board-abolish/",
+   "title": "Vancouver's move to abolish its unique parks board 'awakens sleeping giant'",
+   "publisher": "The Globe and Mail",
+   "published": "2024-01-06",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Coverage of Sim's Dec 2023 move to abolish the elected Park Board (paywalled)."
+  },
+  {
+   "url": "https://globalnews.ca/news/10882069/scrapping-vancouver-park-board-report/",
+   "title": "Scrapping Vancouver Park Board could save $7M a year, report finds",
+   "publisher": "Global News",
+   "published": "2024-11-21",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Staff report estimate of savings from Park Board abolition."
+  },
+  {
+   "url": "https://ca.news.yahoo.com/just-one-six-former-abc-010212943.html",
+   "title": "Just one of six former ABC Vancouver park board commissioners to run for party this time",
+   "publisher": "Postmedia (via Yahoo News Canada)",
+   "published": "2026-09-28",
+   "source_type": "news",
+   "candidates": [
+    "park-jas-virdi",
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Virdi only returning ABC commissioner; 3 ABC commissioners went independent over abolition; Virdi priorities: Sunset pool, Moberley turf, free swim lessons; ABC full slate of 7."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-mayor-ken-sim-property-tax-hike-proposal-2023",
+   "title": "Vancouver Mayor Ken Sim says a 10.7% property tax hike is possible",
+   "publisher": "Daily Hive",
+   "published": "2023-03-01",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "taxes"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "2023 budget: Sim announced amendments could raise average property tax to 10.7%."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-property-tax-increase-2024-approved",
+   "title": "Vancouver City Council approves 7.5% property tax increase in 2024",
+   "publisher": "Daily Hive",
+   "published": "2023-12-12",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "taxes"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "2024 property tax increase 7.5%; notes 2023 increase was 10.7%."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-property-tax-2026-zero",
+   "title": "0% property tax increase approved by Vancouver City Council",
+   "publisher": "Daily Hive",
+   "published": "2025-10-08",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "taxes"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Council motion for 0% 2026 tax; Bligh, Fry, Orr, Maloney opposed."
+  },
+  {
+   "url": "https://www.ctvnews.ca/vancouver/article/vancouver-council-approves-zero-per-cent-property-tax-increase/",
+   "title": "Vancouver council approves zero per cent property tax increase",
+   "publisher": "CTV News",
+   "published": "2025-11-25",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "taxes",
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Final 2026 budget vote with 0% increase; ABC majority for, opposition against."
+  },
+  {
+   "url": "https://www.ctvnews.ca/vancouver/article/mayor-ken-sim-makes-case-for-re-election-in-speech-to-vancouver-business-crowd/",
+   "title": "Mayor Ken Sim makes case for re-election",
+   "publisher": "CTV News",
+   "published": "2026-04-10",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "taxes",
+    "economy"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Sim re-election pitch; CTV notes ~22% cumulative tax increase over previous three years."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-public-safety-plebiscite-mental-health-addictions-approved-october-2026-civic-election",
+   "title": "Vancouver public safety plebiscite approved after heated opposition to ABC plan",
+   "publisher": "Daily Hive",
+   "published": "2026-08-14",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "drug_policy",
+    "policing",
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "ABC council majority approved Sim's plebiscite on public hard drug use and St. Paul's site treatment facility."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-villages-plan-rejected-city-council-decision",
+   "title": "Vancouver City Council kills Villages Plan after fierce public backlash",
+   "publisher": "Daily Hive",
+   "published": "2026-07-28",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "housing",
+    "displacement"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Council effectively rejected Villages Plan (up to 8 storeys in 17 areas)."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/ken-sim-wins-vancouver-mayoral-election-2022",
+   "title": "Ken Sim of the ABC party wins Vancouver mayoral election",
+   "publisher": "Daily Hive",
+   "published": "2022-10-16",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "2022 election night: Sim defeats Kennedy Stewart."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-mayor-ken-sim-leads-election-early-survey",
+   "title": "Ken Sim leads Vancouver mayoral race with 30% of decided vote: survey",
+   "publisher": "Daily Hive",
+   "published": "2026-08-04",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim",
+    "mayor-colleen-hardwick"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Research Co. early poll of mayoral race."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/ken-sim-abc-vancouver-tree-plantings",
+   "title": "Ken Sim's ABC Vancouver party promises to plant 100,000 trees in four years",
+   "publisher": "Daily Hive",
+   "published": "2022-08-22",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "environment"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "2022 promise (trackable outcome)."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/abc-vancouver-childcare-space-expansion-ken-sim",
+   "title": "Ken Sim's ABC Vancouver party promises 5,000 more childcare spaces",
+   "publisher": "Daily Hive",
+   "published": "2022-09-15",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "childcare"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "2022 promise (trackable outcome)."
+  },
+  {
+   "url": "https://www.burnabynow.com/economy-law-politics/abc-vancouver-votes-to-keep-ken-sim-on-vancouver-police-board-9070489",
+   "title": "ABC Vancouver votes to keep Ken Sim on Vancouver police board",
+   "publisher": "Vancouver Is Awesome (Glacier)",
+   "published": "2024-06-11",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "policing",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "7-3 party-line vote to keep Sim on Police Board after Police Act changes ended automatic mayoral chair; Sim had chaired since 2022."
+  },
+  {
+   "url": "https://www.burnabynow.com/local-news/year-end-interview-vancouver-mayor-ken-sim-first-45-days-6288489",
+   "title": "Year-end interview: Vancouver mayor Ken Sim reflects on first 45 days in office",
+   "publisher": "Vancouver Is Awesome (Glacier)",
+   "published": "2022-12-22",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "governance",
+    "policing",
+    "taxes"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Sim elected Oct 15, inaugurated Nov 7, 2022; says he chairs police board, sits on Metro board and Mayors' Council."
+  },
+  {
+   "url": "https://www.ctvnews.ca/vancouver/article/vancouver-police-board-chair-to-step-down-in-june/",
+   "title": "Vancouver Police Board chair Frank Chong to end term in June",
+   "publisher": "CTV News",
+   "published": "2026-04-15",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "policing",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Police Board leadership change (context for Sim no longer chairing)."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-city-council-2026-road-safety",
+   "title": "What has Vancouver City Council accomplished in 2026?",
+   "publisher": "Daily Hive",
+   "published": "2026-09-03",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "active_transport",
+    "transit"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Reports Vision Zero Vancouver 2026 report card; Meiszner ranked last; ABC majority opposed prioritizing road safety motions after 0% budget."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/abc-vancouver-ken-sim-road-safety",
+   "title": "'Moving us backwards': Ken Sim's track record on road safety",
+   "publisher": "Daily Hive",
+   "published": "2026-08-27",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "active_transport"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Vision Zero Vancouver critique of ABC road safety record."
+  },
+  {
+   "url": "https://storeys.com/vancouver-permanent-sign-peter-meiszner/",
+   "title": "Councillor Introducing Motion For Permanent 'Vancouver' Sign",
+   "publisher": "STOREYS",
+   "published": "2024-02-27",
+   "source_type": "news",
+   "candidates": [
+    "council-peter-meiszner"
+   ],
+   "party": null,
+   "topics": [
+    "public_services"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Meiszner motion for permanent 'Vancouver' sign."
+  },
+  {
+   "url": "https://thetyee.ca/News/2026/02/25/ABC-Councillor-Accuses-Colleagues-Drug-Crimes/",
+   "title": "ABC Councillor Accuses Colleagues of Drug Crimes",
+   "publisher": "The Tyee",
+   "published": "2026-02-25",
+   "source_type": "news",
+   "candidates": [
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "governance",
+    "coops_public_housing"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260603091040",
+   "notes": "Zhou WeChat video accusing a non-ABC councillor of drug use/dealing while opposing a social housing motion; four councillors denounced it."
+  },
+  {
+   "url": "https://thetyee.ca/News/2026/10/08/Who-Will-Fix-Vancouver-Pools-Community-Centres/",
+   "title": "Who Will Fix Vancouver's Broken Pools and Crumbling Community Centres?",
+   "publisher": "The Tyee",
+   "published": "2026-10-08",
+   "source_type": "news",
+   "candidates": [
+    "park-jas-virdi",
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20261011201507",
+   "notes": "Parties' Park Board platforms; ABC full slate incl. incumbent Virdi; ABC dropped abolition in July."
+  },
+  {
+   "url": "https://thetyee.ca/Opinion/2026/08/13/Mayor-Ken-Sim-Poised-Win-Re-Election/",
+   "title": "How Mayor Ken Sim Is Poised to Win Re-Election",
+   "publisher": "The Tyee",
+   "published": "2026-08-13",
+   "source_type": "news",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260922083812",
+   "notes": "Opinion/analysis of Sim's re-election prospects and polling."
+  },
+  {
+   "url": "https://thetyee.ca/News/2022/06/23/Councillors-Broadway-Plan-Votes/",
+   "title": "On the Record: Councillors on Their Broadway Plan Votes",
+   "publisher": "The Tyee",
+   "published": "2022-06-23",
+   "source_type": "news",
+   "candidates": [
+    "mayor-colleen-hardwick",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato"
+   ],
+   "party": null,
+   "topics": [
+    "housing",
+    "displacement"
+   ],
+   "perspective": null,
+   "access": "blocked_use_wayback",
+   "wayback_ts": "20260723191428",
+   "notes": "Broadway Plan vote statements: Hardwick (TEAM) No; Kirby-Yung and Dominato (ABC) Yes."
+  },
+  {
+   "url": "https://globalnews.ca/news/8939542/vancouver-councillors-vote-broadway-plan",
+   "title": "Vancouver council approves controversial 30-year Broadway Plan",
+   "publisher": "Global News",
+   "published": "2022-06-22",
+   "source_type": "news",
+   "candidates": [
+    "mayor-colleen-hardwick",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato"
+   ],
+   "party": null,
+   "topics": [
+    "housing",
+    "displacement"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Broadway Plan passed 7-4; Hardwick among opponents."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/colleen-hardwick-team-vancouver-mayoral-campaign-2026",
+   "title": "TEAM selects Colleen Hardwick for second Vancouver mayoral bid",
+   "publisher": "Daily Hive",
+   "published": "2026-05-04",
+   "source_type": "news",
+   "candidates": [
+    "mayor-colleen-hardwick",
+    "council-charles-kelly",
+    "council-kathleen-larsen"
+   ],
+   "party": null,
+   "topics": [
+    "governance",
+    "housing"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Hardwick: council 2018-2022 (NPA, then left), 2022 mayoral 3rd place (16,769 votes), 2025 by-election 3rd (17,352); initial council slate."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/team-party-colleen-hardwick-vancouver-area-plans-repeal-campaign-promise",
+   "title": "Colleen Hardwick's TEAM party vows to repeal six Vancouver area plans if elected",
+   "publisher": "Daily Hive",
+   "published": "2026-07-16",
+   "source_type": "news",
+   "candidates": [
+    "mayor-colleen-hardwick"
+   ],
+   "party": null,
+   "topics": [
+    "housing",
+    "displacement",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "TEAM would repeal citywide ODP (Mar 2026), Jericho Lands ODP and other area plans."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/team-colleen-hardwick-additional-candidates-vancouver-election-august-2026",
+   "title": "Colleen Hardwick's daughter among TEAM's five new candidates in Vancouver election",
+   "publisher": "Daily Hive",
+   "published": "2026-08-06",
+   "source_type": "news",
+   "candidates": [
+    "council-josh-gordon",
+    "council-patrick-sauriol",
+    "park-wah-gee",
+    "park-alex-tkach",
+    "school-kat-nystedt",
+    "mayor-colleen-hardwick"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Announces Gordon, Sauriol (council), Gee, Tkach (Park), Nystedt (School; Hardwick's daughter)."
+  },
+  {
+   "url": "https://www.vancitylookout.com/p/colleen-hardwick-wants-to-empower-neighbourhoods-and-fight-back-on-rezonings",
+   "title": "Colleen Hardwick wants to empower neighbourhoods and fight back on rezonings",
+   "publisher": "Vancity Lookout",
+   "published": "2026-05-29",
+   "source_type": "news",
+   "candidates": [
+    "mayor-colleen-hardwick"
+   ],
+   "party": null,
+   "topics": [
+    "housing",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Mayoral candidate profile: rezonings, local democracy, reconciliation stance."
+  },
+  {
+   "url": "https://www.vancitylookout.com/p/team-candidates-by-election-vancouver",
+   "title": "TEAM candidates position themselves as a voice of opposition to ABC majority",
+   "publisher": "Vancity Lookout",
+   "published": "2025-02-05",
+   "source_type": "news",
+   "candidates": [
+    "mayor-colleen-hardwick"
+   ],
+   "party": null,
+   "topics": [
+    "housing",
+    "parks",
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Hardwick as TEAM 2025 by-election candidate opposing Broadway Plan and Park Board abolition."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-aquatic-centre-demolition-pause-bc-appeal-court-decision",
+   "title": "Appeal court pauses Vancouver Aquatic Centre demolition until early November",
+   "publisher": "Daily Hive",
+   "published": "2026-10-14",
+   "source_type": "news",
+   "candidates": [
+    "park-jon-girard",
+    "park-mayeli-alvarez"
+   ],
+   "party": null,
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "BC Court of Appeal interim injunction (to Nov 3) on application of Protecting Our VAC Society (Girard, Alvarez directors)."
+  },
+  {
+   "url": "https://www.ctvnews.ca/vancouver/article/court-temporarily-halts-demolition-of-vancouver-aquatic-centre/",
+   "title": "Demolition of Vancouver Aquatic Centre halted",
+   "publisher": "CTV News",
+   "published": "2026-10-14",
+   "source_type": "news",
+   "candidates": [
+    "park-jon-girard"
+   ],
+   "party": null,
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Court halt of VAC demolition; Girard quoted."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-aquatic-centre-redevelopment-petition-court-decision",
+   "title": "Why a judge dismissed the challenge to Vancouver Aquatic Centre's redevelopment",
+   "publisher": "Daily Hive",
+   "published": "2026-09-26",
+   "source_type": "news",
+   "candidates": [
+    "park-jon-girard",
+    "park-mayeli-alvarez"
+   ],
+   "party": null,
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "BC Supreme Court dismissed the society's petition (25m vs 50m pool)."
+  },
+  {
+   "url": "https://www.vancitylookout.com/p/new-court-case-filed-against-controversial-vancouver-aquatic-centre-renewal-831162f3d",
+   "title": "New court case filed against controversial Vancouver Aquatic Centre renewal",
+   "publisher": "Vancity Lookout",
+   "published": "2025-08-22",
+   "source_type": "news",
+   "candidates": [
+    "park-jon-girard"
+   ],
+   "party": null,
+   "topics": [
+    "parks"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Society led by Girard files judicial review."
+  },
+  {
+   "url": "https://tricitynews.com/bc-news/abc-vancouver-park-commissioner-party-chair-to-battle-for-conservative-nomination-angela-haer-marie-rogers-8185888",
+   "title": "Park commissioner, party chair battle for Tory nomination",
+   "publisher": "Vancouver Is Awesome (Glacier)",
+   "published": "2024-01-30",
+   "source_type": "news",
+   "candidates": [
+    "park-marie-rogers"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Marie Rogers, ABC party chair, sought federal Conservative nomination in Vancouver-Granville."
+  },
+  {
+   "url": "https://globalnews.ca/news/10958259/vancouver-byelections-adriane-carr",
+   "title": "Vancouver to face double byelection with Adriane Carr retiring",
+   "publisher": "Global News",
+   "published": "2025-01-14",
+   "source_type": "news",
+   "candidates": [
+    "park-stephen-molnar"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Identifies Stephen Molnar as president of ABC Vancouver."
+  },
+  {
+   "url": "https://visionzerovancouver.ca/2026/06/10/abc-guts-road-safety/",
+   "title": "ABC Guts Road Safety Plan",
+   "publisher": "Vision Zero Vancouver",
+   "published": "2026-06-10",
+   "source_type": "advocacy_assessment",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "active_transport"
+   ],
+   "perspective": "Vision Zero Vancouver: road-safety advocacy group",
+   "access": "direct",
+   "notes": "ABC majority rejected safer speed limits on major roads in Vision Zero Safe Mobility Plan."
+  },
+  {
+   "url": "https://dailyhive.com/vancouver/vancouver-2026-civic-election-candidates-ballot-order",
+   "title": "Vancouver's 2026 civic election candidate list is set: All 130 names in ballot order",
+   "publisher": "Daily Hive",
+   "published": "2026-09-22",
+   "source_type": "reference",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-joyce-gillespie",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-arezo-zarrabian",
+    "council-lorraine-lowe",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-david-grewal",
+    "council-lenny-zhou",
+    "park-stephen-molnar",
+    "park-marie-rogers",
+    "park-christian-kyle",
+    "park-chris-qiu",
+    "park-jas-virdi",
+    "park-cheryl-grant",
+    "park-jay-bailey",
+    "school-alfred-chien",
+    "school-shirley-sio",
+    "school-maria-kritikos",
+    "school-matt-kroeker",
+    "school-rob-nijjar",
+    "school-preeti-faridkot",
+    "school-lina-vargas",
+    "mayor-colleen-hardwick",
+    "council-amanda-boggan",
+    "council-charles-kelly",
+    "council-kathleen-larsen",
+    "council-jonathan-weisman",
+    "council-raj-mundra",
+    "council-patrick-sauriol",
+    "council-josh-gordon",
+    "park-allan-fawley",
+    "park-jon-girard",
+    "park-mayeli-alvarez",
+    "park-alex-tkach",
+    "park-wah-gee",
+    "school-kat-nystedt"
+   ],
+   "party": null,
+   "topics": [],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Full ballot order incl. all ABC and TEAM candidates with numbers."
+  },
+  {
+   "url": "https://visionzerovancouver.ca/2026/09/02/vision-zero-vancouver-2026-vancouver-council-in-review/",
+   "title": "Vision Zero Vancouver: 2026 Vancouver Council in Review",
+   "publisher": "Vision Zero Vancouver",
+   "published": "2026-09-02",
+   "source_type": "advocacy_assessment",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "active_transport",
+    "transit"
+   ],
+   "perspective": "Vision Zero Vancouver: road-safety advocacy group favouring lower speeds, bus lanes, active transport",
+   "access": "direct",
+   "notes": "2026 report card scoring each councillor's votes on 9 road safety motions; Meiszner last."
+  },
+  {
+   "url": "https://visionzerovancouver.ca/2026/01/21/vision-zero-vancouver-2025-vancouver-council-in-review/",
+   "title": "Vision Zero Vancouver: 2025 Vancouver Council in Review",
+   "publisher": "Vision Zero Vancouver",
+   "published": "2026-01-21",
+   "source_type": "advocacy_assessment",
+   "candidates": [
+    "mayor-ken-sim",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato",
+    "council-mike-klassen",
+    "council-peter-meiszner",
+    "council-lenny-zhou"
+   ],
+   "party": null,
+   "topics": [
+    "active_transport",
+    "transit"
+   ],
+   "perspective": "Vision Zero Vancouver: road-safety advocacy group favouring lower speeds, bus lanes, active transport",
+   "access": "direct",
+   "notes": "2025 report card of councillor votes on road safety motions (links 2024 and 2023 cards)."
+  },
+  {
+   "url": "https://promisetracker.ca/",
+   "title": "Promise Tracker",
+   "publisher": "Promise Tracker",
+   "published": null,
+   "source_type": "advocacy_assessment",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": "ABC Vancouver",
+   "topics": [
+    "governance"
+   ],
+   "perspective": "Independent promise-tracking site; editorial ratings, publisher not clearly identified",
+   "access": "direct",
+   "notes": "Third-party tracker rating Sim/ABC 2022 and in-term promises as kept/broken (e.g., pool drop-in 'Broken')."
+  },
+  {
+   "url": "https://www.ehnewspaper.ca/articles/candidates-questionnaire-week-1-meet-your-school-board-candidates-and-find-out-why-theyre-running",
+   "title": "Candidates' Questionnaire Week 1",
+   "publisher": "The Griffins' Nest (Eric Hamber Secondary student newspaper)",
+   "published": "2026-09-22",
+   "source_type": "questionnaire",
+   "candidates": [
+    "school-kat-nystedt"
+   ],
+   "party": null,
+   "topics": [
+    "education"
+   ],
+   "perspective": "Student newspaper at Eric Hamber Secondary; publishes candidates' unedited responses, no stated endorsement",
+   "access": "direct",
+   "notes": "Why running / priorities. Nystedt responded; ABC's Chien, Faridkot, Kritikos, Kroeker, Nijjar, Sio, Vargas listed as not responding."
+  },
+  {
+   "url": "https://www.ehnewspaper.ca/articles/candidates-questionnaire-week-2-generative-ai-in-schools",
+   "title": "Candidates' Questionnaire Week 2",
+   "publisher": "The Griffins' Nest (Eric Hamber Secondary student newspaper)",
+   "published": "2026-09-28",
+   "source_type": "questionnaire",
+   "candidates": [
+    "school-kat-nystedt"
+   ],
+   "party": null,
+   "topics": [
+    "education"
+   ],
+   "perspective": "Student newspaper at Eric Hamber Secondary; publishes candidates' unedited responses, no stated endorsement",
+   "access": "direct",
+   "notes": "Generative AI in schools. Nystedt responded; all 7 ABC candidates listed as non-responding."
+  },
+  {
+   "url": "https://www.ehnewspaper.ca/articles/candidates-questionnaire-week-3-specialized-district-programs",
+   "title": "Candidates' Questionnaire Week 3",
+   "publisher": "The Griffins' Nest (Eric Hamber Secondary student newspaper)",
+   "published": "2026-10-08",
+   "source_type": "questionnaire",
+   "candidates": [
+    "school-kat-nystedt",
+    "school-preeti-faridkot"
+   ],
+   "party": null,
+   "topics": [
+    "education"
+   ],
+   "perspective": "Student newspaper at Eric Hamber Secondary; publishes candidates' unedited responses, no stated endorsement",
+   "access": "direct",
+   "notes": "Specialized district programs. Nystedt and Faridkot responded (Faridkot: protect mini schools, gifted programs); other ABC candidates non-responding."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2022_Vancouver_municipal_election",
+   "title": "2022 Vancouver municipal election",
+   "publisher": "Wikipedia",
+   "published": null,
+   "source_type": "reference",
+   "candidates": [
+    "mayor-ken-sim",
+    "mayor-colleen-hardwick",
+    "park-jas-virdi",
+    "school-alfred-chien",
+    "school-preeti-faridkot",
+    "council-kathleen-larsen",
+    "council-sarah-kirby-yung",
+    "council-lisa-dominato"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "2022 results: Virdi elected Park Board; Chien, Faridkot elected trustees; Larsen (TEAM) not elected to Park Board (21,418); Kirby-Yung/Dominato joined ABC Apr 2022."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Colleen_Hardwick",
+   "title": "Colleen Hardwick",
+   "publisher": "Wikipedia",
+   "published": null,
+   "source_type": "reference",
+   "candidates": [
+    "mayor-colleen-hardwick"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Councillor term Nov 5, 2018 - Nov 7, 2022; sought independent auditor general."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Ken_Sim",
+   "title": "Ken Sim",
+   "publisher": "Wikipedia",
+   "published": null,
+   "source_type": "reference",
+   "candidates": [
+    "mayor-ken-sim"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Mayor since Nov 7, 2022."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Peter_Meiszner",
+   "title": "Peter Meiszner",
+   "publisher": "Wikipedia",
+   "published": null,
+   "source_type": "reference",
+   "candidates": [
+    "council-peter-meiszner"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Councillor since Nov 7, 2022; Metro Vancouver alternate, Housing and Electoral Area A committees."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Mike_Klassen",
+   "title": "Mike Klassen",
+   "publisher": "Wikipedia",
+   "published": null,
+   "source_type": "reference",
+   "candidates": [
+    "council-mike-klassen"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "Councillor since Nov 7, 2022."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Rob_Nijjar",
+   "title": "Rob Nijjar",
+   "publisher": "Wikipedia",
+   "published": null,
+   "source_type": "reference",
+   "candidates": [
+    "school-rob-nijjar"
+   ],
+   "party": null,
+   "topics": [
+    "governance"
+   ],
+   "perspective": null,
+   "access": "direct",
+   "notes": "BC Liberal MLA for Vancouver-Kingsway May 16, 2001 - May 17, 2005."
+  }
+ ],
+ "affiliations": [
+  {
+   "candidate_id": "mayor-ken-sim",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-joyce-gillespie",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-mike-klassen",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-peter-meiszner",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-arezo-zarrabian",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-lorraine-lowe",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-sarah-kirby-yung",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-lisa-dominato",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-david-grewal",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-lenny-zhou",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-stephen-molnar",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-marie-rogers",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-christian-kyle",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-chris-qiu",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-jas-virdi",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-cheryl-grant",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-jay-bailey",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-alfred-chien",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-shirley-sio",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-maria-kritikos",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-matt-kroeker",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-rob-nijjar",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-preeti-faridkot",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-lina-vargas",
+   "organization": "ABC Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/abc-team/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "mayor-colleen-hardwick",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-amanda-boggan",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-charles-kelly",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-kathleen-larsen",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-jonathan-weisman",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-raj-mundra",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-patrick-sauriol",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-josh-gordon",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-allan-fawley",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-jon-girard",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-mayeli-alvarez",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-alex-tkach",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-wah-gee",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-kat-nystedt",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "2026 candidate",
+   "start": "2026",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "mayor-ken-sim",
+   "organization": "City of Vancouver",
+   "role": "Mayor",
+   "start": "2022-11",
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/mayor-ken-sim.aspx",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "mayor-ken-sim",
+   "organization": "Vancouver Police Board",
+   "role": "Chair (ex officio as mayor)",
+   "start": "2022-11",
+   "end": "2024-06",
+   "source_url": "https://www.burnabynow.com/economy-law-politics/abc-vancouver-votes-to-keep-ken-sim-on-vancouver-police-board-9070489",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "mayor-ken-sim",
+   "organization": "Vancouver Police Board",
+   "role": "Council-appointed member",
+   "start": "2024-06",
+   "end": null,
+   "source_url": "https://www.burnabynow.com/economy-law-politics/abc-vancouver-votes-to-keep-ken-sim-on-vancouver-police-board-9070489",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "mayor-ken-sim",
+   "organization": "Metro Vancouver Board",
+   "role": "Director",
+   "start": "2022-11",
+   "end": null,
+   "source_url": "https://www.burnabynow.com/local-news/year-end-interview-vancouver-mayor-ken-sim-first-45-days-6288489",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "mayor-ken-sim",
+   "organization": "TransLink Mayors' Council on Regional Transportation",
+   "role": "Member",
+   "start": "2022-11",
+   "end": null,
+   "source_url": "https://www.burnabynow.com/local-news/year-end-interview-vancouver-mayor-ken-sim-first-45-days-6288489",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "mayor-ken-sim",
+   "organization": "Non-Partisan Association",
+   "role": "Mayoral candidate",
+   "start": "2018",
+   "end": "2020",
+   "source_url": "https://abcvancouver.ca/team/ken/",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "mayor-ken-sim",
+   "organization": "Nurse Next Door Home Healthcare Services",
+   "role": "Co-founder",
+   "start": "2001",
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/mayor-ken-sim.aspx",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-sarah-kirby-yung",
+   "organization": "Vancouver Park Board",
+   "role": "Commissioner and Chair",
+   "start": "2014",
+   "end": "2018",
+   "source_url": "https://abcvancouver.ca/team/sarah-kirby-yung/",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "council-sarah-kirby-yung",
+   "organization": "Vancouver City Council",
+   "role": "Councillor",
+   "start": "2018",
+   "end": null,
+   "source_url": "https://abcvancouver.ca/team/sarah-kirby-yung/",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "council-sarah-kirby-yung",
+   "organization": "Metro Vancouver Board",
+   "role": "Director; Chair, Zero Waste Committee",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/sarah-kirby-yung.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-sarah-kirby-yung",
+   "organization": "TransLink Mayors' Council on Regional Transportation",
+   "role": "Listed in official city bio (role wording ambiguous)",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/sarah-kirby-yung.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-sarah-kirby-yung",
+   "organization": "Vancouver Auditor General Committee",
+   "role": "Vice-Chair",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/sarah-kirby-yung.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-sarah-kirby-yung",
+   "organization": "Vancouver Art Gallery",
+   "role": "Trustee",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/sarah-kirby-yung.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-sarah-kirby-yung",
+   "organization": "Pacific National Exhibition",
+   "role": "Former Chair",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/sarah-kirby-yung.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-sarah-kirby-yung",
+   "organization": "Non-Partisan Association",
+   "role": "Elected councillor (left party; joined ABC Apr 2022)",
+   "start": "2018",
+   "end": "2022",
+   "source_url": "https://en.wikipedia.org/wiki/2022_Vancouver_municipal_election",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-lisa-dominato",
+   "organization": "Vancouver School Board",
+   "role": "Trustee (2017 by-election)",
+   "start": "2017",
+   "end": "2018",
+   "source_url": "https://vancouver.ca/your-government/lisa-dominato.aspx",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "council-lisa-dominato",
+   "organization": "Vancouver City Council",
+   "role": "Councillor (elected 2018, re-elected 2022)",
+   "start": "2018",
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/lisa-dominato.aspx",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "council-lisa-dominato",
+   "organization": "Metro Vancouver Board",
+   "role": "Chair, Air Quality and Climate Committee; member Governance, Caucus of Committee Chairs",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/lisa-dominato.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-lisa-dominato",
+   "organization": "Federation of Canadian Municipalities",
+   "role": "Board member",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/lisa-dominato.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-lisa-dominato",
+   "organization": "Vancouver Auditor General Committee",
+   "role": "Chair",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/lisa-dominato.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-lisa-dominato",
+   "organization": "Pacific National Exhibition",
+   "role": "Past Chair",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/lisa-dominato.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-lisa-dominato",
+   "organization": "Non-Partisan Association",
+   "role": "Elected councillor (joined ABC Apr 2022)",
+   "start": "2018",
+   "end": "2022",
+   "source_url": "https://en.wikipedia.org/wiki/2022_Vancouver_municipal_election",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-mike-klassen",
+   "organization": "Vancouver City Council",
+   "role": "Councillor",
+   "start": "2022-11",
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/mike-klassen.aspx",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "council-mike-klassen",
+   "organization": "Metro Vancouver Board",
+   "role": "Director; Chair, Finance Committee",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/mike-klassen.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-mike-klassen",
+   "organization": "Pacific National Exhibition",
+   "role": "Chair, Board of Directors",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/mike-klassen.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-mike-klassen",
+   "organization": "Standing Committee on City Finance and Services",
+   "role": "Vice-Chair",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/mike-klassen.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-mike-klassen",
+   "organization": "BC Care Providers Association",
+   "role": "VP Public Affairs (Acting CEO during COVID)",
+   "start": "2016",
+   "end": "2022",
+   "source_url": "https://abcvancouver.ca/team/mike-klassen/",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-peter-meiszner",
+   "organization": "Vancouver City Council",
+   "role": "Councillor",
+   "start": "2022-11",
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/peter-meiszner.aspx",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "council-peter-meiszner",
+   "organization": "Standing Committee on Policy and Strategic Priorities",
+   "role": "Chair",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/peter-meiszner.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-peter-meiszner",
+   "organization": "Metro Vancouver Board",
+   "role": "Director; Water and Housing committees; mayor's alternate",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/peter-meiszner.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-peter-meiszner",
+   "organization": "Vancouver Public Library Board",
+   "role": "Trustee",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/peter-meiszner.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-peter-meiszner",
+   "organization": "Global BC",
+   "role": "Online news producer & reporter",
+   "start": "2008",
+   "end": "2014",
+   "source_url": "https://abcvancouver.ca/team/peter-meiszner/",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-lenny-zhou",
+   "organization": "Vancouver City Council",
+   "role": "Councillor",
+   "start": "2022-11",
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/lenny-zhou.aspx",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "council-lenny-zhou",
+   "organization": "Standing Committee on City Finance and Services",
+   "role": "Chair",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/lenny-zhou.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-lenny-zhou",
+   "organization": "Metro Vancouver Board",
+   "role": "Director; Zero Waste Committee",
+   "start": null,
+   "end": null,
+   "source_url": "https://vancouver.ca/your-government/lenny-zhou.aspx",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-lenny-zhou",
+   "organization": "Provincial Health Services Authority (BC Children's Hospital)",
+   "role": "Manager of Operations Engineering",
+   "start": null,
+   "end": null,
+   "source_url": "https://abcvancouver.ca/team/lenny-zhou/",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-lorraine-lowe",
+   "organization": "Vancouver Police Board",
+   "role": "Vice-Chair (on leave during campaign)",
+   "start": null,
+   "end": null,
+   "source_url": "https://abcvancouver.ca/team/lorraine-lowe/",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-lorraine-lowe",
+   "organization": "H.R. MacMillan Space Centre",
+   "role": "Executive Director (on leave)",
+   "start": null,
+   "end": null,
+   "source_url": "https://abcvancouver.ca/team/lorraine-lowe/",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-lorraine-lowe",
+   "organization": "Dr. Sun Yat-Sen Classical Chinese Garden",
+   "role": "Former Executive Director",
+   "start": null,
+   "end": null,
+   "source_url": "https://abcvancouver.ca/team/lorraine-lowe/",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-david-grewal",
+   "organization": "Office of Mayor Ken Sim",
+   "role": "Senior advisor",
+   "start": "2022",
+   "end": null,
+   "source_url": "https://dailyhive.com/vancouver/abc-vancouver-city-council-candidates-2026-election-zarrabian-gillespie-lowe-grewal",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-david-grewal",
+   "organization": "West End Business Improvement Association",
+   "role": "Former chair",
+   "start": null,
+   "end": null,
+   "source_url": "https://dailyhive.com/vancouver/abc-vancouver-city-council-candidates-2026-election-zarrabian-gillespie-lowe-grewal",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-arezo-zarrabian",
+   "organization": "Vancouver Police Department",
+   "role": "Crime and data analyst (~20 yrs)",
+   "start": null,
+   "end": null,
+   "source_url": "https://dailyhive.com/vancouver/abc-vancouver-city-council-candidates-2026-election-zarrabian-gillespie-lowe-grewal",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-joyce-gillespie",
+   "organization": "GigHound",
+   "role": "President and co-founder",
+   "start": null,
+   "end": null,
+   "source_url": "https://dailyhive.com/vancouver/abc-vancouver-city-council-candidates-2026-election-zarrabian-gillespie-lowe-grewal",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-joyce-gillespie",
+   "organization": "Dunbar Little League",
+   "role": "Former president",
+   "start": null,
+   "end": null,
+   "source_url": "https://dailyhive.com/vancouver/abc-vancouver-city-council-candidates-2026-election-zarrabian-gillespie-lowe-grewal",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "park-jas-virdi",
+   "organization": "Vancouver Park Board",
+   "role": "Commissioner",
+   "start": "2022",
+   "end": null,
+   "source_url": "https://ca.news.yahoo.com/just-one-six-former-abc-010212943.html",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "park-stephen-molnar",
+   "organization": "ABC Vancouver",
+   "role": "President",
+   "start": "2025",
+   "end": null,
+   "source_url": "https://globalnews.ca/news/10958259/vancouver-byelections-adriane-carr",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-marie-rogers",
+   "organization": "ABC Vancouver",
+   "role": "Party chair",
+   "start": "2024",
+   "end": null,
+   "source_url": "https://tricitynews.com/bc-news/abc-vancouver-park-commissioner-party-chair-to-battle-for-conservative-nomination-angela-haer-marie-rogers-8185888",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "park-marie-rogers",
+   "organization": "Conservative Party of Canada",
+   "role": "Nomination contestant, Vancouver-Granville",
+   "start": "2024",
+   "end": null,
+   "source_url": "https://tricitynews.com/bc-news/abc-vancouver-park-commissioner-party-chair-to-battle-for-conservative-nomination-angela-haer-marie-rogers-8185888",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "school-alfred-chien",
+   "organization": "Vancouver School Board",
+   "role": "Trustee; Chair, Education Plan Committee",
+   "start": "2022",
+   "end": null,
+   "source_url": "https://vsb.bc.ca/alfred-chien",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "school-preeti-faridkot",
+   "organization": "Vancouver School Board",
+   "role": "Trustee; Chair, Facilities Planning Committee",
+   "start": "2022",
+   "end": null,
+   "source_url": "https://vsb.bc.ca/preeti-faridkot",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "school-rob-nijjar",
+   "organization": "Legislative Assembly of British Columbia",
+   "role": "MLA, Vancouver-Kingsway (BC Liberal)",
+   "start": "2001-05",
+   "end": "2005-05",
+   "source_url": "https://en.wikipedia.org/wiki/Rob_Nijjar",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "mayor-colleen-hardwick",
+   "organization": "Vancouver City Council",
+   "role": "Councillor",
+   "start": "2018-11",
+   "end": "2022-11",
+   "source_url": "https://en.wikipedia.org/wiki/Colleen_Hardwick",
+   "kind": "elected_office"
+  },
+  {
+   "candidate_id": "mayor-colleen-hardwick",
+   "organization": "Non-Partisan Association",
+   "role": "Elected councillor (left party mid-term)",
+   "start": "2018",
+   "end": "2021",
+   "source_url": "https://dailyhive.com/vancouver/colleen-hardwick-team-vancouver-mayoral-campaign-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "mayor-colleen-hardwick",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "Founder/leader; mayoral candidate 2022 and 2026; 2025 by-election candidate",
+   "start": "2021",
+   "end": null,
+   "source_url": "https://dailyhive.com/vancouver/colleen-hardwick-team-vancouver-mayoral-campaign-2026",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "mayor-colleen-hardwick",
+   "organization": "PlaceSpeak",
+   "role": "Founder",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026/colleen-for-mayor",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-kathleen-larsen",
+   "organization": "TEAM for a Livable Vancouver",
+   "role": "Park Board candidate (not elected)",
+   "start": "2022",
+   "end": "2022",
+   "source_url": "https://en.wikipedia.org/wiki/2022_Vancouver_municipal_election",
+   "kind": "party"
+  },
+  {
+   "candidate_id": "council-kathleen-larsen",
+   "organization": "Vancouver Heritage Foundation",
+   "role": "Director (council-appointed)",
+   "start": "2021",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026/kathleen-for-council",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-kathleen-larsen",
+   "organization": "Toronto Committee of Adjustment",
+   "role": "Member (council-appointed)",
+   "start": "2017",
+   "end": "2020",
+   "source_url": "https://www.voteteam.ca/candidates-2026/kathleen-for-council",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-amanda-boggan",
+   "organization": "Downtown Eastside Neighbourhood Council",
+   "role": "Former president",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026/amanda-boggan-for-council",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "council-patrick-sauriol",
+   "organization": "DigiBC",
+   "role": "Executive Director (3 years)",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026/patrick-sauriol-for-council",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-josh-gordon",
+   "organization": "Statistics Canada",
+   "role": "Researcher (housing data, poverty measurement)",
+   "start": "2021",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026/josh-gordon-for-council",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-josh-gordon",
+   "organization": "Simon Fraser University School of Public Policy",
+   "role": "Assistant Professor (7 years)",
+   "start": null,
+   "end": "2021",
+   "source_url": "https://www.voteteam.ca/candidates-2026/josh-gordon-for-council",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-charles-kelly",
+   "organization": "UN World Urban Forum (Vancouver)",
+   "role": "Commissioner General",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026/charles-for-council",
+   "kind": "employer"
+  },
+  {
+   "candidate_id": "council-raj-mundra",
+   "organization": "Society of Punjabi Engineers and Technologists of BC",
+   "role": "Board member",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026/raj-mundra-for-council",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "park-jon-girard",
+   "organization": "Protecting Our Vancouver Aquatic Centre Society",
+   "role": "Founding managing director",
+   "start": "2025",
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026/jon-girard-for-park-board",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "park-mayeli-alvarez",
+   "organization": "Protecting Our Vancouver Aquatic Centre Society",
+   "role": "Director",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026/mayeli-alvarez-for-park-board",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "park-wah-gee",
+   "organization": "City of Vancouver Children, Youth and Families Advisory Committee",
+   "role": "Member",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026/wah-gee-for-park-board",
+   "kind": "board"
+  },
+  {
+   "candidate_id": "park-wah-gee",
+   "organization": "Surrey School District",
+   "role": "Elementary teacher, Indigenous Lead Teacher",
+   "start": null,
+   "end": null,
+   "source_url": "https://www.voteteam.ca/candidates-2026/wah-gee-for-park-board",
+   "kind": "employer"
+  }
+ ],
+ "gaps": [
+  {
+   "candidate_id": "council-joyce-gillespie",
+   "what": "ABC party bio page https://abcvancouver.ca/team/joyce-gillespie",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "council-david-grewal",
+   "what": "ABC party bio page https://abcvancouver.ca/team/david-grewal",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "council-arezo-zarrabian",
+   "what": "ABC party bio page https://abcvancouver.ca/team/arezo-zarrabian",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "park-stephen-molnar",
+   "what": "ABC party bio page https://abcvancouver.ca/team/stephen-molnar",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "park-marie-rogers",
+   "what": "ABC party bio page https://abcvancouver.ca/team/marie-rogers",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "park-christian-kyle",
+   "what": "ABC party bio page https://abcvancouver.ca/team/christian-kyle",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "park-chris-qiu",
+   "what": "ABC party bio page https://abcvancouver.ca/team/(no slug; not on Sept abc-team snapshot)",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "park-cheryl-grant",
+   "what": "ABC party bio page https://abcvancouver.ca/team/cheryl-grant",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "park-jay-bailey",
+   "what": "ABC party bio page https://abcvancouver.ca/team/jay-bailey",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "school-shirley-sio",
+   "what": "ABC party bio page https://abcvancouver.ca/team/shirley-sio",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "school-maria-kritikos",
+   "what": "ABC party bio page https://abcvancouver.ca/team/maria-kritikos",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "school-matt-kroeker",
+   "what": "ABC party bio page https://abcvancouver.ca/team/matt-kroeker",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "school-rob-nijjar",
+   "what": "ABC party bio page https://abcvancouver.ca/team/rob-nijjar",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "school-lina-vargas",
+   "what": "ABC party bio page https://abcvancouver.ca/team/lina-vargas",
+   "tried": "Wayback CDX for abcvancouver.ca/team/* (2025-2026) has no capture of this slug; live site returns Cloudflare 403; slug known from archived abc-team page."
+  },
+  {
+   "candidate_id": "park-chris-qiu",
+   "what": "Any bio or news coverage",
+   "tried": "Not listed on archived abc-team page (2026-09-13 capture); only appears on ballot lists (Daily Hive ballot order, City candidate page). Web searches found nothing else."
+  },
+  {
+   "candidate_id": "school-shirley-sio",
+   "what": "Any bio or news coverage beyond ballot listing",
+   "tried": "Web searches (name + ABC/VSB) returned nothing; not a respondent in Griffins' Nest questionnaires."
+  },
+  {
+   "candidate_id": "park-christian-kyle",
+   "what": "News coverage",
+   "tried": "Only ABC profile snippets (UBC geological engineering, East Van) seen in search results; no independent coverage found."
+  },
+  {
+   "candidate_id": "park-cheryl-grant",
+   "what": "News coverage of Jericho Pier/Kitsilano Coalition advocacy",
+   "tried": "Searched name + Jericho Pier/Kitsilano Coalition; no credible news found."
+  },
+  {
+   "candidate_id": "mayor-ken-sim",
+   "what": "ABC 2026 full platform page / 'Raising Vancouver' policy launch post / 'record' page",
+   "tried": "abcvancouver.ca/platform/ latest capture (2026-08-08) is still the 2022 platform; /record/ and /2026/09/raising-vancouver-completes-abcs-policy-launch/ have no Wayback capture; live site Cloudflare 403. Used Daily Hive platform coverage + archived /priorities/ instead."
+  },
+  {
+   "candidate_id": "mayor-ken-sim",
+   "what": "ABC July 2026 Park Board position release (abcvancouver.ca/2026/07/abc-vancouver-announces-position-on-vancouver-park-board/)",
+   "tried": "No Wayback capture; live 403. Used Daily Hive and CTV coverage."
+  },
+  {
+   "candidate_id": "mayor-ken-sim",
+   "what": "CBC coverage (police board re-appointment 1.7232763; 100-day review 1.6748777; 2018-22 council votes 1.6573186)",
+   "tried": "cbc.ca returned 403/connection failure to curl and WebFetch; no Wayback captures found via CDX for those URLs."
+  },
+  {
+   "candidate_id": "mayor-ken-sim",
+   "what": "Current Police Board / Mayors' Council status in 2025-2026",
+   "tried": "Official mayor page (Wayback 2026-10-07) lists no board appointments; most recent sourced status is June 2024 (VIA)."
+  },
+  {
+   "candidate_id": "school-preeti-faridkot",
+   "what": "VSB vice-chair term (2022-23) confirmation",
+   "tried": "Seen only in search snippet of a VSB release; not opened."
+  },
+  {
+   "candidate_id": "school-alfred-chien",
+   "what": "Daily Hive article announcing ABC School Board slate (Aug 2026)",
+   "tried": "Referenced inside Daily Hive Aug 27 article but URL not found via search."
+  },
+  {
+   "candidate_id": "council-lisa-dominato",
+   "what": "Concrete 2025-2026 motions/outcomes",
+   "tried": "Searches found only councillor calendar PDFs on vancouver.ca (403) and older CBC 2022 review (blocked)."
+  },
+  {
+   "candidate_id": "council-sarah-kirby-yung",
+   "what": "Concrete 2025-2026 motions/outcomes",
+   "tried": "Searches surfaced only councillor calendars (vancouver.ca, 403); none opened."
+  },
+  {
+   "candidate_id": "council-mike-klassen",
+   "what": "Concrete recent motions (e.g., amendment delaying fast-tracked social housing; 2023 vacancy tax amendment)",
+   "tried": "Seen in search snippets (CTV, Global) but not opened/verified."
+  }
+ ]
+}

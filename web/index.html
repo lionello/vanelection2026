@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vancouver 2026 Candidate Explorer</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%225%22 cy=%2210%22 r=%223%22 fill=%22%232a78d6%22/%3E%3Ccircle cx=%2211%22 cy=%225%22 r=%223%22 fill=%22%23eb6834%22/%3E%3C/svg%3E">
+<script src="vendor/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>Vancouver 2026 Candidate Explorer</h1>
+    <p class="sub">Unsupervised maps of sourced candidate evidence: mayor, council, Park Board and school trustees.
+      Not an endorsement tool. Nothing here scores candidate quality.</p>
+  </div>
+  <nav class="links">
+    <a href="/methods" target="_blank" rel="noopener">Methods report</a>
+    <a href="#exports" id="exportsLink">Exports</a>
+  </nav>
+</header>
+
+<section id="banner" class="banner" aria-live="polite"></section>
+
+<nav class="tabs" role="tablist" id="raceTabs"></nav>
+
+<section class="controls" id="controls">
+  <div class="ctl">
+    <label for="viewSel">View</label>
+    <select id="viewSel">
+      <option value="policy">Individual policy positions</option>
+      <option value="platform">Party platform (shared)</option>
+      <option value="experience">Experience &amp; governance</option>
+      <option value="actions">Reported actions &amp; claimed outcomes</option>
+      <option value="votes">Council recorded votes</option>
+      <option value="combined">Combined (adjustable blocks)</option>
+    </select>
+  </div>
+  <div class="ctl" id="modeCtl">
+    <label for="modeSel">Evidence</label>
+    <select id="modeSel">
+      <option value="individual">Individual evidence only</option>
+      <option value="with_platform">Include party platform</option>
+    </select>
+  </div>
+  <div class="ctl" id="projCtl">
+    <label for="projSel">Projection</label>
+    <select id="projSel">
+      <option value="pca">PCA (primary)</option>
+      <option value="umap">UMAP (optional, nonlinear)</option>
+    </select>
+  </div>
+  <div class="ctl">
+    <label><input type="checkbox" id="colorParty" checked> Colour by party</label>
+  </div>
+  <div class="ctl">
+    <button id="weightsBtn" class="btn" aria-expanded="false">Weights…</button>
+  </div>
+</section>
+
+<section id="weightsPanel" class="weights" hidden>
+  <div class="wcol" id="topicWeights"><h3>Topic weights</h3>
+    <p class="hint">Each covered topic contributes equally by default (1.0). Set 0 to drop a topic. Missing topics
+      are excluded, never zero-filled.</p>
+    <div id="topicSliders"></div>
+  </div>
+  <div class="wcol" id="blockWeights"><h3>Combined-map block weights</h3>
+    <p class="hint">Blocks are L2-normalised, then scaled by √weight, so dimensionality never decides influence.
+      Candidates missing a weighted block are excluded.</p>
+    <div id="blockSliders"></div>
+  </div>
+  <div class="wact"><button class="btn primary" id="applyWeights">Recompute map</button>
+    <button class="btn" id="resetWeights">Reset to equal</button><span id="wstatus" class="hint"></span></div>
+</section>
+
+<section id="partyFilter" class="partyfilter" aria-label="Party filter"></section>
+
+<main class="layout">
+  <section class="mapcol">
+    <div id="mapNote" class="mapnote"></div>
+    <div id="plot" class="plot" role="img" aria-label="Scatterplot of candidates"></div>
+    <div id="mapMeta" class="mapmeta"></div>
+    <details id="excluded" class="excluded"><summary>Not plotted</summary><div id="excludedBody"></div></details>
+  </section>
+  <aside class="panel" id="panel" aria-live="polite">
+    <p class="empty">Select a candidate on the map or in the table.</p>
+  </aside>
+</main>
+
+<section class="compare" id="compare" hidden>
+  <div class="compare-head"><h2>Side-by-side evidence</h2><button class="btn" id="clearCompare">Clear</button></div>
+  <div id="compareBody" class="compare-body"></div>
+</section>
+
+<section class="tablewrap">
+  <div class="tablehead">
+    <h2 id="tableTitle">Candidates</h2>
+    <input type="search" id="search" placeholder="Search name, party, ballot #…" aria-label="Search candidates">
+  </div>
+  <div class="scrollx">
+  <table id="ctable">
+    <thead><tr>
+      <th>Compare</th><th data-k="ballot_number">#</th><th data-k="display_name">Candidate</th><th data-k="party">Party</th>
+      <th data-k="years">Elected office (yrs)</th><th data-k="mgmt">Management resp.</th><th data-k="votes">Vote record</th>
+      <th data-k="topics">Topics w/ positions</th><th data-k="sources">Sources</th><th>Map status</th><th>Ballot source</th>
+    </tr></thead>
+    <tbody></tbody>
+  </table>
+  </div>
+</section>
+
+<section class="exports" id="exports">
+  <h2>Data &amp; exports</h2>
+  <div id="exportsBody"></div>
+</section>
+
+<footer class="foot">
+  <p>Evidence is verbatim text from cached sources; every item links to its source and passage. Classification is
+    rule-based and imperfect. Check citations before relying on any item. Axes on these maps have no political meaning.</p>
+</footer>
+<div id="tip" class="tip" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

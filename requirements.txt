@@ -1,0 +1,20 @@
+# Core pipeline
+requests>=2.32
+beautifulsoup4>=4.12
+lxml>=5.2
+trafilatura>=1.12
+pymupdf>=1.24
+pyyaml>=6.0
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.5
+umap-learn>=0.5.6
+rapidfuzz>=3.9
+# Local embeddings (CPU torch is installed from the PyTorch CPU index, see README)
+sentence-transformers>=3.0
+# Backend
+fastapi>=0.111
+uvicorn>=0.30
+# Tests
+pytest>=8.2
+markdown>=3.6
