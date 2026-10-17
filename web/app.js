@@ -3,7 +3,7 @@
 const S = {
   meta: null, cands: [], cmap: {}, analysis: null, sources: {}, race: "mayor", view: "policy", mode: "individual",
   proj: "pca", colorParty: true, hidden: new Set(), selected: null, compare: [], custom: null,
-  weights: {}, blocks: { policy: 1, experience: 0.5, actions: 0.5 }, search: "", sort: ["ballot_number", 1],
+  weights: {}, blocks: { policy: 1, experience: 0.5, actions: 0.5 }, missing: "shared", search: "", sort: ["ballot_number", 1],
 };
 const RACES = [["mayor", "Mayor"], ["council", "City Council"], ["park", "Park Board"], ["school", "School Board"], ["all", "Cross-race (policy only)"]];
 // Fixed categorical order (colour follows the party, never its rank). Parties past slot 8 share "other" grey
@@ -32,6 +32,7 @@ async function init() {
   $("#viewSel").onchange = (e) => { S.view = e.target.value; S.custom = null; render(); };
   $("#modeSel").onchange = (e) => { S.mode = e.target.value; S.custom = null; render(); };
   $("#projSel").onchange = (e) => { S.proj = e.target.value; render(); };
+  $("#missSel").onchange = (e) => { S.missing = e.target.value; S.custom = null; render(); };
   $("#colorParty").onchange = (e) => { S.colorParty = e.target.checked; render(); };
   $("#search").oninput = (e) => { S.search = e.target.value.toLowerCase(); table(); };
   $("#weightsBtn").onclick = () => { const p = $("#weightsPanel"); p.hidden = !p.hidden; $("#weightsBtn").setAttribute("aria-expanded", String(!p.hidden)); };
@@ -79,7 +80,7 @@ function sliders() {
 async function applyWeights() {
   $("#wstatus").textContent = "Recomputing…";
   const view = S.view === "votes" ? "policy" : S.view;
-  const q = new URLSearchParams({ race: S.race, view, mode: S.mode, weights: JSON.stringify(S.weights), blocks: JSON.stringify(S.blocks) });
+  const q = new URLSearchParams({ race: S.race, view, mode: S.mode, weights: JSON.stringify(S.weights), blocks: JSON.stringify(S.blocks), missing: S.missing });
   try { S.custom = await j(`/api/map?${q}`); S.customKey = key(); $("#wstatus").textContent = "Custom weights applied (stability metrics shown are for default weights)."; }
   catch (e) { $("#wstatus").textContent = "Failed: " + e.message; }
   render();
@@ -90,7 +91,7 @@ function setHash() {
   if (location.hash !== h) history.replaceState(null, "", h);
 }
 
-const key = () => `${S.race}|${S.view}|${S.mode}`;
+const key = () => `${S.race}|${S.view}|${S.mode}|${S.missing}`;
 
 function currentMap() {
   if (S.custom && S.customKey === key()) return S.custom;
@@ -106,7 +107,8 @@ async function render() {
   setHash();
   tabs();
   $("#modeCtl").style.display = S.view === "policy" || S.view === "combined" ? "" : "none";
-  $("#projCtl").style.display = S.view === "votes" ? "none" : "";
+  $("#projCtl").style.display = S.view === "votes" || S.view === "combined" ? "none" : "";
+  $("#missCtl").style.display = S.view === "combined" ? "" : "none";
   if (S.race === "all" && S.view !== "policy") { S.view = "policy"; $("#viewSel").value = "policy"; }
   $("#viewSel").querySelectorAll("option").forEach((o) => (o.disabled = S.race === "all" && o.value !== "policy"));
   if (S.view === "combined" && !(S.custom && S.customKey === key())) { await applyWeights(); return; }
@@ -166,7 +168,7 @@ function renderMap() {
       textposition: "top center", textfont: { size: 11, color: css("--text") }, cliponaxis: false,
       customdata: ps.map((p) => p.id),
       hovertext: ps.map((p) => { const c = S.cmap[p.id]; const s = stab[p.id];
-        return `<b>${esc(c.display_name)}</b> (#${c.ballot_number})<br>${esc(c.party)}${s ? `<br>${s.unstable ? "⚠ unstable: " + esc(s.reasons.join("; ")) : "stable under tests"}` : ""}<br>Nearest (original space): ${esc(p.neighbours.slice(0, 3).map((n) => S.cmap[n.id].display_name).join(", "))}`; }),
+        return `<b>${esc(c.display_name)}</b> (#${c.ballot_number})<br>${esc(c.party)}${s ? `<br>${s.unstable ? "⚠ unstable: " + esc(s.reasons.join("; ")) : "stable under tests"}` : ""}${p.blocks ? `<br>Blocks compared: ${esc(p.blocks.join(", "))}` : ""}<br>Nearest (original space): ${esc(p.neighbours.slice(0, 3).map((n) => S.cmap[n.id].display_name).join(", "))}`; }),
       hoverinfo: "text",
       marker: {
         size: ps.map((p) => (p.id === S.selected ? 16 : 11)),
@@ -177,18 +179,20 @@ function renderMap() {
     };
   });
   const ev = m.pca?.explained_variance_ratio || [];
-  const xt = useU ? "UMAP 1 (no inherent meaning)" : `PC1 (${fmtPct(ev[0])} of variance)`;
-  const yt = useU ? "UMAP 2 (no inherent meaning)" : `PC2 (${fmtPct(ev[1])} of variance)`;
+  const mds = m.pca && m.pca.method === "classical MDS";
+  const xt = useU ? "UMAP 1 (no inherent meaning)" : `${mds ? "MDS 1" : "PC1"} (${fmtPct(ev[0])} of variance)`;
+  const yt = useU ? "UMAP 2 (no inherent meaning)" : `${mds ? "MDS 2" : "PC2"} (${fmtPct(ev[1])} of variance)`;
   Plotly.purge("plot"); $("#plot").innerHTML = "";
   Plotly.react("plot", traces, plotLayout(xt, yt), { responsive: true, displaylogo: false, modeBarButtonsToRemove: ["select2d", "lasso2d"] });
   $("#plot").on("plotly_click", (e) => { const id = e.points[0].customdata; select(id); });
   const nUnst = Object.values(stab).filter((s) => s.unstable).length;
   $("#mapMeta").innerHTML = (useU
     ? `UMAP: n_neighbors ${m.umap.n_neighbors}, min_dist ${m.umap.min_dist}, metric ${esc(m.umap.metric)}, random seed ${m.umap.seed}. Axes and inter-cluster distances have no inherent meaning.`
-    : `PCA explained variance, first components: ${ev.slice(0, 5).map(fmtPct).join(", ")}. Axes are directions of greatest variance in the embedding space, with no political meaning.`)
+    : `${mds ? "MDS" : "PCA"} explained variance, first components: ${ev.slice(0, 5).map(fmtPct).join(", ")}. Axes are directions of greatest variance${mds ? " in the pairwise-similarity configuration" : " in the embedding space"}, with no political meaning.`)
     + (S.proj === "umap" && !m.umap?.available ? ` <b>UMAP unavailable here</b>: ${esc(m.umap?.note || "")}. Showing PCA.` : "")
     + (m.same_party_neighbour_rate != null ? `<br>Share of each party candidate's 3 nearest original-space neighbours from the same party: <b>${fmtPct(m.same_party_neighbour_rate)}</b>${S.view === "policy" && S.mode === "with_platform" ? " (inflated by the shared platform vector)" : ""}.` : "")
-    + `<br>${m.n} plotted · ${Object.keys(m.insufficient || {}).length} not plotted · ${nUnst} flagged unstable under source removal / re-weighting (ringed markers) · ${Object.values(stab).filter((s) => s.projection_distorted).length} whose 2-D neighbours differ from original-space neighbours (use the neighbour list) · hollow circles = no party.`;
+    + (S.custom && S.customKey === key() ? `<br>${m.n} plotted · ${Object.keys(m.insufficient || {}).length} not plotted · <b>stability tests are not run for custom or combined maps</b>; use the default views for stability flags.` : "")
+    + (S.custom && S.customKey === key() ? "" : `<br>${m.n} plotted · ${Object.keys(m.insufficient || {}).length} not plotted · ${nUnst} flagged unstable under source removal / re-weighting (ringed markers) · ${Object.values(stab).filter((s) => s.projection_distorted).length} whose 2-D neighbours differ from original-space neighbours (use the neighbour list) · hollow circles = no party.`);
   excludedList(m);
   axesPanel(m, useU);
 }

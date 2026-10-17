@@ -71,7 +71,7 @@ def claims(cid: str):
 
 @app.get("/api/map")
 def custom_map(race: str = Query(...), view: str = "policy", mode: str = "individual",
-               weights: str = "{}", blocks: str = "{}"):
+               weights: str = "{}", blocks: str = "{}", missing: str = "shared"):
     """Re-project with user weights. view=combined uses block weights."""
     st = state()
     try:
@@ -83,45 +83,88 @@ def custom_map(race: str = Query(...), view: str = "policy", mode: str = "indivi
     if r not in (None, *analyze.RACES):
         raise HTTPException(400, "unknown race")
     if view == "combined":
-        return JSONResponse(combined(st, r, mode, w, b))
+        if missing not in ("shared", "exclude"):
+            raise HTTPException(400, "missing must be shared|exclude")
+        return JSONResponse(combined(st, r, mode, w, b, missing))
     if view not in ("policy", "platform", "experience", "actions"):
         raise HTTPException(400, "unknown view")
     return JSONResponse(analyze.analyse_map(st, r, view, mode, weights=w, sensitivity=False))
 
 
-def combined(st, race, mode, w, b):
-    """Concatenate L2-normalised block vectors scaled by sqrt(weight): each block's
-    influence depends on its weight, not its dimensionality."""
+def combined(st, race, mode, w, b, missing="shared"):
+    """Combine the policy / experience / actions blocks with adjustable weights.
+
+    missing="shared" (default): pairwise similarity is the weight-averaged cosine over the blocks BOTH
+    candidates have; the map is classical MDS of the resulting distances. The highest-weighted block is
+    required so every pair shares at least one block. A missing block never becomes zeros; it simply
+    does not enter that pair's comparison.
+    missing="exclude": only candidates with every weighted block; L2-normalised blocks scaled by
+    sqrt(weight) are concatenated and projected with PCA.
+    """
     blocks = {k: v for k, v in b.items() if v > 0 and k in ("policy", "experience", "actions")}
     if not blocks:
         raise HTTPException(400, "give at least one positive block weight")
-    per, missing = {}, {}
+    anchor = max(blocks, key=lambda k: (blocks[k], k == "policy"))
+    per, why = {}, {}
     for blk in blocks:
         ids, X, _, insuff = analyze.candidate_vectors(st, race, blk, mode if blk == "policy" else "individual",
                                                       w if blk != "experience" else None)
         per[blk] = dict(zip(ids, X))
-        for c, why in insuff.items():
-            missing.setdefault(c, []).append(f"{blk}: {why}")
+        for c, r in insuff.items():
+            why.setdefault(c, []).append(f"{blk}: {r}")
     pool = [c["candidate_id"] for c in st.cands if race is None or c["race"] == race]
-    ids = [c for c in pool if all(c in per[blk] for blk in blocks)]
-    for c in pool:
-        if c not in ids and c not in missing:
-            missing[c] = ["missing a block"]
-    res = dict(race=race, view="combined", mode=mode, blocks=blocks, n=len(ids),
-               insufficient={c: "; ".join(v) for c, v in missing.items() if c not in ids},
-               note="Combined map: each block L2-normalised and scaled by sqrt(weight) before concatenation. "
-                    "Candidates missing any weighted block are excluded, never zero-filled.")
+    if missing == "exclude":
+        ids = [c for c in pool if all(c in per[blk] for blk in blocks)]
+    else:
+        ids = [c for c in pool if c in per[anchor]]
+    res = dict(race=race, view="combined", mode=mode, blocks=blocks, missing=missing, anchor=anchor, n=len(ids),
+               insufficient={c: "; ".join(why.get(c, ["no evidence in a required block"])) for c in pool if c not in ids},
+               blocks_present={c: [blk for blk in blocks if c in per[blk]] for c in ids})
+    if missing == "exclude":
+        res["note"] = ("Combined map (strict): each block L2-normalised and scaled by sqrt(weight), concatenated, PCA. "
+                       "Candidates missing any weighted block are excluded, never zero-filled.")
+    else:
+        res["note"] = (f"Combined map (shared blocks): similarity between two candidates is the weight-averaged cosine "
+                       f"over the blocks both have; the {anchor} block is required so every pair shares one. Missing "
+                       f"blocks are never zero-filled. Map = classical MDS of sqrt(2 - 2 x similarity).")
     if len(ids) < 3:
         res["points"] = [dict(id=c) for c in ids]
         return res
-    X = np.hstack([np.array([per[blk][c] for c in ids]) * np.sqrt(wt) for blk, wt in blocks.items()])
-    X /= np.linalg.norm(X, axis=1, keepdims=True)
-    Y, evr = analyze.pca2(X)
-    nb = analyze.knn(X, min(5, len(ids) - 1))
-    S = X @ X.T
-    res["pca"] = dict(explained_variance_ratio=evr)
+    n = len(ids)
+    if missing == "exclude":
+        X = np.hstack([np.array([per[blk][c] for c in ids]) * np.sqrt(wt) for blk, wt in blocks.items()])
+        X /= np.linalg.norm(X, axis=1, keepdims=True)
+        Y, evr = analyze.pca2(X)
+        S = X @ X.T
+        res["pca"] = dict(explained_variance_ratio=evr)
+    else:
+        num = np.zeros((n, n))
+        den = np.zeros((n, n))
+        for blk, wt in blocks.items():
+            have = np.array([c in per[blk] for c in ids])
+            V = np.array([per[blk][c] if c in per[blk] else np.zeros(st.vecs.shape[1]) for c in ids])
+            both = np.outer(have, have)
+            num += wt * (V @ V.T) * both
+            den += wt * both
+        S = num / den  # anchor guarantees den > 0
+        D2 = np.clip(2 - 2 * S, 0, None)
+        J = np.eye(n) - np.ones((n, n)) / n
+        B = -0.5 * J @ D2 @ J
+        ev, U = np.linalg.eigh(B)
+        o = np.argsort(ev)[::-1]
+        ev, U = ev[o], U[:, o]
+        pos = np.clip(ev, 0, None)
+        Y = U[:, :2] * np.sqrt(pos[:2])
+        for k in range(2):
+            if Y[np.argmax(np.abs(Y[:, k])), k] < 0:
+                Y[:, k] *= -1
+        neg = float(-ev[ev < 0].sum() / np.abs(ev).sum()) if np.abs(ev).sum() else 0.0
+        res["pca"] = dict(explained_variance_ratio=[round(float(x), 4) for x in (pos / pos.sum())[:10]],
+                          method="classical MDS", negative_eigen_share=round(neg, 4))
+    np.fill_diagonal(S, -np.inf)
+    nb = [list(np.argsort(-S[i])[:min(5, n - 1)]) for i in range(n)]
     res["umap"] = dict(available=False, note="UMAP not computed for custom combined maps")
-    res["points"] = [dict(id=c, pca=[round(float(v), 5) for v in Y[i]], umap=None,
+    res["points"] = [dict(id=c, pca=[round(float(v), 5) for v in Y[i]], umap=None, blocks=res["blocks_present"][c],
                           neighbours=[dict(id=ids[j], cosine=round(float(S[i, j]), 4)) for j in nb[i]])
                      for i, c in enumerate(ids)]
     return res
