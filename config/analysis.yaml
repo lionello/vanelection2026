@@ -22,6 +22,20 @@ views:
   actions:     {evidence_types: [reported_action, claimed_outcome], label: "Recorded & reported actions"}
   # third_party_assessment and commentary are shown, labelled by publisher, but never embedded
 
+debias:
+  # Remove the average vector of each source type (bio page, questionnaire, aggregator, news, platform...)
+  # from its chunks, so "what kind of page this came from" is not itself a dimension.
+  source_genre_centering: true
+  # Express each topic vector relative to the race's average statement on that topic, so axes reflect
+  # differences WITHIN topics rather than which topics a candidate talks about.
+  topic_centering: true
+  # Concept erasure of source/outlet style: estimate the directions along which the SAME candidate's
+  # chunks differ by source, and project every chunk onto their orthogonal complement.
+  source_erasure:
+    enabled: true
+    variance_fraction: 0.8   # erase the smallest set of directions explaining this share of within-candidate between-source variance
+    max_dims: 32
+
 dedup:
   near_duplicate_cosine: 0.95          # chunks of one subject this similar collapse to one
 

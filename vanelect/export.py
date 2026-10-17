@@ -68,8 +68,8 @@ def profiles(cands, claims, sources, feats, platform_topics_by_party, cfg):
             else:
                 pol[t] = dict(status="not_found", items=[], n_total=0,
                               note="Not found in collected sources (absence of evidence, not a position).")
-        exp = sorted([c for c in cl if c["evidence_type"] in ("elected_experience", "professional_experience", "education")],
-                     key=lambda c: ({"elected_experience": 0, "professional_experience": 1, "education": 2}[c["evidence_type"]], rank(c)))
+        exp = sorted([c for c in cl if c["evidence_type"] in ("elected_experience", "professional_experience", "education", "biography")],
+                     key=lambda c: ({"elected_experience": 0, "professional_experience": 1, "education": 2, "biography": 3}[c["evidence_type"]], rank(c)))
         act = sorted([c for c in cl if c["evidence_type"] in ("reported_action", "claimed_outcome")],
                      key=lambda c: (c["evidence_type"] == "claimed_outcome", rank(c)))
         com = sorted([c for c in cl if c["evidence_type"] == "commentary"], key=rank)
@@ -354,6 +354,28 @@ def methods_report(meta, analysis, cands) -> str:
         "platform pulls each candidate toward their party, so same-party neighbour rates rise sharply. Verbatim text "
         "shared by several candidates of one party is retyped `shared_campaign_language` and kept out of individual "
         "vectors (cross-candidate cosine >= the near-duplicate threshold is treated the same way).", "",
+        "### Removing source and outlet effects", "",
+        "Two diagnostic findings shaped the representation. Before debiasing, the main PCA axes mostly separated "
+        "*genres* (third-person campaign bios vs. questionnaire answers vs. platform bullet lists), and source type "
+        "could be predicted from a chunk's embedding about two times out of three. Three steps were applied, in order "
+        "(config `debias`):", "",
+        "1. Stance-less campaign narrative is typed `biography` and kept out of the policy view; a name mention counts as a "
+        "position only when the candidate is the subject or speaker.",
+        "2. Source-genre centering: the mean vector of each (view, source type) is subtracted from its chunks.",
+        "3. Concept erasure: directions along which the same candidate's chunks differ by source (within-candidate "
+        "contrasts) are estimated by SVD and projected out of every chunk in the view.",
+        "4. Topic centering: each topic vector is expressed relative to the race's mean statement on that topic.", "",
+        "| view | erased dims | stage | source-type acc. | publisher acc. | within-candidate source acc. over chance | between-candidate variance share |",
+        "|---|---|---|---|---|---|---|"] + [
+        f"| {v} | {r.get('erased_dims')} | {stg} | {x['source_type_acc']} | {x['publisher_acc']} | "
+        f"{x['within_candidate_source_acc_over_chance']} | {x['between_candidate_variance_share']} |"
+        for v, r in analysis.get("debias", {}).get("erasure", {}).items() for stg, x in r.get("stages", {}).items()] + ["",
+        "Accuracies are leave-one-out nearest-centroid. After debiasing, source type is at or below chance, and a "
+        "candidate's own sources are close to indistinguishable, while the between-candidate share of variance is "
+        "unchanged. Publisher remains partly predictable because most publishers are party sites covering only their "
+        "own candidates, so publisher and party (and candidate) are confounded; erasing it further would erase the "
+        "candidates' content. Axis descriptions on the site (passages, distinguishing words, topic drivers) are "
+        "automated interpretations computed after debiasing, shown only when an axis keeps its direction under source dropout.", "",
         "## 6. Council votes", "",
         f"Source: {meta['votes_dataset']['url']} (modified {meta['votes_dataset']['modified']}, sha256 "
         f"`{meta['votes_dataset']['sha256'][:16]}...`). The City says minutes remain the official record. Motions are "

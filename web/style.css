@@ -115,3 +115,10 @@ td.num { font-variant-numeric: tabular-nums; }
 }
 
 [hidden] { display: none !important; }
+
+.axes { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: .7rem .9rem; margin: .5rem 0 1rem; font-size: .85rem; }
+.axes h3 { margin-top: .2rem; }
+.axis { border-top: 1px solid var(--border); padding-top: .5rem; margin-top: .5rem; }
+.poles { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+.term { display: inline-block; font-size: .75rem; padding: .05rem .4rem; margin: .1rem; border-radius: 4px; background: var(--surface-2); }
+@media (max-width: 900px) { .poles { grid-template-columns: 1fr; } }

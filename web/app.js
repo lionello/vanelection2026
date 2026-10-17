@@ -147,6 +147,7 @@ function renderMap() {
   if (S.view === "combined") note.push(esc(m?.note || ""));
   $("#mapNote").innerHTML = note.join("<br>");
   if (!m || !m.points || m.n < 3 || !m.points[0].pca) {
+    $("#axes").hidden = true;
     Plotly.purge("plot");
     $("#plot").innerHTML = `<p class="empty" style="padding:1rem">${esc(m?.note || "Not enough candidates with sufficient evidence for a projection in this view.")}</p>`;
     $("#mapMeta").innerHTML = ""; excludedList(m); return;
@@ -189,6 +190,31 @@ function renderMap() {
     + (m.same_party_neighbour_rate != null ? `<br>Share of each party candidate's 3 nearest original-space neighbours from the same party: <b>${fmtPct(m.same_party_neighbour_rate)}</b>${S.view === "policy" && S.mode === "with_platform" ? " (inflated by the shared platform vector)" : ""}.` : "")
     + `<br>${m.n} plotted · ${Object.keys(m.insufficient || {}).length} not plotted · ${nUnst} flagged unstable under source removal / re-weighting (ringed markers) · ${Object.values(stab).filter((s) => s.projection_distorted).length} whose 2-D neighbours differ from original-space neighbours (use the neighbour list) · hollow circles = no party.`;
   excludedList(m);
+  axesPanel(m, useU);
+}
+
+function axesPanel(m, useU) {
+  const el = $("#axes");
+  const axes = m && m.axes;
+  if (!axes || !axes.length || useU || (S.custom && S.customKey === key())) {
+    el.hidden = true; return;
+  }
+  const tl = S.meta.topic_labels, nm = (id) => (id.startsWith("party:") ? id.slice(6) + " platform" : S.cmap[id]?.display_name || id);
+  const pole = (p, sign) => `<div><b>${sign} end</b> · nearest candidates: ${p.candidates.map((c) => `<a href="#" data-c="${c}">${esc(S.cmap[c].display_name)}</a>`).join(", ")}
+      <div>${p.terms.length ? p.terms.slice(0, 8).map((t) => `<span class="term" title="z=${t.z}">${esc(t.term)}</span>`).join("") : '<span class="status">no significantly distinguishing words</span>'}</div>
+      ${p.passages.slice(0, 3).map((x) => `<div class="ev"><p class="q">“${esc(x.text)}”</p><div class="src">${esc(nm(x.subject))} · ${esc(tl[x.topic] || x.topic)} · <a href="/source/${esc(x.source_id)}?p=${encodeURIComponent(x.passage_id)}#${encodeURIComponent(x.passage_id)}" target="_blank" rel="noopener">cite</a></div></div>`).join("")}</div>`;
+  el.hidden = false;
+  el.innerHTML = `<h3>What varies along each axis? <span class="badge warn">automated interpretation</span></h3>
+    ${(() => { const e = (S.analysis.debias || {}).erasure || {}; const r = e[S.view === "platform" ? "policy" : S.view]; if (!r || !r.stages) return "";
+      const a = r.stages.raw, b = r.stages.erased;
+      return `<p class="hint"><b>Source effects removed</b> before projection: genre centering + ${r.erased_dims} erased source-style directions. Predicting a chunk's source type from its vector: ${fmtPct(a.source_type_acc)} → ${fmtPct(b.source_type_acc)} (chance ${fmtPct(r.chance_source_type)}); telling one candidate's own sources apart: ${a.within_candidate_source_acc_over_chance} → ${b.within_candidate_source_acc_over_chance} above chance. <a href="/methods#removing-source-and-outlet-effects" target="_blank">details</a></p>`; })()}
+    <p class="hint">Each axis is described only by evidence: the passages and words that sit furthest toward each end (one passage per candidate) and the topics whose statements spread most along it. No political label is implied. An axis is shown as readable only if it keeps its direction when 20% of sources are randomly removed.</p>
+    ${axes.map((a) => `<div class="axis"><b>PC${a.component}</b> · ${fmtPct(a.explained_variance)} of variance ·
+      ${a.stable ? `<span class="badge ok">stable direction (|cos| ${a.stability_median_abs_cosine})</span>` : `<span class="badge bad">unstable direction (|cos| ${a.stability_median_abs_cosine ?? "n/a"}): do not interpret</span>`}
+      ${a.eigen_ratio_to_next && a.eigen_ratio_to_next < 1.1 ? '<span class="badge warn">nearly tied with the next axis: may rotate</span>' : ""}
+      <div class="status">Topics spreading most along it: ${a.topic_drivers.slice(0, 4).map((d) => esc(tl[d.topic] || d.topic)).join(", ") || "n/a"}</div>
+      ${a.stable ? `<div class="poles">${pole(a.positive_pole, "＋")}${pole(a.negative_pole, "−")}</div>` : `<details><summary>Show anyway</summary><div class="poles">${pole(a.positive_pole, "＋")}${pole(a.negative_pole, "−")}</div></details>`}</div>`).join("")}`;
+  el.querySelectorAll("a[data-c]").forEach((a) => (a.onclick = (e) => { e.preventDefault(); select(a.dataset.c); }));
 }
 
 function excludedList(m) {
@@ -200,6 +226,7 @@ function excludedList(m) {
 }
 
 function renderVotes() {
+  $("#axes").hidden = true;
   const V = S.analysis.votes;
   if (!["mayor", "council"].includes(S.race)) {
     Plotly.purge("plot");
@@ -282,7 +309,7 @@ function select(id) { S.selected = id; if (S.race !== "all" && S.cmap[id].race !
 function citeHTML(it) {
   const s = S.sources[it.source_id] || {};
   const typeLbl = { individual_position: "position", party_commitment: "party platform", elected_experience: "elected office",
-    professional_experience: "experience", education: "education", reported_action: "reported action", claimed_outcome: "claimed outcome (unverified)", commentary: "commentary", third_party_assessment: "third-party assessment", shared_campaign_language: "shared campaign language" }[it.evidence_type] || it.evidence_type;
+    professional_experience: "experience", education: "education", reported_action: "reported action", claimed_outcome: "claimed outcome (unverified)", commentary: "commentary", third_party_assessment: "third-party assessment", shared_campaign_language: "shared campaign language", biography: "biography (not embedded)" }[it.evidence_type] || it.evidence_type;
   const forms = (it.housing_forms || []).length ? ` · housing form: ${it.housing_forms.map(esc).join(", ")}` : "";
   return `<div class="ev ${esc(it.evidence_type)}"><p class="q">“${esc(it.claim)}”</p>
     ${it.perspective && (it.evidence_type === "third_party_assessment" || it.evidence_type === "commentary" || it.verification_status === "questionnaire_response") ? `<div class="src"><b>Publisher perspective:</b> ${esc(it.perspective)}</div>` : ""}
@@ -331,6 +358,8 @@ async function panel(id) {
       ${c.also_on_ballot_as.map((o) => `<span class="badge">also running: ${esc(S.cmap[o].office)}</span>`).join("")}
       <span class="badge">${p.coverage.topics_with_positions}/13 topics with own statements</span><span class="badge">${f.n_sources} sources</span></div>
     ${S.view !== "votes" ? stabilityHTML(id) : ""}
+    ${(() => { const ax = (currentMap() || {}).axes; if (!ax || !ax.length || !(ax[0].candidate_pulls || {})[id]) return "";
+      return `<details><summary>Why here? Topic pulls along each axis <span class="badge warn">automated interpretation</span></summary>${ax.map((a) => `<p style="font-size:.82rem;margin:.3rem 0"><b>PC${a.component}</b>${a.stable ? "" : " (unstable axis)"}: ${(a.candidate_pulls[id] || []).map(([t, v]) => `${esc(tl[t] || t)} ${v >= 0 ? "→ ＋" : "→ −"} (${v.toFixed(3)})`).join(" · ") || "no shared topics"}</p>`).join("")}<p class="status">How this candidate's statements on each topic sit along the axis compared with other candidates' statements on the same topic, weighted by that topic's share of the candidate's vector.</p></details>`; })()}
     <p style="font-size:.84rem">${links ? "Campaign links (from official page): " + links + "<br>" : ""}${docs ? "Official documents: " + docs + "<br>" : ""}<a href="${esc(c.official_candidate_page)}" target="_blank" rel="noopener">Official candidate page ↗</a></p>
     <h3>Structured features</h3><dl class="kv"><dt>Years in elected office</dt><dd>${f.years_elected_office ?? "not documented"} <span class="status">(${esc(f.years_basis)})</span></dd>
       <dt>Management responsibility</dt><dd>${f.management_responsibility ? "documented" : "not documented (missing, not zero)"}</dd>

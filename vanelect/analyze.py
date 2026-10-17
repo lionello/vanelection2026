@@ -37,7 +37,31 @@ class State:
         self.cands = json.loads((OUT / "candidates.json").read_text())
         self.cmap = {c["candidate_id"]: c for c in self.cands}
         self.chunks = [json.loads(l) for l in (OUT / "chunks.jsonl").open()]
-        self.vecs = np.load(OUT / "chunk_vectors.npy")
+        self.raw_vecs = np.load(OUT / "chunk_vectors.npy")
+        self.vecs = self.raw_vecs
+        self.genre_means = {}
+        if self.cfg.get("debias", {}).get("source_genre_centering") and len(self.raw_vecs):
+            stypes = {s["source_id"]: s["source_type"] for s in json.loads((OUT / "sources.json").read_text())}
+            groups = defaultdict(list)
+            for i, c in enumerate(self.chunks):
+                c["genre"] = stypes.get(c["source_id"], "reference")
+                if not c.get("near_duplicate_of"):
+                    groups[(c["view"], c["genre"])].append(i)
+            adj = self.raw_vecs.astype(np.float64).copy()
+            for (v, g), ii in groups.items():
+                if len(ii) >= 20:  # too few chunks -> mean is noise; leave as is
+                    mu = self.raw_vecs[ii].mean(0)
+                    self.genre_means[f"{v}:{g}"] = len(ii)
+                    for i in [k for k, c in enumerate(self.chunks) if c["view"] == v and c["genre"] == g]:
+                        adj[i] -= mu
+            adj /= np.linalg.norm(adj, axis=1, keepdims=True).clip(1e-12)
+            self.vecs = adj.astype(np.float32)
+        self.erasure = {}
+        er = self.cfg.get("debias", {}).get("source_erasure", {})
+        if er.get("enabled") and len(self.vecs):
+            from .erasure import erase_sources
+            pubs = {x["source_id"]: x.get("publisher") or x["source_id"] for x in json.loads((OUT / "sources.json").read_text())}
+            self.vecs, self.erasure = erase_sources(self.chunks, self.vecs, er, raw=self.raw_vecs, publisher=pubs)
         self.by_view = defaultdict(list)
         for i, c in enumerate(self.chunks):
             self.by_view[c["view"]].append(i)
@@ -81,7 +105,8 @@ def combine_topics(tv: np.ndarray, weights: np.ndarray) -> np.ndarray | None:
 
 
 def candidate_vectors(st: State, race: str | None, view: str, mode: str = "individual",
-                      weights: dict | None = None, exclude_sources=frozenset(), ids: list[str] | None = None):
+                      weights: dict | None = None, exclude_sources=frozenset(), ids: list[str] | None = None,
+                      collect_tv: dict | None = None):
     """Returns ids, X, info{id: {...coverage...}}, insufficient{id: reason}."""
     cfg = st.cfg
     thr = cfg["thresholds"]
@@ -91,6 +116,7 @@ def candidate_vectors(st: State, race: str | None, view: str, mode: str = "indiv
     pm = st.topic_matrix("platform", exclude_sources) if (view == "policy" and mode == "with_platform") else {}
     pool = ids or [c["candidate_id"] for c in st.cands if race is None or c["race"] == race]
     out_ids, X, info, insufficient = [], [], {}, {}
+    staged = []
     for cid in pool:
         c = st.cmap[cid]
         tv, cnt = tm.get(cid, (np.full((len(topics), st.vecs.shape[1]), np.nan), np.zeros(len(topics), int)))
@@ -124,27 +150,49 @@ def candidate_vectors(st: State, race: str | None, view: str, mode: str = "indiv
         if view in ("policy", "actions") and len(covered) < thr["min_topics"]:
             insufficient[cid] = f"only {len(covered)} topic(s) covered (< {thr['min_topics']})"
             continue
+        staged.append((cid, tv))
+    # topic centering: each topic vector relative to the pool's mean statement on that topic
+    if cfg.get("debias", {}).get("topic_centering") and staged:
+        T = np.array([tv for _, tv in staged])  # (n, T, D)
+        for t in range(T.shape[1]):
+            have = ~np.isnan(T[:, t, 0])
+            if have.sum() >= 3:
+                mu = T[have, t].mean(0)
+                d = T[have, t] - mu
+                T[have, t] = d / np.linalg.norm(d, axis=1, keepdims=True).clip(1e-12)
+        staged = [(cid, T[i]) for i, (cid, _) in enumerate(staged)]
+    for cid, tv in staged:
         v = combine_topics(tv, w)
         if v is None:
             insufficient[cid] = "all evidence in zero-weighted topics"
             continue
         out_ids.append(cid)
         X.append(v)
+        if collect_tv is not None:
+            collect_tv[cid] = (tv, w)
     return out_ids, (np.array(X) if X else np.zeros((0, st.vecs.shape[1]))), info, insufficient
 
 
 # ------------------------------------------------------------------ projections
-def pca2(X: np.ndarray) -> tuple[np.ndarray, list[float]]:
+def pca_axes(X: np.ndarray):
+    """-> Y (n,2), explained variance ratios, components (2,D) sign-aligned with Y, mean (D,)"""
     n = len(X)
     if n < 3:
-        return np.zeros((n, 2)), []
+        return np.zeros((n, 2)), [], np.zeros((2, X.shape[1])), X.mean(0) if n else None
     p = PCA(n_components=min(n - 1, X.shape[1], 10), random_state=0).fit(X)
     Y = p.transform(X)[:, :2]
-    # deterministic sign: largest-|loading| coordinate positive
+    comps = p.components_[:2].copy()
+    # deterministic sign: largest-|score| candidate positive
     for k in range(Y.shape[1]):
         if Y[np.argmax(np.abs(Y[:, k])), k] < 0:
             Y[:, k] *= -1
-    return Y, [round(float(x), 4) for x in p.explained_variance_ratio_]
+            comps[k] *= -1
+    return Y, [round(float(x), 4) for x in p.explained_variance_ratio_], comps, p.mean_
+
+
+def pca2(X: np.ndarray) -> tuple[np.ndarray, list[float]]:
+    Y, evr, _, _ = pca_axes(X)
+    return Y, evr
 
 
 def umap2(X: np.ndarray, seed: int, cfg: dict) -> np.ndarray | None:
@@ -201,7 +249,7 @@ def support_pairs(st: State, view: str, a: str, b: str, mode: str, top: int = 2)
     ia, ib = chunks_of(a), chunks_of(b)
     if not ia or not ib:
         return []
-    S = st.vecs[ia] @ st.vecs[ib].T
+    S = st.raw_vecs[ia] @ st.raw_vecs[ib].T  # raw (un-centred) similarity is what a reader expects
     out, used = [], set()
     for flat in np.argsort(-S, axis=None):
         i, j = np.unravel_index(flat, S.shape)
@@ -224,7 +272,8 @@ def analyse_map(st: State, race: str | None, view: str, mode: str = "individual"
                 weights: dict | None = None, sensitivity: bool = True, ids=None) -> dict:
     cfg = st.cfg
     k = cfg["thresholds"]["neighbours_k"]
-    cids, X, info, insufficient = candidate_vectors(st, race, view, mode, weights, ids=ids)
+    tvs = {}
+    cids, X, info, insufficient = candidate_vectors(st, race, view, mode, weights, ids=ids, collect_tv=tvs)
     res = dict(race=race, view=view, mode=mode, n=len(cids), insufficient=insufficient, coverage=info,
                generated_at=now_iso())
     if len(cids) < 3:
@@ -255,6 +304,8 @@ def analyse_map(st: State, race: str | None, view: str, mode: str = "individual"
             and sum(st.cmap[q["id"]]["party_id"] == st.cmap[p["id"]]["party_id"] for q in pts) > 1]
     res["same_party_neighbour_rate"] = round(float(np.mean(same)), 3) if same else None
     if sensitivity:
+        from .interpret import interpret_axes
+        res["axes"] = interpret_axes(st, race, view, mode, weights, cids, X, tvs, ids=ids)
         res["stability"] = stability(st, race, view, mode, weights, cids, X, Y, U, ids=ids)
     return res
 
@@ -446,6 +497,7 @@ def build(sensitivity: bool = True) -> dict:
                                        "differ. Similar language does not imply similar responsibilities.")
     result["votes"] = votes_maps()
     result["features"] = structured_features(st)
+    result["debias"] = dict(config=st.cfg.get("debias", {}), genre_groups=st.genre_means, erasure=st.erasure)
     (SITE / "analysis.json").write_text(json.dumps(result, ensure_ascii=False))
     return {r: {k: v["n"] for k, v in result["races"][r].items()} for r in RACES}
 

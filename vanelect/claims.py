@@ -61,7 +61,7 @@ EXPERIENCE = re.compile(r"\b(years? (of )?experience|career|chaired|served on|wo
 EDUCATION = re.compile(r"\b(degree|bachelor|master'?s|MBA|PhD|doctorate|diploma|graduate[d]? (of|from)|studied|certified|certification|designation|CPA|P\.Eng|J\.D\.|LL\.?B|university of|UBC|SFU|BCIT|Langara)\b", re.I)
 MGMT = re.compile(r"\b(budget of|\$[\d.,]+ ?(million|billion|m|b)\b.*\b(budget|portfolio|operation)|managed (a )?(team|staff|budget)|staff of \d+|team of \d+|\d+ (employees|staff)|oversaw|responsible for (a|the) .*(budget|team|staff|program))", re.I)
 OUTCOME = re.compile(r"\b(I|we|he|she|they|[A-Z][a-z]+) (have |has )?(delivered|secured|built|reduced|increased|achieved|passed|won|saved|created|launched|opened|completed|fixed|cut|froze|hired|added|got)\b", re.I)
-POSITION = re.compile(r"\b(will|would|must|should|plan(s)? to|commit(s|ted)? to|propose[sd]?|support(s)?|oppose[sd]?|believe[sd]?|priorit(y|ize|ise)|fight for|push for|advocate for|stand(s)? for|want(s)? to|need(s)? to|calls? for|pledge[sd]?|promise[sd]?|vision)\b", re.I)
+POSITION = re.compile(r"\b(will|would|must|should|ought|need(s|ed)? to|needs?\b|cannot|can't|deserves?|plan(s)? to|commit(s|ted)? to|propose[sd]?|support(s|ing)?|oppose[sd]?|opposing|believe[sd]?|priorit(y|ies|ize|ise)|fight(s|ing)? for|push(es|ing)? for|advocat(e|es|ing) for|stand(s)? (for|against)|want(s)?\b|calls? for|pledge[sd]?|promise[sd]?|vision|time to|important to|let's|we'll|i'll|end the|stop the|restore|protect|expand|reduce|increase|cut|freeze|ban|scrap|reverse|invest in|keep)\b", re.I)
 SPEECH = re.compile(r"[\"“”‘’'].{8,}[\"“”‘’'].*\b(said|says|told|wrote|stated|argued|added)\b|\b(said|says|told|wrote|stated|argued|added)\b.*[\"“”].{8,}", re.I)
 QUOTE = re.compile(r"[\"“”]|\b(said|says|told|according to)\b", re.I)
 BOILER = re.compile(r"\b(donate|volunteer sign|sign up|subscribe|newsletter|sponsored|is running for (city )?council|on the ballot for|candidate \d+ on the ballot|contribute this|we acknowledge|unceded|pdf file|retrieved \d|archived from|accessed \d|cookie|privacy policy|all rights reserved|follow us|share this|click here|read more|copyright|paid for by|authorized by|financial agent|log ?in|menu|skip to)\b", re.I)
@@ -183,8 +183,10 @@ def classify(sent: str, source_type: str, how: str = "") -> tuple[str, str]:
         et = "claimed_outcome" if camp else "reported_action"
     elif source_type in ("news", "reference", "official_record", "employer_bio") and not SPEECH.search(sent):
         et = "reported_action" if source_type != "employer_bio" else "professional_experience"
-    else:
+    elif POSITION.search(sent) or source_type == "questionnaire":
         et = "individual_position"
+    else:
+        et = "biography"  # descriptive campaign text without a stance: shown, never embedded
     vs = {"candidate_bio": "attributed_campaign_claim", "campaign_site": "attributed_campaign_claim",
           "party_candidate_list": "attributed_campaign_claim", "official_record": "official_record",
           "employer_bio": "employer_record", "news": "independently_reported",
@@ -207,6 +209,11 @@ def build() -> dict:
     sources = {s["source_id"]: s for s in json.loads((OUT / "sources.json").read_text())}
     passages = [json.loads(l) for l in (OUT / "passages.jsonl").open()]
     table = alias_table(cands)
+    _CANDS.clear()
+    _CANDS.update(cmap)
+    _FIRST.clear()
+    for c in cands:
+        _FIRST.setdefault(c["display_name"].split()[0], set()).add(c["candidate_id"])
     by_src = defaultdict(list)
     for p in passages:
         by_src[p["source_id"]].append(p)
@@ -285,6 +292,10 @@ def build() -> dict:
                         owners, how = [section_owner], "section_heading"
                     elif len(named) == 1 and st in SINGLE_TAG_OK:
                         owners, how = named, "source_tagged_single_candidate"
+                if how in ("single_candidate_page", "source_tagged_single_candidate", "section_heading") and \
+                        about_someone_else(s, owners[0]):
+                    hits = [c for c in cmap if mentions(s, c, table)]
+                    owners, how = (hits, "name_in_sentence") if hits else ([], None)
                 if not owners:
                     if st == "party_platform":
                         claims.append(mk(None, party_id_of(party, cands), s, p, src, date, date_basis, "party_page"))
@@ -320,8 +331,54 @@ def party_id_of(party: str | None, cands: list[dict]) -> str | None:
     return None
 
 
+SPEAK_VERBS = r"(said|says|told|wrote|writes|argued|argues|added|believes?|wants?|will|would|supports?|opposes?|proposes?|pledged|promised|promises|plans?|calls? for|is calling|vowed|vows|intends?|thinks?|stated|noted)"
+_CANDS: dict = {}
+
+
+AMBIG_FIRST = {"victoria", "job", "armor", "summit", "mark", "guy", "grant", "will", "rob", "kat", "jay", "wah", "ken"}
+_FIRST: dict = {}
+
+
+def about_someone_else(sent: str, owner: str) -> bool:
+    """On a page attributed to `owner`, does the sentence name a different roster candidate (full name, or a
+    distinctive first name) without naming the owner?"""
+    c = _CANDS.get(owner)
+    if not c:
+        return False
+    parts = c["display_name"].split()
+    if re.search(rf"\b({re.escape(parts[0])}|{re.escape(parts[-1])})\b", sent):
+        return False
+    for first, ids in _FIRST.items():
+        if owner in ids or first.lower() in AMBIG_FIRST:
+            continue
+        if re.search(rf"\b{re.escape(first)}\b", sent):
+            return True
+    return False
+
+
+def speaks(sent: str, cid: str) -> bool:
+    """Is the candidate the speaker/subject of the sentence (not merely mentioned)?"""
+    c = _CANDS.get(cid)
+    if not c:
+        return True
+    names = [re.escape(c["display_name"]), re.escape(c["display_name"].split()[-1])]
+    title = r"(?:(?:Mayor|Councillor|Coun\.|Commissioner|Trustee|candidate|Dr\.)\s+)?"
+    for n in names:
+        if re.search(rf"\b{title}{n}(?:'s)?\s+(?:\w+\s+){{0,2}}{SPEAK_VERBS}\b", sent, re.I):
+            return True
+        if re.search(rf"\b(said|says|told|according to|wrote)\s+{title}{n}\b", sent, re.I):
+            return True
+        if re.search(rf"[”\"]\s*[–—-]\s*{n}", sent):
+            return True
+    return False
+
+
 def mk(cid, pid, sent, p, src, date, date_basis, how, quoted_doc=None) -> dict:
     et, vs = classify(sent, src["source_type"], how)
+    if cid and how == "name_in_sentence" and et == "individual_position" and not speaks(sent, cid):
+        # mentioned, not speaking: a statement ABOUT the candidate, never their position
+        et, vs = ("reported_action", vs) if src["source_type"] in ("news", "reference", "official_record") \
+            else ("biography", vs)
     if cid is None:
         et, vs = "party_commitment", ("party_commitment" if how == "party_page" else
                                       "party_commitment_quoted_elsewhere")
