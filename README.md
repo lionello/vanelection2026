@@ -59,6 +59,10 @@ and then cached.
   - Council ballot numbers come from Daily Hive's ballot-order list, which matches the official pages
     on all 74 other entries.
   - All 130 names and offices are matched against Elections BC's official registered-candidate list.
+- Committed HTML snapshots can omit browser runtime scripts and hydration payloads;
+  JSON-LD provenance and static article text are retained. Run
+  `python scripts/sanitize_snapshots.py` before committing new captures. The Daily Hive
+  snapshot is sanitized this way to avoid redistributing its third-party frontend keys.
 - Each claim is a verbatim sentence with a passage id. Each source keeps its original bytes, URL,
   publisher, date, retrieval time and SHA-256 hash.
 - Missing values stay distinct and are never zero-filled:
